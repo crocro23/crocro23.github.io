@@ -1,0 +1,51 @@
+/*@import '../static/fonts/ibm-plex-sans.css';*/
+/*@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,500,600,700);*/
+
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+/* Import custom theme classes */
+@import './lib/theme.css';
+
+@theme {
+	--default-font-family: 'IBM Plex Sans', 'sans-serif';
+
+	/* Light theme colors (default) */
+	--color-primary: black;
+	--color-background: oklch(97% 0 0); /* neutral-100 */
+	--color-box: white;
+
+	/* Dark theme colors */
+	--color-primary-dark: white;
+	--color-background-dark: oklch(20.5% 0 0); /* neutral-900 */
+	--color-box-dark: oklch(26.9% 0 0); /* neutral-800 */
+}
+
+/* Apply dark theme colors based on system preference */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-primary: var(--color-primary-dark);
+		--color-background: var(--color-background-dark);
+		--color-box: var(--color-box-dark);
+	}
+}
+
+/* Custom utility classes */
+.image-hover-effect {
+	filter: grayscale(100%);
+	transition: all 0.3s ease-in-out;
+	transform: scale(1);
+}
+
+.image-hover-effect:hover {
+	filter: grayscale(0%);
+	transform: scale(1.05);
+}
+
+@variant enabled {
+	&:not(:disabled) {
+		@slot;
+	}
+}
+

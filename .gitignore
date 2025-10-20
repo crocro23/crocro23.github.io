@@ -1,0 +1,28 @@
+node_modules
+# Content
+content/projects/*
+!content/projects/example-project/
+!content/projects/example_projects.zip
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+*~lock~
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
