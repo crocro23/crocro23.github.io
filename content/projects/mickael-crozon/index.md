@@ -55,6 +55,8 @@ Cette décennie m’a permis de consolider mes compétences techniques tout en d
 3. Travail en équipe 
 4. Adaptabilité
 
+[Mon CV](documents/CV-Mickael-Crozon-2025-01.pdf)
+
 ---
 
 _Note: MAJ au 17 octobre 2025_
