@@ -1,11 +1,8 @@
 ---
-title: 'Bienvenue sur mon portfolio!'
-description: 'Un générateur de portfolio statique moderne conçu avec SvelteKit et Tailwind CSS. Içi je présente mon travail avec élégance et simplicité.'
+title: 'Welcome!'
+description: 'A modern static portfolio generator built with SvelteKit and Tailwind CSS. Showcase your creative work with elegance and simplicity.'
 ---
 
-## Je suis Mickaël Crozon
+## This is the homepage
 
-Professionnel de l’informatique spécialisé dans la modélisation documentaire, la gestion de production et le support technique. Fort de plus de 20 ans d’expérience, j’ai évolué dans des environnements exigeants où rigueur, adaptabilité et esprit d’équipe sont essentiels.
-
-Me contacter
-Tu souhaites collaborer avec moi : 📧 mickaelcrozon@hotmail.com 📱 06 63 66 99 45 Ou en savoir plus sur mon profil ? => Va voir Mon CV
+Add content here.
