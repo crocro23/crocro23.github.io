@@ -57,13 +57,6 @@ featured: true
 
 ---
 
-## ⚙️ Automatisation avec Bash
-
-Les scripts Bash permettent d’automatiser les tâches répétitives : sauvegardes, mises à jour système, flux de travail personnalisés.  
-Des outils comme **xbindkeys** peuvent associer des scripts ou commandes à des raccourcis clavier.
-
----
-
 ## 📜 Commandes Unix essentielles
 
 - `ls` → liste le contenu d’un dossier  
@@ -91,6 +84,13 @@ Des outils comme **xbindkeys** peuvent associer des scripts ou commandes à des 
 - `history` → afficher l’historique des commandes  
 - `man` → afficher le manuel d’une commande  
 - `echo` → imprimer du texte ou écrire dans un fichier  
+
+---
+
+## ⚙️ Automatisation avec Bash
+
+Les scripts Bash permettent d’automatiser les tâches répétitives : sauvegardes, mises à jour système, flux de travail personnalisés.  
+Des outils comme **xbindkeys** peuvent associer des scripts ou commandes à des raccourcis clavier.
 
 ---
 
@@ -132,3 +132,5 @@ do
 done
 
 mv *.save SAVE
+
+Note: MAJ au 14 novembre 2025
