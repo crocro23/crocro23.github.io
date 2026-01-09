@@ -94,5 +94,8 @@ Le CV qui sert de modèle pour l’ATS :
 - Comporte de gros pavés de texte
 
 💬 Mon avis : la lettre de motivation ne semble pas indispensable dans ce contexte.
+
+## 🔎 Pour aller plus loin
+- Le modèle de CV pour l'IT chez novoresume.com
   
-_Note: MAJ au 31 octobre 2025_
+_Note: MAJ au 17 novembre 2025_

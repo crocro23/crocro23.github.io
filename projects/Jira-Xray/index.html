@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.svg" />
+		<link rel="preconnect" href="https://fonts.bunny.net" />
+		<link
+			href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,500,600,700"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+		<link href="../../_app/immutable/assets/0.DKgpxOX7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.BOoXjOBU.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C9tlFOz0.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Be08vJ07.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BCZbx2Sk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/tbjhAa6l.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CdH9Huor.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.B-5o6L-n.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/gqh83yNy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B_5HCC-R.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DYPfjpQk.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.reaY6dXx.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BkpA0PSA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DSGmDI0q.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/7.Btjgh-N1.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DXiV9JFe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D-RxnAsG.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C-CYnFmR.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/waNz1Iww.js"><!--[--><meta name="description" content="Installation et utilisation de TestLink pour la gestion des tests manuels"/> <meta property="og:title" content="Jira avec Xray – Mise en oeuvre du projet de tests"/> <meta property="og:description" content="Installation et utilisation de TestLink pour la gestion des tests manuels"/> <meta property="og:image" content="../../content/projects/Jira-Xray/thumbnail.jpg"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="microfolio"/><!--]--><title>microfolio • Jira avec Xray – Mise en oeuvre du projet de tests</title>
+	</head>
+	<body class="bg-background px-4" data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><header class="bg-background sticky top-0 z-5000 mb-8"><div class="border-primary mx-auto flex h-32 max-w-7xl items-end justify-between border-b border-solid px-4 md:h-32"><section class="h-15 flex-1"><a href="../../"><div class="text-2xl font-medium">microfolio</div> <div class="text-sm">Générateur de portfolio statique</div></a></section> <nav class="hidden md:block"><ul class="flex h-8 gap-4"><!--[--><li class="hover:border-primary px-2 hover:font-medium "><a href="../../">Accueil</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../about">À propos</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../projects">Projets</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../list">Liste</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../map">Carte</a></li><!--]--></ul></nav> <button class="bg-box text-primary border-primary z-100 mb-3 cursor-pointer rounded-full border-1 p-2 md:hidden" aria-label="Menu"><!--[!--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="pointer-events-none size-6 hover:scale-110"><path fill="currentColor" d="M4 6h24v2H4zm0 18h24v2H4zm0-12h24v2H4zm0 6h24v2H4z"></path></svg><!--]--></button></div> <!--[!--><!--]--></header><!----> <main class="mx-auto max-w-7xl px-4 pb-24"><!----><div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6"><div class="col-span-2 mb-12 max-w-none"><div><h1 class="text-primary mb-2 text-3xl font-bold">Jira avec Xray – Mise en oeuvre du projet de tests</h1></div> <p class="text-lg">Installation et utilisation de TestLink pour la gestion des tests manuels</p> <a href="../../projects" class="my-4 block text-sm hover:underline">← Retour aux projets</a> <img src="../../content/projects/Jira-Xray/thumbnail.jpg" alt="Jira avec Xray – Mise en oeuvre du projet de tests" class="w-full"/> <div class="text-primary mt-4 text-sm"><!--[!--><p class="font-medium">thumbnail.jpg</p><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <article class="prose prose-neutral text-primary mt-8"><!----><h1>Jira avec Xray – Mise en œuvre d’un projet de test</h1>
+<h2>🧭 Création du projet Jira</h2>
+<ul>
+<li>Connexion à Jira (<a href="https://home.atlassian.com/">https://home.atlassian.com/</a>)</li>
+<li>Création d’un projet <strong>Kanban</strong> nommé <em>QA Testing en Kanban</em></li>
+<li>Types d’éléments activés :<ul>
+<li>Task : petite tâche</li>
+<li>Story : besoin utilisateur</li>
+<li>Feature : fonctionnalité large</li>
+<li>Request : demande d’assistance</li>
+<li>Bug : anomalie à corriger</li>
+</ul>
+</li>
+<li>Colonnes du tableau Kanban : Do To, In Progress, In Review, Done</li>
+</ul>
+<p>Jira crée automatiquement 3 tâches :</p>
+<ul>
+<li>KAN-1 : Tâche 1</li>
+<li>KAN-2 : Tâche 2</li>
+<li>KAN-3 : Sous-tâche 2.1</li>
+</ul>
+<p>Jira fonctionne !</p>
+<hr>
+<h2>🧪 Ajout de l’extension Xray</h2>
+<ul>
+<li>Extension : <a href="https://marketplace.atlassian.com/apps/1211769/xray-test-management-for-jira?tab=overview&hosting=cloud">Xray Test Management for Jira</a></li>
+<li>Édition Standard : 30 jours gratuits, puis 10 $/mois</li>
+<li>Installation via le menu <strong>Apps</strong> → <strong>Créer un projet</strong></li>
+</ul>
+<hr>
+<h2>📋 Vue du projet Xray</h2>
+<p>Dans le tableau XSP :</p>
+<ul>
+<li>Éléments visibles : Epic, Story, Test, Bug, Précondition, Test Plan, Test Execution, Test Set</li>
+<li>Onglets : Résumé, Chronologie (sprint 1 mois), Backlog, Sprints actifs (Kanban 3 colonnes)</li>
+</ul>
+<hr>
+<h2>🔗 Structure des tests</h2>
+<ul>
+<li>Un test peut être lié à : Story, Epic, Test Plan, Test Execution, Test Set</li>
+</ul>
+<p>Exemples :</p>
+<ul>
+<li>Epic XSP-3 → Story XSP-15 et XSP-22</li>
+<li>Story XSP-22 → 7 tests : XSP-1 à XSP-45</li>
+<li>Test Plan XSP-32 → 5 tests : XSP-1 à XSP-12</li>
+<li>Test Execution XSP-33 → 5 tests : XSP-42 à XSP-56</li>
+<li>Test Set XSP-41 → 5 tests : XSP-42 à XSP-56</li>
+</ul>
+<p>Ordre recommandé :</p>
+<ol>
+<li>Création des tests &amp; préconditions</li>
+<li>Test Set</li>
+<li>Test Plan</li>
+<li>Test Execution
+🎥 <a href="https://youtu.be/AqB-N31DicU?list=PLYbxiVM16d2J6e9NWooisV2JEyhO6OMG2&t=391">Vidéo explicative</a></li>
+</ol>
+<hr>
+<h2>🌍 Environnements de test</h2>
+<p>Par défaut : Desktop Chrome, Desktop Safari, Mobile Chrome, Mobile Safari</p>
+<p>Suggestion : Développement, Recette, PréProd, Maintenance à chaud</p>
+<hr>
+<h2>🧩 Couverture des tests</h2>
+<ul>
+<li>Story XSP-10 : UNCOVERED → Ajouter un test → rattacher au ticket → couverture activée</li>
+</ul>
+<hr>
+<h2>▶️ Exécution des tests</h2>
+<ul>
+<li>Test Plan XSP-39 → lancement des tests XSP-42</li>
+<li>Bouton &quot;Play&quot; → démarrage du chronomètre → date du jour</li>
+<li>En cas de bug : ajouter constatation, résumé, environnement, pièce jointe</li>
+<li>Si tout est OK → clic sur le carré vert</li>
+</ul>
+<hr>
+<h2>📊 Reporting et suivi</h2>
+<ul>
+<li><strong>Test Coverage Report</strong> : Story et Epic sans couverture (ex. : XSP-8, XSP-2)</li>
+<li><strong>Requirement Traceability Report</strong> : Epic, Story, Tests, Exécutions, Bugs</li>
+<li><strong>Test Plans Metrics Report</strong> : avancement des plans de test</li>
+</ul>
+<hr>
+<h2>🔍 Requêtes JQL utiles</h2>
+<p>📄 <a href="https://atlassianblog.wpengine.com/wp-content/uploads/2017/01/atlassian_jql-cheat-sheet.pdf">JQL Cheat Sheet</a></p>
+<p>Top 5 requêtes :</p>
+<ul>
+<li><code>Status = &quot;Open&quot;</code></li>
+<li><code>Assignee = currentUser()</code></li>
+<li><code>Project = &quot;Project Name&quot;</code></li>
+<li><code>created &gt; startOfWeek()</code></li>
+<li><code>Priority = &quot;High&quot; AND Status != &quot;Closed&quot;</code></li>
+</ul>
+<hr>
+<h2>🎓 Ressources complémentaires</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=tWbLVYpn4rI&t=307s">Démo Xray – Modus Create France</a></li>
+<li><a href="https://www.youtube.com/watch?v=AqB-N31DicU&list=PLYbxiVM16d2J6e9NWooisV2JEyhO6OMG2">Playlist Xray Jira – SMART QA</a></li>
+<li><a href="https://academy.getxray.app/plus/catalog">Académie Xray</a></li>
+<li><a href="https://www.atlassian.com/fr/devops/testing-tutorials/jira-xray-integration-manage-test-cases">Créer et gérer des scénarios de test</a></li>
+</ul>
+<hr>
+<h2>🧪 Exemple de test XP-S1</h2>
+<p><strong>Titre</strong> : Vérifier le calcul pour un montant initial de 100, taux d’intérêt 1 %, fréquence hebdomadaire, durée 1 an, taux d’imposition 0 %</p>
+<p><strong>Scénario utilisateur</strong> :</p>
+<blockquote>
+<p>En tant qu’invité ou utilisateur enregistré, je souhaite pouvoir payer et finaliser mon achat en toute sécurité.</p>
+</blockquote>
+<p><strong>Critères d’acceptation</strong> :</p>
+<ul>
+<li>Paiement par carte (Visa, MasterCard, Amex) et PayPal</li>
+<li>Sélection du mode de paiement</li>
+<li>Connexion sécurisée</li>
+<li>Stockage sécurisé pour utilisateurs enregistrés</li>
+<li>Confirmation de commande</li>
+</ul>
+<p><strong>Définition de &quot;Terminé&quot;</strong> :</p>
+<ul>
+<li>Paiement sécurisé mis en place</li>
+<li>Interface utilisateur claire</li>
+<li>Fonction de stockage sécurisé</li>
+<li>Cryptage conforme aux normes</li>
+<li>Tests de validation effectués</li>
+<li>Confirmation de commande opérationnelle</li>
+<li>Documentation fournie au support client</li>
+<li>Code intégré à la branche principale</li>
+</ul>
+<hr>
+<h2>🧱 Epic XSP-3 – Fonctionnalité de paiement</h2>
+<p>Objectif : offrir un processus de paiement fluide et intuitif, avec possibilité de retirer des produits du panier.</p>
+<hr>
+<h2>🧪 Préconditions</h2>
+<h3>Précondition XSP-29 (Cucumber)</h3>
+<pre><code>gherkin
+Étant donné que j&#39;utilise un téléphone portable et qu&#39;il a accès à Internet
+et qu&#39;il dispose d&#39;une application de navigation fonctionnelle
+Lorsque j&#39;ouvre l&#39;application de navigation
+Alors l&#39;utilisateur peut accéder au Web
+</code></pre>
+<h3>Précondition XSP-30 (Manuel)</h3>
+<ul>
+<li>Vérifier que l&#39;appareil est chargé</li>
+<li>Allumer l&#39;appareil</li>
+<li>Déverrouiller l’écran</li>
+<li>Vérifier la connectivité réseau</li>
+<li>Vérifier la disponibilité d’un navigateur</li>
+<li>Ajuster les paramètres si nécessaire</li>
+<li>S’assurer d’un éclairage et d’une visibilité adéquats</li>
+</ul>
+<p>Note: MAJ au 07 janvier 2026</p>
+<!----></article></div> <aside class="bg-box mb-6 space-y-3 p-6 text-sm lg:sticky lg:top-40 lg:self-start"><div class="flex items-center justify-between"><!--[--><span class="inline-block rounded-full border border-primary bg-box px-2 py-1 text-sm capitalize "><!---->testlogiciel<!----></span><!--]--><!----> <!--[--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="inline-block size-6 pb-1"><path fill="currentColor" d="m16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48Z"></path></svg><!--]--></div> <hr/> <div><h3 class="text-base font-medium">Informations</h3> <span class="font-medium">Lieu et date ›</span> <span>Mordelles, France /</span> <span>2026-01</span> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <!--[--><div class="mt-2"><h3 class="text-base font-medium">Équipe</h3> <!--[--><div><span class="font-medium">Mickael Crozon</span> <!--[--><span>› Auteur</span><!--]--></div><!--]--></div><!--]--> <!--[--><div class="mt-2"><h3 class="mb-1 text-base font-medium">Mots-clés</h3> <div class="flex flex-wrap gap-2"><!--[--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->Jira<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->Xray<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->gestion de projet<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->QA<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->reporting<!----></span><!--]--><!--]--></div></div><!--]--></aside></div> <!--[--><!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--><!--]--> <!--[!--><!--]--><!----><!----></main> <footer><div class="border-primary mx-auto flex h-auto max-w-7xl flex-col items-center justify-between gap-4 border-t-2 border-solid px-4 py-4 md:h-12 md:flex-row md:gap-0 md:py-0"><p class="text-center text-sm md:text-start">© AKER
+			2026 — généré avec <a href="https://github.com/aker-dev/microfolio" target="_blank" class="font-medium hover:underline">microfolio 0.5.0-beta.8</a></p> <nav><ul class="flex justify-center gap-4 md:justify-end"><!--[!--><!--]--> <!--[--><li><a href="https://www.linkedin.com/in/mickael-crozon-17a85328/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><path fill="currentColor" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"></path></svg><!----></a></li><!--]--> <!--[--><li><a href="https://github.com/crocro23" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><g fill="none"><g clip-path="url(#SVGXv8lpc2Y)"><path fill="currentColor" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12" clip-rule="evenodd"></path></g><defs><clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></g></svg><!----></a></li><!--]--></ul></nav></div></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_llwhwf = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/microfolio"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.BOoXjOBU.js"),
+						import("../../_app/immutable/entry/app.B-5o6L-n.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data: [null,{type:"data",data:{project:{slug:"Jira-Xray",title:"Jira avec Xray – Mise en oeuvre du projet de tests",date:"2026-01-07",location:"Mordelles, France",coordinates:[48.066669,-1.85],description:"Installation et utilisation de TestLink pour la gestion des tests manuels",type:"testlogiciel",tags:["Jira","Xray","gestion de projet","QA","reporting"],authors:[{name:"Mickael Crozon",role:"Auteur"}],featured:true,content:"\u003Ch1>Jira avec Xray – Mise en œuvre d’un projet de test\u003C/h1>\n\u003Ch2>🧭 Création du projet Jira\u003C/h2>\n\u003Cul>\n\u003Cli>Connexion à Jira (\u003Ca href=\"https://home.atlassian.com/\">https://home.atlassian.com/\u003C/a>)\u003C/li>\n\u003Cli>Création d’un projet \u003Cstrong>Kanban\u003C/strong> nommé \u003Cem>QA Testing en Kanban\u003C/em>\u003C/li>\n\u003Cli>Types d’éléments activés :\u003Cul>\n\u003Cli>Task : petite tâche\u003C/li>\n\u003Cli>Story : besoin utilisateur\u003C/li>\n\u003Cli>Feature : fonctionnalité large\u003C/li>\n\u003Cli>Request : demande d’assistance\u003C/li>\n\u003Cli>Bug : anomalie à corriger\u003C/li>\n\u003C/ul>\n\u003C/li>\n\u003Cli>Colonnes du tableau Kanban : Do To, In Progress, In Review, Done\u003C/li>\n\u003C/ul>\n\u003Cp>Jira crée automatiquement 3 tâches :\u003C/p>\n\u003Cul>\n\u003Cli>KAN-1 : Tâche 1\u003C/li>\n\u003Cli>KAN-2 : Tâche 2\u003C/li>\n\u003Cli>KAN-3 : Sous-tâche 2.1\u003C/li>\n\u003C/ul>\n\u003Cp>Jira fonctionne !\u003C/p>\n\u003Chr>\n\u003Ch2>🧪 Ajout de l’extension Xray\u003C/h2>\n\u003Cul>\n\u003Cli>Extension : \u003Ca href=\"https://marketplace.atlassian.com/apps/1211769/xray-test-management-for-jira?tab=overview&hosting=cloud\">Xray Test Management for Jira\u003C/a>\u003C/li>\n\u003Cli>Édition Standard : 30 jours gratuits, puis 10 $/mois\u003C/li>\n\u003Cli>Installation via le menu \u003Cstrong>Apps\u003C/strong> → \u003Cstrong>Créer un projet\u003C/strong>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>📋 Vue du projet Xray\u003C/h2>\n\u003Cp>Dans le tableau XSP :\u003C/p>\n\u003Cul>\n\u003Cli>Éléments visibles : Epic, Story, Test, Bug, Précondition, Test Plan, Test Execution, Test Set\u003C/li>\n\u003Cli>Onglets : Résumé, Chronologie (sprint 1 mois), Backlog, Sprints actifs (Kanban 3 colonnes)\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🔗 Structure des tests\u003C/h2>\n\u003Cul>\n\u003Cli>Un test peut être lié à : Story, Epic, Test Plan, Test Execution, Test Set\u003C/li>\n\u003C/ul>\n\u003Cp>Exemples :\u003C/p>\n\u003Cul>\n\u003Cli>Epic XSP-3 → Story XSP-15 et XSP-22\u003C/li>\n\u003Cli>Story XSP-22 → 7 tests : XSP-1 à XSP-45\u003C/li>\n\u003Cli>Test Plan XSP-32 → 5 tests : XSP-1 à XSP-12\u003C/li>\n\u003Cli>Test Execution XSP-33 → 5 tests : XSP-42 à XSP-56\u003C/li>\n\u003Cli>Test Set XSP-41 → 5 tests : XSP-42 à XSP-56\u003C/li>\n\u003C/ul>\n\u003Cp>Ordre recommandé :\u003C/p>\n\u003Col>\n\u003Cli>Création des tests &amp; préconditions\u003C/li>\n\u003Cli>Test Set\u003C/li>\n\u003Cli>Test Plan\u003C/li>\n\u003Cli>Test Execution\n🎥 \u003Ca href=\"https://youtu.be/AqB-N31DicU?list=PLYbxiVM16d2J6e9NWooisV2JEyhO6OMG2&t=391\">Vidéo explicative\u003C/a>\u003C/li>\n\u003C/ol>\n\u003Chr>\n\u003Ch2>🌍 Environnements de test\u003C/h2>\n\u003Cp>Par défaut : Desktop Chrome, Desktop Safari, Mobile Chrome, Mobile Safari\u003C/p>\n\u003Cp>Suggestion : Développement, Recette, PréProd, Maintenance à chaud\u003C/p>\n\u003Chr>\n\u003Ch2>🧩 Couverture des tests\u003C/h2>\n\u003Cul>\n\u003Cli>Story XSP-10 : UNCOVERED → Ajouter un test → rattacher au ticket → couverture activée\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>▶️ Exécution des tests\u003C/h2>\n\u003Cul>\n\u003Cli>Test Plan XSP-39 → lancement des tests XSP-42\u003C/li>\n\u003Cli>Bouton &quot;Play&quot; → démarrage du chronomètre → date du jour\u003C/li>\n\u003Cli>En cas de bug : ajouter constatation, résumé, environnement, pièce jointe\u003C/li>\n\u003Cli>Si tout est OK → clic sur le carré vert\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>📊 Reporting et suivi\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Cstrong>Test Coverage Report\u003C/strong> : Story et Epic sans couverture (ex. : XSP-8, XSP-2)\u003C/li>\n\u003Cli>\u003Cstrong>Requirement Traceability Report\u003C/strong> : Epic, Story, Tests, Exécutions, Bugs\u003C/li>\n\u003Cli>\u003Cstrong>Test Plans Metrics Report\u003C/strong> : avancement des plans de test\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🔍 Requêtes JQL utiles\u003C/h2>\n\u003Cp>📄 \u003Ca href=\"https://atlassianblog.wpengine.com/wp-content/uploads/2017/01/atlassian_jql-cheat-sheet.pdf\">JQL Cheat Sheet\u003C/a>\u003C/p>\n\u003Cp>Top 5 requêtes :\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>Status = &quot;Open&quot;\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>Assignee = currentUser()\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>Project = &quot;Project Name&quot;\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>created &gt; startOfWeek()\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>Priority = &quot;High&quot; AND Status != &quot;Closed&quot;\u003C/code>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🎓 Ressources complémentaires\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://www.youtube.com/watch?v=tWbLVYpn4rI&t=307s\">Démo Xray – Modus Create France\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.youtube.com/watch?v=AqB-N31DicU&list=PLYbxiVM16d2J6e9NWooisV2JEyhO6OMG2\">Playlist Xray Jira – SMART QA\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://academy.getxray.app/plus/catalog\">Académie Xray\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.atlassian.com/fr/devops/testing-tutorials/jira-xray-integration-manage-test-cases\">Créer et gérer des scénarios de test\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🧪 Exemple de test XP-S1\u003C/h2>\n\u003Cp>\u003Cstrong>Titre\u003C/strong> : Vérifier le calcul pour un montant initial de 100, taux d’intérêt 1 %, fréquence hebdomadaire, durée 1 an, taux d’imposition 0 %\u003C/p>\n\u003Cp>\u003Cstrong>Scénario utilisateur\u003C/strong> :\u003C/p>\n\u003Cblockquote>\n\u003Cp>En tant qu’invité ou utilisateur enregistré, je souhaite pouvoir payer et finaliser mon achat en toute sécurité.\u003C/p>\n\u003C/blockquote>\n\u003Cp>\u003Cstrong>Critères d’acceptation\u003C/strong> :\u003C/p>\n\u003Cul>\n\u003Cli>Paiement par carte (Visa, MasterCard, Amex) et PayPal\u003C/li>\n\u003Cli>Sélection du mode de paiement\u003C/li>\n\u003Cli>Connexion sécurisée\u003C/li>\n\u003Cli>Stockage sécurisé pour utilisateurs enregistrés\u003C/li>\n\u003Cli>Confirmation de commande\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Définition de &quot;Terminé&quot;\u003C/strong> :\u003C/p>\n\u003Cul>\n\u003Cli>Paiement sécurisé mis en place\u003C/li>\n\u003Cli>Interface utilisateur claire\u003C/li>\n\u003Cli>Fonction de stockage sécurisé\u003C/li>\n\u003Cli>Cryptage conforme aux normes\u003C/li>\n\u003Cli>Tests de validation effectués\u003C/li>\n\u003Cli>Confirmation de commande opérationnelle\u003C/li>\n\u003Cli>Documentation fournie au support client\u003C/li>\n\u003Cli>Code intégré à la branche principale\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🧱 Epic XSP-3 – Fonctionnalité de paiement\u003C/h2>\n\u003Cp>Objectif : offrir un processus de paiement fluide et intuitif, avec possibilité de retirer des produits du panier.\u003C/p>\n\u003Chr>\n\u003Ch2>🧪 Préconditions\u003C/h2>\n\u003Ch3>Précondition XSP-29 (Cucumber)\u003C/h3>\n\u003Cpre>\u003Ccode>gherkin\nÉtant donné que j&#39;utilise un téléphone portable et qu&#39;il a accès à Internet\net qu&#39;il dispose d&#39;une application de navigation fonctionnelle\nLorsque j&#39;ouvre l&#39;application de navigation\nAlors l&#39;utilisateur peut accéder au Web\n\u003C/code>\u003C/pre>\n\u003Ch3>Précondition XSP-30 (Manuel)\u003C/h3>\n\u003Cul>\n\u003Cli>Vérifier que l&#39;appareil est chargé\u003C/li>\n\u003Cli>Allumer l&#39;appareil\u003C/li>\n\u003Cli>Déverrouiller l’écran\u003C/li>\n\u003Cli>Vérifier la connectivité réseau\u003C/li>\n\u003Cli>Vérifier la disponibilité d’un navigateur\u003C/li>\n\u003Cli>Ajuster les paramètres si nécessaire\u003C/li>\n\u003Cli>S’assurer d’un éclairage et d’une visibilité adéquats\u003C/li>\n\u003C/ul>\n\u003Cp>Note: MAJ au 07 janvier 2026\u003C/p>\n",resources:{images:[],videos:[],documents:[]},thumbnailMetadata:{credit:null,source:null,description:null,headline:null,keywords:null,camera:null,lens:null,focalLength:null,aperture:null,shutterSpeed:null,iso:null,dateTime:null,gps:null,city:null,state:null,country:null,location:null,raw:{file:{"Bits Per Sample":{value:8,description:"8"},"Image Height":{value:226,description:"226px"},"Image Width":{value:555,description:"555px"},"Color Components":{value:3,description:"3"},Subsampling:{value:[[1,34,0],[2,17,1],[3,17,1]],description:"YCbCr4:2:0 (2 2)"},FileType:{value:"jpeg",description:"JPEG"}},jfif:{"JFIF Version":{value:257,description:"1.1"},"Resolution Unit":{value:1,description:"inches"},XResolution:{value:120,description:"120"},YResolution:{value:120,description:"120"},"JFIF Thumbnail Width":{value:0,description:"0px"},"JFIF Thumbnail Height":{value:0,description:"0px"}},exif:{Orientation:{id:274,value:1,description:"top-left"}}},creditLine:null}}},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
