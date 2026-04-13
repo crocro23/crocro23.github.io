@@ -24,7 +24,7 @@ améliorer mes connaissances sur les tendances nouvelles et émergentes dans le 
 
 ### Mes expériences
 
-- **Modéliseur Dématérialisation (2012–2024)**
+- **Modéliseur Dématérialisation (2012–Actuellement)**
 En tant que modéliseur spécialisé dans la dématérialisation, j’ai participé activement à l’analyse documentaire et à la modélisation du courrier pour des processus automatisés. Mon rôle consistait à structurer les flux d’informations afin d’optimiser leur traitement au sein de la plateforme.
 J’ai également pris part aux phases de test de recette et d’homologation, garantissant la fiabilité des livraisons applicatives mensuelles. Cette rigueur m’a permis de contribuer à la qualité et à la stabilité des évolutions techniques.
 Mon implication dans la rédaction des évolutions de la plateforme m’a permis de développer une vision globale des enjeux métiers et techniques. J’ai su collaborer étroitement avec les équipes de développement et de production.
