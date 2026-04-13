@@ -121,3 +121,5 @@ Exemple en ligne :
 https://www.db-fiddle.com/f/9y8dT6CBqtUcMdhax74HLD/818
 
 ---
+
+Note: MAJ au 2 mars 2026

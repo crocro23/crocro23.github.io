@@ -4,7 +4,7 @@ date: "2025-12-14"
 location: "Mordelles, France"
 coordinates: [48.066669, -1.85]
 description: "Installation et utilisation de TestLink pour la gestion des tests manuels"
-type: "testlogiciel"
+type: "test-logiciel"
 tags: ["TestLink", "tests manuels", "gestion de projet", "QA", "reporting"]
 authors:
   - name: 'Mickael Crozon'

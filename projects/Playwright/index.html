@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.svg" />
+		<link rel="preconnect" href="https://fonts.bunny.net" />
+		<link
+			href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,500,600,700"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+		<link href="../../_app/immutable/assets/0.DKgpxOX7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DPNPZ6je.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CP6n-VMi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Be08vJ07.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BCZbx2Sk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/tbjhAa6l.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CK6M67NC.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.gv6bxq8D.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/gqh83yNy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B_5HCC-R.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DYPfjpQk.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DhRdYEGY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BkpA0PSA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DSGmDI0q.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/7.Cjg_R0Sw.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DXiV9JFe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D-RxnAsG.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C-CYnFmR.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/waNz1Iww.js"><!--[--><meta name="description" content="Playwright – Guide complet pour débuter et maîtriser les tests automatisés"/> <meta property="og:title" content="Playwright"/> <meta property="og:description" content="Playwright – Guide complet pour débuter et maîtriser les tests automatisés"/> <meta property="og:image" content="../../content/projects/Playwright/thumbnail.jpg"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="microfolio"/><!--]--><title>microfolio • Playwright</title>
+	</head>
+	<body class="bg-background px-4" data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><header class="bg-background sticky top-0 z-5000 mb-8"><div class="border-primary mx-auto flex h-32 max-w-7xl items-end justify-between border-b border-solid px-4 md:h-32"><section class="h-15 flex-1"><a href="../../"><div class="text-2xl font-medium">microfolio</div> <div class="text-sm">Générateur de portfolio statique</div></a></section> <nav class="hidden md:block"><ul class="flex h-8 gap-4"><!--[--><li class="hover:border-primary px-2 hover:font-medium "><a href="../../">Accueil</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../about">À propos</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../projects">Projets</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../list">Liste</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../map">Carte</a></li><!--]--></ul></nav> <button class="bg-box text-primary border-primary z-100 mb-3 cursor-pointer rounded-full border-1 p-2 md:hidden" aria-label="Menu"><!--[!--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="pointer-events-none size-6 hover:scale-110"><path fill="currentColor" d="M4 6h24v2H4zm0 18h24v2H4zm0-12h24v2H4zm0 6h24v2H4z"></path></svg><!--]--></button></div> <!--[!--><!--]--></header><!----> <main class="mx-auto max-w-7xl px-4 pb-24"><!----><div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6"><div class="col-span-2 mb-12 max-w-none"><div><h1 class="text-primary mb-2 text-3xl font-bold">Playwright</h1></div> <p class="text-lg">Playwright – Guide complet pour débuter et maîtriser les tests automatisés</p> <a href="../../projects" class="my-4 block text-sm hover:underline">← Retour aux projets</a> <img src="../../content/projects/Playwright/thumbnail.jpg" alt="Playwright" class="w-full"/> <div class="text-primary mt-4 text-sm"><!--[!--><p class="font-medium">thumbnail.jpg</p><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <article class="prose prose-neutral text-primary mt-8"><!----><h1>🎭 Introduction à Playwright</h1>
+<p>Playwright est un framework moderne permettant d’automatiser des tests end‑to‑end sur plusieurs navigateurs : Chromium, Firefox et WebKit. 
+Il permet aussi de tester les API, l’accessibilité, les interactions clavier/souris, les uploads de fichiers, et bien plus encore.
+Ce guide retrace toutes les étapes, depuis l’installation jusqu’aux tests avancés.</p>
+<hr>
+<h1>🛠️ 1. Cloner un dépôt Playwright</h1>
+<p>Dans VS Code, je clone ce dépôt :
+<a href="https://github.com/LinkedInLearning/playwright_5404027.git">https://github.com/LinkedInLearning/playwright_5404027.git</a> </p>
+<h3>❗ Erreur rencontrée</h3>
+<pre><code>fatal: unable to access &#39;https://github.com/...&#39;: Could not resolve host: github.com
+</code></pre>
+<p>➡️ Solution : configurer le proxy</p>
+<pre><code>setx HTTP_PROXY &quot;http://localhost:9000/&quot;
+setx HTTPS_PROXY &quot;http://localhost:9000/&quot;
+setx NO_PROXY &quot;127.0.0.1,localhost&quot;
+</code></pre>
+<p>Après redémarrage de VS Code → le clone fonctionne.</p>
+<hr>
+<h1>📦 2. Installation des dépendances</h1>
+<pre><code>npm install
+</code></pre>
+<h3>❗ Erreur : self‑signed certificate</h3>
+<pre><code>request to https://registry.npmjs.org/... failed, reason: self-signed certificate
+</code></pre>
+<p>➡️ Solution :</p>
+<pre><code>npm set strict-ssl false
+npm install
+</code></pre>
+<hr>
+<h1>🧩 3. Installation de Playwright</h1>
+<p>Dans VS Code :</p>
+<ul>
+<li>Installer l’extension <strong>Playwright Test</strong> (Microsoft)</li>
+<li>Palette de commande :</li>
+</ul>
+<pre><code>Test: Install Playwright
+Résultat : **Happy hacking! 🎭**
+</code></pre>
+<p>La fiole de chimiste apparaît : accès aux outils Playwright.</p>
+<hr>
+<h1>🧪 4. Premier test Playwright</h1>
+<p>Un fichier <code>example.spec.ts</code> est fourni.
+Dans la barre Playwright :</p>
+<ul>
+<li>Navigateur <strong>Chromium</strong> coché</li>
+<li>Option <strong>Show browser</strong> activée</li>
+</ul>
+<p>Je clique sur <strong>Run tests</strong> → Chrome s’ouvre :</p>
+<pre><code>Running 2 tests using 1 worker
+2 passed (4.5s)
+</code></pre>
+<hr>
+<h1>📘 5. Construire un plan de test</h1>
+<p>Un plan de test doit contenir :</p>
+<ul>
+<li>Les spécifications fonctionnelles</li>
+<li>Les User Stories (en Agile)</li>
+<li>Les cas de tests : usuels, extrêmes, erreurs</li>
+<li>1 test = 1 cas de test</li>
+</ul>
+<h3>Le modèle AAA</h3>
+<ul>
+<li><strong>Arrange</strong> : préparer le test</li>
+<li><strong>Act</strong> : déclencher l’action</li>
+<li><strong>Assert</strong> : vérifier le résultat</li>
+</ul>
+<p>Bonnes pratiques :</p>
+<ul>
+<li>Tests indépendants</li>
+<li>Déterministes et reproductibles</li>
+<li>Données factices mais représentatives</li>
+<li>Pas de valeurs « magiques »</li>
+<li>Dépendances isolées</li>
+</ul>
+<hr>
+<h1>🎥 6. Enregistrer un test (Record)</h1>
+<p>Je lance l’enregistreur : <strong>Record new</strong>.</p>
+<p>Dans Chrome :</p>
+<ul>
+<li>Je vais sur <a href="https://labasse.github.io/tutti-frutti/">https://labasse.github.io/tutti-frutti/</a></li>
+<li>Je tape &quot;ana&quot; dans la barre de recherche</li>
+<li>Deux résultats apparaissent</li>
+</ul>
+<p>Playwright génère un test.</p>
+<p>Je renomme le fichier :
+barre-de-recherche-avec-texte.spec.ts</p>
+<p>Puis je crée :</p>
+<ul>
+<li>test‑1a.spec.ts → recherche sans résultat, retour accueil, reset</li>
+<li>test‑1b.spec.ts → tests complets</li>
+</ul>
+<hr>
+<h1>🧭 7. Exécution avancée avec UI</h1>
+<p>Dans le terminal :</p>
+<pre><code>npx playwright test --ui
+</code></pre>
+<p>Je visualise les tests.
+Résultats :</p>
+<pre><code>- test‑1.spec.ts → OK
+- test‑1a.spec.ts → OK
+- test‑1b.spec.ts → ❌ KO
+
+Erreur :
+
+expect(locator).toBeVisible() failed
+Locator: locator(&#39;head&#39;)
+Expected: visible
+Received: hidden
+</code></pre>
+<p>➡️ Correction :</p>
+<pre><code>await expect(headTag).toHaveCount(1);
+</code></pre>
+<hr>
+<h1>♿ 8. Accessibilité &amp; rôles ARIA</h1>
+<p>Documentation ARIA : <a href="https://www.w3.org/TR/wai-aria-1.0/roles">https://www.w3.org/TR/wai-aria-1.0/roles</a></p>
+<p>Playwright permet :</p>
+<ul>
+<li><code>getByRole()</code></li>
+<li><code>getByText()</code> (regex possibles)</li>
+<li><code>getByAltText()</code></li>
+</ul>
+<p>Exemples :</p>
+<pre><code>await expect(page.getByText(/^Ananas.*Banane/i)).toBeVisible();
+await expect(page.getByAltText(/(fruit)$/)).toHaveCount(11);
+</code></pre>
+<p>Principales assertions :</p>
+<ul>
+<li>toBeEnabled</li>
+<li>toBeEditable</li>
+<li>toBeFocused</li>
+<li>toBeVisible</li>
+<li>toHaveCount</li>
+<li>toBeEmpty</li>
+<li>toHaveText</li>
+</ul>
+<hr>
+<h1>🖱️ 9. Souris &amp; interactions</h1>
+<ul>
+<li><code>hover()</code></li>
+<li><code>dragTo()</code></li>
+<li><code>mouse.click()</code></li>
+<li><code>mouse.move()</code></li>
+<li><code>mouse.wheel()</code></li>
+</ul>
+<p>Voir : <code>portrait-drawing.spec.ts</code></p>
+<hr>
+<h1>⌨️ 10. Clavier</h1>
+<ul>
+<li><code>page.keyboard.press(&#39;Delete&#39;)</code></li>
+<li><code>page.keyboard.type(&#39;...&#39;)</code></li>
+</ul>
+<p>Utile pour les touches spéciales.</p>
+<hr>
+<h1>📁 11. Upload de fichiers</h1>
+<p>Exemple :</p>
+<pre><code>await page.getByLabel(&#39;Fond&#39;).setInputFiles([&#39;tests/data/bg.jpg&#39;]);
+</code></pre>
+<hr>
+<h1>🪟 12. Pop‑ups</h1>
+<pre><code>page.on(&#39;dialog&#39;, dlg =&gt; dlg.accept());
+</code></pre>
+<hr>
+<h1>🌐 13. Tests API</h1>
+<p>Exemple :</p>
+<pre><code>const response = await request.get(&#39;https://labasse.github.io/tutti-frutti/calendrier.json&#39;);
+expect(response.ok()).toBeTruthy();
+</code></pre>
+<p>Mock API :</p>
+<pre><code>await page.route(&#39;/*/calendrier.json&#39;, async route =&gt; {
+await route.fulfill({ status: 200, json: [...] });
+});
+</code></pre>
+<hr>
+<h1>🧱 14. Fixtures &amp; organisation</h1>
+<h3>Base URL</h3>
+<p>Dans <code>playwright.config.ts</code> :</p>
+<pre><code>baseURL: &#39;https://labasse.github.io/&#39;
+</code></pre>
+<h3>Hooks</h3>
+<pre><code>test.beforeEach(async ({ page }) =&gt; {...})
+test.afterEach(async () =&gt; {...})
+</code></pre>
+<h3>Fixtures personnalisées</h3>
+<ul>
+<li>nav.ts</li>
+<li>index.ts</li>
+</ul>
+<h3>Authentification</h3>
+<ul>
+<li>user.ts</li>
+<li>index.ts</li>
+<li>cookies (ex : saucedemo)</li>
+</ul>
+<hr>
+<h1>♿ 15. Accessibilité WCAG avec Axe</h1>
+<pre><code>npm install -D @axe-core/playwright
+</code></pre>
+<p>Résultat : score parfait sur mon portfolio.
+Voir : <code>accessibility.spec.ts</code></p>
+<hr>
+<h1>🧩 16. Page Object Model (POM)</h1>
+<p>Créer une classe par page :</p>
+<ul>
+<li>Méthodes = actions</li>
+<li>Tests plus courts et lisibles</li>
+</ul>
+<p>Exemple :</p>
+<ul>
+<li>index-page.ts</li>
+<li>index.spec-pages.ts</li>
+</ul>
+<hr>
+<h1>📸 17. Captures d’écran</h1>
+<pre><code>await page.screenshot({ path: &#39;test-results/screenshots/index.png&#39;, fullPage: true });
+</code></pre>
+<p>Pour les anomalies :</p>
+<pre><code>await canvas.screenshot({ path: &#39;test-results/screenshots/canvas.png&#39; });
+</code></pre>
+<hr>
+<h1>📊 18. Reporting avec Monocart</h1>
+<p>Installation :</p>
+<pre><code>npm i -D monocart-reporter
+</code></pre>
+<p>Configuration :</p>
+<pre><code>reporter: [
+[&#39;list&#39;],
+[&#39;monocart-reporter&#39;, { outputFile: &#39;test-results/reporter/index.html&#39; }]
+]
+</code></pre>
+<p>Afficher le rapport :</p>
+<pre><code>npx monocart show-report test-results/reporter/index.html
+</code></pre>
+<hr>
+<h1>📚 Pour aller plus loin</h1>
+<h2>🤖 AI / Playwright MCP / Agents</h2>
+<ul>
+<li><a href="https://medium.com/@testleaf/playwright-mcp-in-2026-testers-are-crying-ai-is-coding-ed1fd161096c">Playwright MCP in 2026: Testers Are Crying… AI Is Coding</a></li>
+<li><a href="https://medium.com/@gurudatt.sa26/making-sense-of-playwright-mcp-cli-and-skills-a-beginners-guide-65e3c94be067">Making Sense of Playwright MCP, CLI, and Skills — A Beginner’s Guide</a></li>
+<li><a href="https://medium.com/@banothvijaykumar2020/end-to-end-guide-to-playwright-automation-with-mcp-ai-agents-6029420e275e">End-to-End Guide to Playwright Automation with MCP &amp; AI Agents</a></li>
+<li><a href="https://ai.plainenglish.io/stop-diagnosing-playwright-traces-manually-automate-it-with-claude-playwright-mcp-f0f2672f3a86">Stop Diagnosing Playwright Traces Manually</a></li>
+<li><a href="https://blog.dot.co.id/building-an-ai-powered-test-automation-framework-with-playwright-024e9c160d5e">Building an AI-Powered Test Automation Framework with Playwright</a></li>
+<li><a href="https://medium.com/@poorva.ramani/writing-playwright-tests-with-claude-code-a-senior-qas-reflective-experiment-77125601f3f0">Writing Playwright Tests with Claude Code</a></li>
+<li><a href="https://medium.com/@eshnehapaudyal/how-ai-agents-like-playwright-agents-can-enhance-qa-and-testing-d324eba65a7a">AI Agents for QA and Testing</a></li>
+</ul>
+<hr>
+<h2>🧱 Architecture / Framework / Scalabilité</h2>
+<ul>
+<li><a href="https://medium.com/codetodeploy/how-to-build-a-playwright-framework-that-survives-10-000-tests-86132ab4c101">How to Build a Playwright Framework That Survives 10,000+ Tests</a></li>
+<li><a href="https://medium.com/@rajesh.yemul_42550/building-a-scalable-automation-framework-with-playwright-typescript-39a23a996f96">Building a Scalable Automation Framework with Playwright + TypeScript</a></li>
+<li><a href="https://medium.com/codetodeploy/playwright-vs-selenium-in-2026-an-engineering-and-career-perspective-777ed53d84b8">Playwright vs Selenium in 2026</a></li>
+<li><a href="https://blog.stackademic.com/playwright-101-the-testing-revolution-youve-been-waiting-for-3842b14d5df8">Playwright 101</a></li>
+</ul>
+<hr>
+<h2>🧪 Flakiness / Fiabilité / Debug</h2>
+<ul>
+<li><a href="https://medium.com/codetodeploy/why-your-playwright-tests-are-still-flaky-and-its-not-because-of-timing-9c005d0e83a3">Why Your Playwright Tests Are Still Flaky</a></li>
+<li><a href="https://medium.com/@testleaf/i-wasted-two-weeks-fighting-flaky-tests-until-i-found-this-playwright-trick-37ad7b0a7809">I Wasted Two Weeks Fighting Flaky Tests</a></li>
+<li><a href="https://medium.com/h7w/async-javascript-for-playwright-engineers-why-most-test-instability-is-a-misunderstood-event-loop-f153637504fd">Async JavaScript for Playwright Engineers</a></li>
+<li><a href="https://medium.com/@vitalicset/graceful-test-cancellation-why-your-playwright-tests-need-abortsignal-479ef30a1e78">Graceful Test Cancellation with AbortSignal</a></li>
+<li><a href="https://medium.com/@Amr.sa/healwright-let-your-playwright-tests-heal-their-own-selectors-on-the-fly-d0178568f9bc">Healwright: Self-healing selectors</a></li>
+</ul>
+<hr>
+<h2>🔌 API / Backend Testing</h2>
+<ul>
+<li><a href="https://medium.com/@gunashekarr11/testing-graphql-apis-using-playwright-advanced-use-cases-for-modern-sdets-bf09d46d7bf5">Testing GraphQL APIs Using Playwright</a></li>
+<li><a href="https://medium.com/@gunashekarr11/api-validation-against-database-using-playwright-the-missing-e2e-pattern-every-sdet-should-use-7bb1242edd41">API Validation Against Database Using Playwright</a></li>
+</ul>
+<hr>
+<h2>🛠️ Outils / Reporting / CI</h2>
+<ul>
+<li><a href="https://medium.com/insiderengineering/visual-testing-that-doesnt-suck-playwright-github-actions-chef-s-kiss-efc27e0e8d83">Visual Testing with Playwright + GitHub Actions</a></li>
+<li><a href="https://medium.com/@qa.gary.parker/playwright-smart-reporter-building-an-intelligent-test-reporter-with-ai-df559d8b94d7">Playwright Smart Reporter</a></li>
+<li><a href="https://medium.com/detesters/using-agent-skills-to-write-playwright-tests-d0988aeccc93">Using agent skills to write Playwright tests</a></li>
+</ul>
+<hr>
+<h2>🎓 Interview / Learning</h2>
+<ul>
+<li><a href="https://www.linkedin.com/learning/l-essentiel-de-playwright/bienvenue-dans-l-essentiel-de-playwright">LinkedIn Learning – L&#39;essentiel de Playwright</a></li>
+<li><a href="https://medium.com/@pragyas215/most-asked-playwright-interview-questions-7b78924fb343">Most Asked Playwright Interview Questions (Mar 2026)</a></li>
+</ul>
+<hr>
+<p><em>Note: MAJ au 11 avril 2026</em></p>
+<!----></article></div> <aside class="bg-box mb-6 space-y-3 p-6 text-sm lg:sticky lg:top-40 lg:self-start"><div class="flex items-center justify-between"><!--[--><span class="inline-block rounded-full border border-primary bg-box px-2 py-1 text-sm capitalize "><!---->QA<!----></span><!--]--><!----> <!--[--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="inline-block size-6 pb-1"><path fill="currentColor" d="m16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48Z"></path></svg><!--]--></div> <hr/> <div><h3 class="text-base font-medium">Informations</h3> <span class="font-medium">Lieu et date ›</span> <span>Mordelles, France /</span> <span>2026-04</span> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <!--[--><div class="mt-2"><h3 class="text-base font-medium">Équipe</h3> <!--[--><div><span class="font-medium">Mickaël Crozon</span> <!--[--><span>› Auteur</span><!--]--></div><!--]--></div><!--]--> <!--[--><div class="mt-2"><h3 class="mb-1 text-base font-medium">Mots-clés</h3> <div class="flex flex-wrap gap-2"><!--[--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->playwright<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->tests<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->automatisation<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->e2e<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->qa<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->typescript<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->accessibilite<!----></span><!--]--><!--]--></div></div><!--]--></aside></div> <!--[--><!--[!--><!--]--> <!--[!--><!--]--> <!--[--><section class="mb-12"><h2 class="mb-6 text-2xl font-bold">Documents</h2> <div class="grid grid-cols-1 gap-3 md:grid-cols-2"><!--[--><a href="/microfolio/content/projects/Playwright/documents/Test Report - Test Report.pdf" target="_blank" rel="noopener noreferrer" class="bg-box flex items-center gap-3 p-4"><div class="flex-shrink-0"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-primary pointer-events-none h-6 w-6"><path fill="currentColor" d="m25.7 9.3l-7-7c-.2-.2-.4-.3-.7-.3H8c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-.3-.1-.5-.3-.7M18 4.4l5.6 5.6H18zM24 28H8V4h8v6c0 1.1.9 2 2 2h6z"></path><path fill="currentColor" d="M10 22h12v2H10zm0-6h12v2H10z"></path></svg><!----></div> <div class="flex-1"><p class="text-primary text-sm font-medium">Test Report - Test Report.pdf</p> <p class="text-primary text-xs">Télécharger</p></div></a><!--]--></div></section><!--]--><!--]--> <!--[!--><!--]--><!----><!----></main> <footer><div class="border-primary mx-auto flex h-auto max-w-7xl flex-col items-center justify-between gap-4 border-t-2 border-solid px-4 py-4 md:h-12 md:flex-row md:gap-0 md:py-0"><p class="text-center text-sm md:text-start">© AKER
+			2026 — généré avec <a href="https://github.com/aker-dev/microfolio" target="_blank" class="font-medium hover:underline">microfolio 0.5.0-beta.8</a></p> <nav><ul class="flex justify-center gap-4 md:justify-end"><!--[!--><!--]--> <!--[--><li><a href="https://www.linkedin.com/in/mickael-crozon-17a85328/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><path fill="currentColor" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"></path></svg><!----></a></li><!--]--> <!--[--><li><a href="https://github.com/crocro23" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><g fill="none"><g clip-path="url(#SVGXv8lpc2Y)"><path fill="currentColor" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12" clip-rule="evenodd"></path></g><defs><clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></g></svg><!----></a></li><!--]--></ul></nav></div></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_nmrmm = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/microfolio"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DPNPZ6je.js"),
+						import("../../_app/immutable/entry/app.gv6bxq8D.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data: [null,{type:"data",data:{project:{slug:"Playwright",title:"Playwright",date:"2026-04-02",location:"Mordelles, France",description:"Playwright – Guide complet pour débuter et maîtriser les tests automatisés",type:"QA",tags:["playwright","tests","automatisation","e2e","qa","typescript","accessibilite"],authors:[{name:"Mickaël Crozon",role:"Auteur"}],featured:true,content:"\u003Ch1>🎭 Introduction à Playwright\u003C/h1>\n\u003Cp>Playwright est un framework moderne permettant d’automatiser des tests end‑to‑end sur plusieurs navigateurs : Chromium, Firefox et WebKit. \nIl permet aussi de tester les API, l’accessibilité, les interactions clavier/souris, les uploads de fichiers, et bien plus encore.\nCe guide retrace toutes les étapes, depuis l’installation jusqu’aux tests avancés.\u003C/p>\n\u003Chr>\n\u003Ch1>🛠️ 1. Cloner un dépôt Playwright\u003C/h1>\n\u003Cp>Dans VS Code, je clone ce dépôt :\n\u003Ca href=\"https://github.com/LinkedInLearning/playwright_5404027.git\">https://github.com/LinkedInLearning/playwright_5404027.git\u003C/a> \u003C/p>\n\u003Ch3>❗ Erreur rencontrée\u003C/h3>\n\u003Cpre>\u003Ccode>fatal: unable to access &#39;https://github.com/...&#39;: Could not resolve host: github.com\n\u003C/code>\u003C/pre>\n\u003Cp>➡️ Solution : configurer le proxy\u003C/p>\n\u003Cpre>\u003Ccode>setx HTTP_PROXY &quot;http://localhost:9000/&quot;\nsetx HTTPS_PROXY &quot;http://localhost:9000/&quot;\nsetx NO_PROXY &quot;127.0.0.1,localhost&quot;\n\u003C/code>\u003C/pre>\n\u003Cp>Après redémarrage de VS Code → le clone fonctionne.\u003C/p>\n\u003Chr>\n\u003Ch1>📦 2. Installation des dépendances\u003C/h1>\n\u003Cpre>\u003Ccode>npm install\n\u003C/code>\u003C/pre>\n\u003Ch3>❗ Erreur : self‑signed certificate\u003C/h3>\n\u003Cpre>\u003Ccode>request to https://registry.npmjs.org/... failed, reason: self-signed certificate\n\u003C/code>\u003C/pre>\n\u003Cp>➡️ Solution :\u003C/p>\n\u003Cpre>\u003Ccode>npm set strict-ssl false\nnpm install\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>🧩 3. Installation de Playwright\u003C/h1>\n\u003Cp>Dans VS Code :\u003C/p>\n\u003Cul>\n\u003Cli>Installer l’extension \u003Cstrong>Playwright Test\u003C/strong> (Microsoft)\u003C/li>\n\u003Cli>Palette de commande :\u003C/li>\n\u003C/ul>\n\u003Cpre>\u003Ccode>Test: Install Playwright\nRésultat : **Happy hacking! 🎭**\n\u003C/code>\u003C/pre>\n\u003Cp>La fiole de chimiste apparaît : accès aux outils Playwright.\u003C/p>\n\u003Chr>\n\u003Ch1>🧪 4. Premier test Playwright\u003C/h1>\n\u003Cp>Un fichier \u003Ccode>example.spec.ts\u003C/code> est fourni.\nDans la barre Playwright :\u003C/p>\n\u003Cul>\n\u003Cli>Navigateur \u003Cstrong>Chromium\u003C/strong> coché\u003C/li>\n\u003Cli>Option \u003Cstrong>Show browser\u003C/strong> activée\u003C/li>\n\u003C/ul>\n\u003Cp>Je clique sur \u003Cstrong>Run tests\u003C/strong> → Chrome s’ouvre :\u003C/p>\n\u003Cpre>\u003Ccode>Running 2 tests using 1 worker\n2 passed (4.5s)\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>📘 5. Construire un plan de test\u003C/h1>\n\u003Cp>Un plan de test doit contenir :\u003C/p>\n\u003Cul>\n\u003Cli>Les spécifications fonctionnelles\u003C/li>\n\u003Cli>Les User Stories (en Agile)\u003C/li>\n\u003Cli>Les cas de tests : usuels, extrêmes, erreurs\u003C/li>\n\u003Cli>1 test = 1 cas de test\u003C/li>\n\u003C/ul>\n\u003Ch3>Le modèle AAA\u003C/h3>\n\u003Cul>\n\u003Cli>\u003Cstrong>Arrange\u003C/strong> : préparer le test\u003C/li>\n\u003Cli>\u003Cstrong>Act\u003C/strong> : déclencher l’action\u003C/li>\n\u003Cli>\u003Cstrong>Assert\u003C/strong> : vérifier le résultat\u003C/li>\n\u003C/ul>\n\u003Cp>Bonnes pratiques :\u003C/p>\n\u003Cul>\n\u003Cli>Tests indépendants\u003C/li>\n\u003Cli>Déterministes et reproductibles\u003C/li>\n\u003Cli>Données factices mais représentatives\u003C/li>\n\u003Cli>Pas de valeurs « magiques »\u003C/li>\n\u003Cli>Dépendances isolées\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🎥 6. Enregistrer un test (Record)\u003C/h1>\n\u003Cp>Je lance l’enregistreur : \u003Cstrong>Record new\u003C/strong>.\u003C/p>\n\u003Cp>Dans Chrome :\u003C/p>\n\u003Cul>\n\u003Cli>Je vais sur \u003Ca href=\"https://labasse.github.io/tutti-frutti/\">https://labasse.github.io/tutti-frutti/\u003C/a>\u003C/li>\n\u003Cli>Je tape &quot;ana&quot; dans la barre de recherche\u003C/li>\n\u003Cli>Deux résultats apparaissent\u003C/li>\n\u003C/ul>\n\u003Cp>Playwright génère un test.\u003C/p>\n\u003Cp>Je renomme le fichier :\nbarre-de-recherche-avec-texte.spec.ts\u003C/p>\n\u003Cp>Puis je crée :\u003C/p>\n\u003Cul>\n\u003Cli>test‑1a.spec.ts → recherche sans résultat, retour accueil, reset\u003C/li>\n\u003Cli>test‑1b.spec.ts → tests complets\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧭 7. Exécution avancée avec UI\u003C/h1>\n\u003Cp>Dans le terminal :\u003C/p>\n\u003Cpre>\u003Ccode>npx playwright test --ui\n\u003C/code>\u003C/pre>\n\u003Cp>Je visualise les tests.\nRésultats :\u003C/p>\n\u003Cpre>\u003Ccode>- test‑1.spec.ts → OK\n- test‑1a.spec.ts → OK\n- test‑1b.spec.ts → ❌ KO\n\nErreur :\n\nexpect(locator).toBeVisible() failed\nLocator: locator(&#39;head&#39;)\nExpected: visible\nReceived: hidden\n\u003C/code>\u003C/pre>\n\u003Cp>➡️ Correction :\u003C/p>\n\u003Cpre>\u003Ccode>await expect(headTag).toHaveCount(1);\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>♿ 8. Accessibilité &amp; rôles ARIA\u003C/h1>\n\u003Cp>Documentation ARIA : \u003Ca href=\"https://www.w3.org/TR/wai-aria-1.0/roles\">https://www.w3.org/TR/wai-aria-1.0/roles\u003C/a>\u003C/p>\n\u003Cp>Playwright permet :\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>getByRole()\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>getByText()\u003C/code> (regex possibles)\u003C/li>\n\u003Cli>\u003Ccode>getByAltText()\u003C/code>\u003C/li>\n\u003C/ul>\n\u003Cp>Exemples :\u003C/p>\n\u003Cpre>\u003Ccode>await expect(page.getByText(/^Ananas.*Banane/i)).toBeVisible();\nawait expect(page.getByAltText(/(fruit)$/)).toHaveCount(11);\n\u003C/code>\u003C/pre>\n\u003Cp>Principales assertions :\u003C/p>\n\u003Cul>\n\u003Cli>toBeEnabled\u003C/li>\n\u003Cli>toBeEditable\u003C/li>\n\u003Cli>toBeFocused\u003C/li>\n\u003Cli>toBeVisible\u003C/li>\n\u003Cli>toHaveCount\u003C/li>\n\u003Cli>toBeEmpty\u003C/li>\n\u003Cli>toHaveText\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🖱️ 9. Souris &amp; interactions\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Ccode>hover()\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>dragTo()\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>mouse.click()\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>mouse.move()\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>mouse.wheel()\u003C/code>\u003C/li>\n\u003C/ul>\n\u003Cp>Voir : \u003Ccode>portrait-drawing.spec.ts\u003C/code>\u003C/p>\n\u003Chr>\n\u003Ch1>⌨️ 10. Clavier\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Ccode>page.keyboard.press(&#39;Delete&#39;)\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>page.keyboard.type(&#39;...&#39;)\u003C/code>\u003C/li>\n\u003C/ul>\n\u003Cp>Utile pour les touches spéciales.\u003C/p>\n\u003Chr>\n\u003Ch1>📁 11. Upload de fichiers\u003C/h1>\n\u003Cp>Exemple :\u003C/p>\n\u003Cpre>\u003Ccode>await page.getByLabel(&#39;Fond&#39;).setInputFiles([&#39;tests/data/bg.jpg&#39;]);\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>🪟 12. Pop‑ups\u003C/h1>\n\u003Cpre>\u003Ccode>page.on(&#39;dialog&#39;, dlg =&gt; dlg.accept());\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>🌐 13. Tests API\u003C/h1>\n\u003Cp>Exemple :\u003C/p>\n\u003Cpre>\u003Ccode>const response = await request.get(&#39;https://labasse.github.io/tutti-frutti/calendrier.json&#39;);\nexpect(response.ok()).toBeTruthy();\n\u003C/code>\u003C/pre>\n\u003Cp>Mock API :\u003C/p>\n\u003Cpre>\u003Ccode>await page.route(&#39;/*/calendrier.json&#39;, async route =&gt; {\nawait route.fulfill({ status: 200, json: [...] });\n});\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>🧱 14. Fixtures &amp; organisation\u003C/h1>\n\u003Ch3>Base URL\u003C/h3>\n\u003Cp>Dans \u003Ccode>playwright.config.ts\u003C/code> :\u003C/p>\n\u003Cpre>\u003Ccode>baseURL: &#39;https://labasse.github.io/&#39;\n\u003C/code>\u003C/pre>\n\u003Ch3>Hooks\u003C/h3>\n\u003Cpre>\u003Ccode>test.beforeEach(async ({ page }) =&gt; {...})\ntest.afterEach(async () =&gt; {...})\n\u003C/code>\u003C/pre>\n\u003Ch3>Fixtures personnalisées\u003C/h3>\n\u003Cul>\n\u003Cli>nav.ts\u003C/li>\n\u003Cli>index.ts\u003C/li>\n\u003C/ul>\n\u003Ch3>Authentification\u003C/h3>\n\u003Cul>\n\u003Cli>user.ts\u003C/li>\n\u003Cli>index.ts\u003C/li>\n\u003Cli>cookies (ex : saucedemo)\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>♿ 15. Accessibilité WCAG avec Axe\u003C/h1>\n\u003Cpre>\u003Ccode>npm install -D @axe-core/playwright\n\u003C/code>\u003C/pre>\n\u003Cp>Résultat : score parfait sur mon portfolio.\nVoir : \u003Ccode>accessibility.spec.ts\u003C/code>\u003C/p>\n\u003Chr>\n\u003Ch1>🧩 16. Page Object Model (POM)\u003C/h1>\n\u003Cp>Créer une classe par page :\u003C/p>\n\u003Cul>\n\u003Cli>Méthodes = actions\u003C/li>\n\u003Cli>Tests plus courts et lisibles\u003C/li>\n\u003C/ul>\n\u003Cp>Exemple :\u003C/p>\n\u003Cul>\n\u003Cli>index-page.ts\u003C/li>\n\u003Cli>index.spec-pages.ts\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>📸 17. Captures d’écran\u003C/h1>\n\u003Cpre>\u003Ccode>await page.screenshot({ path: &#39;test-results/screenshots/index.png&#39;, fullPage: true });\n\u003C/code>\u003C/pre>\n\u003Cp>Pour les anomalies :\u003C/p>\n\u003Cpre>\u003Ccode>await canvas.screenshot({ path: &#39;test-results/screenshots/canvas.png&#39; });\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>📊 18. Reporting avec Monocart\u003C/h1>\n\u003Cp>Installation :\u003C/p>\n\u003Cpre>\u003Ccode>npm i -D monocart-reporter\n\u003C/code>\u003C/pre>\n\u003Cp>Configuration :\u003C/p>\n\u003Cpre>\u003Ccode>reporter: [\n[&#39;list&#39;],\n[&#39;monocart-reporter&#39;, { outputFile: &#39;test-results/reporter/index.html&#39; }]\n]\n\u003C/code>\u003C/pre>\n\u003Cp>Afficher le rapport :\u003C/p>\n\u003Cpre>\u003Ccode>npx monocart show-report test-results/reporter/index.html\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch1>📚 Pour aller plus loin\u003C/h1>\n\u003Ch2>🤖 AI / Playwright MCP / Agents\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://medium.com/@testleaf/playwright-mcp-in-2026-testers-are-crying-ai-is-coding-ed1fd161096c\">Playwright MCP in 2026: Testers Are Crying… AI Is Coding\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@gurudatt.sa26/making-sense-of-playwright-mcp-cli-and-skills-a-beginners-guide-65e3c94be067\">Making Sense of Playwright MCP, CLI, and Skills — A Beginner’s Guide\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@banothvijaykumar2020/end-to-end-guide-to-playwright-automation-with-mcp-ai-agents-6029420e275e\">End-to-End Guide to Playwright Automation with MCP &amp; AI Agents\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://ai.plainenglish.io/stop-diagnosing-playwright-traces-manually-automate-it-with-claude-playwright-mcp-f0f2672f3a86\">Stop Diagnosing Playwright Traces Manually\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://blog.dot.co.id/building-an-ai-powered-test-automation-framework-with-playwright-024e9c160d5e\">Building an AI-Powered Test Automation Framework with Playwright\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@poorva.ramani/writing-playwright-tests-with-claude-code-a-senior-qas-reflective-experiment-77125601f3f0\">Writing Playwright Tests with Claude Code\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@eshnehapaudyal/how-ai-agents-like-playwright-agents-can-enhance-qa-and-testing-d324eba65a7a\">AI Agents for QA and Testing\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🧱 Architecture / Framework / Scalabilité\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://medium.com/codetodeploy/how-to-build-a-playwright-framework-that-survives-10-000-tests-86132ab4c101\">How to Build a Playwright Framework That Survives 10,000+ Tests\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@rajesh.yemul_42550/building-a-scalable-automation-framework-with-playwright-typescript-39a23a996f96\">Building a Scalable Automation Framework with Playwright + TypeScript\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/codetodeploy/playwright-vs-selenium-in-2026-an-engineering-and-career-perspective-777ed53d84b8\">Playwright vs Selenium in 2026\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://blog.stackademic.com/playwright-101-the-testing-revolution-youve-been-waiting-for-3842b14d5df8\">Playwright 101\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🧪 Flakiness / Fiabilité / Debug\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://medium.com/codetodeploy/why-your-playwright-tests-are-still-flaky-and-its-not-because-of-timing-9c005d0e83a3\">Why Your Playwright Tests Are Still Flaky\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@testleaf/i-wasted-two-weeks-fighting-flaky-tests-until-i-found-this-playwright-trick-37ad7b0a7809\">I Wasted Two Weeks Fighting Flaky Tests\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/h7w/async-javascript-for-playwright-engineers-why-most-test-instability-is-a-misunderstood-event-loop-f153637504fd\">Async JavaScript for Playwright Engineers\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@vitalicset/graceful-test-cancellation-why-your-playwright-tests-need-abortsignal-479ef30a1e78\">Graceful Test Cancellation with AbortSignal\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@Amr.sa/healwright-let-your-playwright-tests-heal-their-own-selectors-on-the-fly-d0178568f9bc\">Healwright: Self-healing selectors\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🔌 API / Backend Testing\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://medium.com/@gunashekarr11/testing-graphql-apis-using-playwright-advanced-use-cases-for-modern-sdets-bf09d46d7bf5\">Testing GraphQL APIs Using Playwright\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@gunashekarr11/api-validation-against-database-using-playwright-the-missing-e2e-pattern-every-sdet-should-use-7bb1242edd41\">API Validation Against Database Using Playwright\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🛠️ Outils / Reporting / CI\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://medium.com/insiderengineering/visual-testing-that-doesnt-suck-playwright-github-actions-chef-s-kiss-efc27e0e8d83\">Visual Testing with Playwright + GitHub Actions\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@qa.gary.parker/playwright-smart-reporter-building-an-intelligent-test-reporter-with-ai-df559d8b94d7\">Playwright Smart Reporter\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/detesters/using-agent-skills-to-write-playwright-tests-d0988aeccc93\">Using agent skills to write Playwright tests\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>🎓 Interview / Learning\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://www.linkedin.com/learning/l-essentiel-de-playwright/bienvenue-dans-l-essentiel-de-playwright\">LinkedIn Learning – L&#39;essentiel de Playwright\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://medium.com/@pragyas215/most-asked-playwright-interview-questions-7b78924fb343\">Most Asked Playwright Interview Questions (Mar 2026)\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Cp>\u003Cem>Note: MAJ au 11 avril 2026\u003C/em>\u003C/p>\n",resources:{images:[],videos:[],documents:[{name:"Test Report - Test Report.pdf",path:"/microfolio/content/projects/Playwright/documents/Test Report - Test Report.pdf"}]},thumbnailMetadata:{credit:null,source:null,description:null,headline:null,keywords:null,camera:null,lens:null,focalLength:null,aperture:null,shutterSpeed:null,iso:null,dateTime:null,gps:null,city:null,state:null,country:null,location:null,raw:{file:{"Bits Per Sample":{value:8,description:"8"},"Image Height":{value:344,description:"344px"},"Image Width":{value:555,description:"555px"},"Color Components":{value:3,description:"3"},Subsampling:{value:[[1,34,0],[2,17,1],[3,17,1]],description:"YCbCr4:2:0 (2 2)"},FileType:{value:"jpeg",description:"JPEG"}},jfif:{"JFIF Version":{value:257,description:"1.1"},"Resolution Unit":{value:1,description:"inches"},XResolution:{value:72,description:"72"},YResolution:{value:72,description:"72"},"JFIF Thumbnail Width":{value:0,description:"0px"},"JFIF Thumbnail Height":{value:0,description:"0px"}}},creditLine:null}}},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

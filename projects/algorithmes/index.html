@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.svg" />
+		<link rel="preconnect" href="https://fonts.bunny.net" />
+		<link
+			href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,500,600,700"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+		<link href="../../_app/immutable/assets/0.DKgpxOX7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DPNPZ6je.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CP6n-VMi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Be08vJ07.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BCZbx2Sk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/tbjhAa6l.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CK6M67NC.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.gv6bxq8D.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/gqh83yNy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B_5HCC-R.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DYPfjpQk.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DhRdYEGY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BkpA0PSA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DSGmDI0q.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/7.Cjg_R0Sw.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DXiV9JFe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D-RxnAsG.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C-CYnFmR.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/waNz1Iww.js"><!--[--><meta name="description" content="Comprendre ce qu’est un algorithme, comment il fonctionne et comment il se traduit en pseudo‑code"/> <meta property="og:title" content="Algorithmes et logique de programmation"/> <meta property="og:description" content="Comprendre ce qu’est un algorithme, comment il fonctionne et comment il se traduit en pseudo‑code"/> <meta property="og:image" content="../../content/projects/algorithmes/thumbnail.jpg"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="microfolio"/><!--]--><title>microfolio • Algorithmes et logique de programmation</title>
+	</head>
+	<body class="bg-background px-4" data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><header class="bg-background sticky top-0 z-5000 mb-8"><div class="border-primary mx-auto flex h-32 max-w-7xl items-end justify-between border-b border-solid px-4 md:h-32"><section class="h-15 flex-1"><a href="../../"><div class="text-2xl font-medium">microfolio</div> <div class="text-sm">Générateur de portfolio statique</div></a></section> <nav class="hidden md:block"><ul class="flex h-8 gap-4"><!--[--><li class="hover:border-primary px-2 hover:font-medium "><a href="../../">Accueil</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../about">À propos</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../projects">Projets</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../list">Liste</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../map">Carte</a></li><!--]--></ul></nav> <button class="bg-box text-primary border-primary z-100 mb-3 cursor-pointer rounded-full border-1 p-2 md:hidden" aria-label="Menu"><!--[!--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="pointer-events-none size-6 hover:scale-110"><path fill="currentColor" d="M4 6h24v2H4zm0 18h24v2H4zm0-12h24v2H4zm0 6h24v2H4z"></path></svg><!--]--></button></div> <!--[!--><!--]--></header><!----> <main class="mx-auto max-w-7xl px-4 pb-24"><!----><div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6"><div class="col-span-2 mb-12 max-w-none"><div><h1 class="text-primary mb-2 text-3xl font-bold">Algorithmes et logique de programmation</h1></div> <p class="text-lg">Comprendre ce qu’est un algorithme, comment il fonctionne et comment il se traduit en pseudo‑code</p> <a href="../../projects" class="my-4 block text-sm hover:underline">← Retour aux projets</a> <img src="../../content/projects/algorithmes/thumbnail.jpg" alt="Algorithmes et logique de programmation" class="w-full"/> <div class="text-primary mt-4 text-sm"><!--[!--><p class="font-medium">thumbnail.jpg</p><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <article class="prose prose-neutral text-primary mt-8"><!----><h1>🧠 Qu’est‑ce qu’un algorithme ?</h1>
+<p>Un &quot;algorithme&quot; est une suite d’instructions exécutées étape par étape, comme une recette de cuisine.<br>Il permet d’automatiser des tâches simples ou complexes :</p>
+<ul>
+<li>Déplacer 2000 photos une par une  </li>
+<li>Chercher une expression dans un PDF de 200 pages  </li>
+<li>Reconnaître une image  </li>
+<li>Vérifier un paiement bancaire en ligne</li>
+</ul>
+<hr>
+<h1>🧱 Décomposer un problème</h1>
+<p>Un programme informatique suit la même logique que la construction d’un bâtiment ou d’un château en Lego :</p>
+<blockquote>
+<p>On découpe un grand problème en sous‑problèmes plus simples.</p>
+</blockquote>
+<p>Exemple :  </p>
+<ul>
+<li>Commencer par les fondations, puis les murs, puis le toit.  </li>
+<li>En programmation, cette décomposition se fait grâce au &quot;pseudo‑code&quot; (ou LDA : Langage de Description d’Algorithmes).</li>
+</ul>
+<hr>
+<h1>🧩 Exemple simple d’algorithme</h1>
+<pre><code>Algorithme Déplacement
+Début
+    Déplacement à droite
+    Déplacement en haut
+    Déplacement à droite
+    Déplacement en haut
+Fin
+</code></pre>
+<h1>🔢 Les variables</h1>
+<p>Une variable contient une valeur que l’on peut lire ou modifier.</p>
+<pre><code>Variable
+    déplacement ← 0
+    score ← 0
+</code></pre>
+<h1>🛠️ Les fonctions</h1>
+<p>Une fonction regroupe plusieurs actions réutilisables.</p>
+<pre><code>Fonction maj_déplacement_score(déplacement, score, point_de_déplacement)
+Début
+    déplacement ← déplacement + 1
+    score ← score + (point_de_déplacement / déplacement)
+Fin
+</code></pre>
+<h1>🧭 Exemple complet avec variables + fonctions</h1>
+<pre><code>Algorithme Déplacement
+
+Variable
+    déplacement ← 0
+    score ← 0
+Début
+    Déplacement en haut
+    maj_déplacement_score(déplacement, score, 25)
+
+    Déplacement en haut
+    maj_déplacement_score(déplacement, score, 25)
+
+    Déplacement à droite
+    maj_déplacement_score(déplacement, score, 70)
+
+    Déplacement à gauche
+    maj_déplacement_score(déplacement, score, 50 - 25)  // retour en arrière
+
+    Déplacement en bas
+    maj_déplacement_score(déplacement, score, 90 - 25)
+
+    Déplacement en bas
+    maj_déplacement_score(déplacement, score, 90 - 25)
+
+    réinitialiser_score(score)
+Fin
+</code></pre>
+<h1>🧮 Types de variables</h1>
+<p>Les types les plus courants :</p>
+<ul>
+<li>Integer / Float : nombres</li>
+<li>String : texte</li>
+<li>Boolean : vrai / faux</li>
+</ul>
+<p>Exemple :</p>
+<pre><code>nomDuJoueur ← &quot;&quot; : CHAINE
+est_terminé ← Faux : BOOL
+
+Début
+    nomDuJoueur ← &quot;Mickael&quot;
+    déplacementDépartArrivée(nomDuJoueur)
+    est_terminé ← Vrai
+Fin
+</code></pre>
+<h1>📦 Les tableaux</h1>
+<p>Un tableau contient plusieurs valeurs.
+Exemple : </p>
+<ul>
+<li>suite de Fibonacci (base 0) → 0, 1, 1, 2, 3, 5, 8, 13</li>
+</ul>
+<ul>
+<li>Tableau statique : taille fixe</li>
+<li>Tableau dynamique : taille variable</li>
+</ul>
+<h1>🔍 Conditions et comparaisons</h1>
+<ul>
+<li>Opérateurs : ==, &gt;, &lt;, &gt;=, &lt;=, !=</li>
+</ul>
+<pre><code>Variable
+    positionArrivée = (x4, y3)
+    positionJoueur = (x4, y3)
+    nombreDeplacements = 5
+
+Début
+    Déplacement vers le haut
+    Déplacement vers la droite
+    Déplacement vers le haut
+    Déplacement vers la droite
+
+Si positionJoueur == positionArrivée
+et nombreDeplacements &lt;= 5
+    afficher &quot;niveau terminé&quot;
+Sinon
+    afficher &quot;Game Over&quot;
+Fin Si
+</code></pre>
+<h1>🔁 Boucles</h1>
+<ul>
+<li>while : quand on ne connaît pas le nombre d’itérations</li>
+<li>for : quand le nombre d’itérations est connu</li>
+</ul>
+<h1>🌳 Structures de données</h1>
+<ul>
+<li>Arbre binaire
+Relation : parent → enfant → feuille</li>
+</ul>
+<p>Utilisé dans :</p>
+<ul>
+<li><p>Jeux vidéo 3D</p>
+</li>
+<li><p>Routeurs Internet</p>
+</li>
+<li><p>Bases de données</p>
+</li>
+<li><p>Calculatrices</p>
+</li>
+<li><p>Graphe
+Données reliées entre elles (réseau routier, transport aérien…).
+Permet de trouver le chemin le plus court.</p>
+</li>
+</ul>
+<h1>🔃 Tri des données : tri à bulles</h1>
+<pre><code>Algorithme Tri_a_bulles(tableau)
+
+    taille ← Taille du tableau
+    Pour i allant de taille - 1 jusqu’à 1
+        Pour j allant de 0 jusqu’à i - 1
+            Si tableau[j+1] &lt; tableau[j]
+                échanger(tableau[j+1], tableau[j])
+            Fin Si
+        Fin Pour
+    Fin Pour
+Fin
+</code></pre>
+<h1>⏱️ Complexité algorithmique</h1>
+<p>La complexité mesure le temps ou la mémoire nécessaires à un algorithme.</p>
+<ul>
+<li>Complexité temporelle : temps d’exécution</li>
+<li>Complexité spatiale : mémoire utilisée
+Notation Big O : notation standard (ex : O(n), O(n²), O(log n)…)</li>
+</ul>
+<h1>🔁 Récursivité : exemple Fibonacci</h1>
+<pre><code>Algorithme fibonacci(n)
+
+Début
+    Si n &lt;= 1
+        Retourner 1
+    Sinon
+        Retourner fibonacci(n - 1) + fibonacci(n - 2)
+    Fin Si
+Fin
+</code></pre>
+<h1>⚠️ Erreurs courantes en algorithmique</h1>
+<p>Voici les erreurs les plus fréquentes chez les débutants (et parfois même chez les développeurs expérimentés) :</p>
+<ul>
+<li>Confondre l’algorithme et le code</li>
+<li>Oublier d’initialiser les variables</li>
+<li>Créer des boucles infinies</li>
+<li>Mal gérer les indices de tableau (commencer à 1 au lieu de 0)</li>
+<li>Écrire des conditions trop complexes</li>
+<li>Ne pas décomposer suffisamment le problème</li>
+<li>Oublier les cas limites (tableau vide, division par zéro…)</li>
+<li>Confondre affectation (=) et comparaison (==)</li>
+<li>Ignorer la complexité algorithmique</li>
+</ul>
+<p>Note: MAJ au 27 mars 2026</p>
+<!----></article></div> <aside class="bg-box mb-6 space-y-3 p-6 text-sm lg:sticky lg:top-40 lg:self-start"><div class="flex items-center justify-between"><!--[--><span class="inline-block rounded-full border border-primary bg-box px-2 py-1 text-sm capitalize "><!---->Dev<!----></span><!--]--><!----> <!--[--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="inline-block size-6 pb-1"><path fill="currentColor" d="m16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48Z"></path></svg><!--]--></div> <hr/> <div><h3 class="text-base font-medium">Informations</h3> <span class="font-medium">Lieu et date ›</span> <span>Mordelles, France /</span> <span>2026-03</span> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <!--[--><div class="mt-2"><h3 class="text-base font-medium">Équipe</h3> <!--[--><div><span class="font-medium">Mickaël Crozon</span> <!--[--><span>› Auteur</span><!--]--></div><!--]--></div><!--]--> <!--[--><div class="mt-2"><h3 class="mb-1 text-base font-medium">Mots-clés</h3> <div class="flex flex-wrap gap-2"><!--[--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->algorithmes<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->pseudo-code<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->programmation<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->variables<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->boucles<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->complexité<!----></span><!--]--><!--]--></div></div><!--]--></aside></div> <!--[--><!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--><!--]--> <!--[!--><!--]--><!----><!----></main> <footer><div class="border-primary mx-auto flex h-auto max-w-7xl flex-col items-center justify-between gap-4 border-t-2 border-solid px-4 py-4 md:h-12 md:flex-row md:gap-0 md:py-0"><p class="text-center text-sm md:text-start">© AKER
+			2026 — généré avec <a href="https://github.com/aker-dev/microfolio" target="_blank" class="font-medium hover:underline">microfolio 0.5.0-beta.8</a></p> <nav><ul class="flex justify-center gap-4 md:justify-end"><!--[!--><!--]--> <!--[--><li><a href="https://www.linkedin.com/in/mickael-crozon-17a85328/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><path fill="currentColor" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"></path></svg><!----></a></li><!--]--> <!--[--><li><a href="https://github.com/crocro23" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><g fill="none"><g clip-path="url(#SVGXv8lpc2Y)"><path fill="currentColor" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12" clip-rule="evenodd"></path></g><defs><clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></g></svg><!----></a></li><!--]--></ul></nav></div></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_nmrmm = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/microfolio"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DPNPZ6je.js"),
+						import("../../_app/immutable/entry/app.gv6bxq8D.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data: [null,{type:"data",data:{project:{slug:"algorithmes",title:"Algorithmes et logique de programmation",date:"2026-03-26",location:"Mordelles, France",description:"Comprendre ce qu’est un algorithme, comment il fonctionne et comment il se traduit en pseudo‑code",type:"Dev",tags:["algorithmes","pseudo-code","programmation","variables","boucles","complexité"],authors:[{name:"Mickaël Crozon",role:"Auteur"}],featured:true,content:"\u003Ch1>🧠 Qu’est‑ce qu’un algorithme ?\u003C/h1>\n\u003Cp>Un &quot;algorithme&quot; est une suite d’instructions exécutées étape par étape, comme une recette de cuisine.\u003Cbr>Il permet d’automatiser des tâches simples ou complexes :\u003C/p>\n\u003Cul>\n\u003Cli>Déplacer 2000 photos une par une  \u003C/li>\n\u003Cli>Chercher une expression dans un PDF de 200 pages  \u003C/li>\n\u003Cli>Reconnaître une image  \u003C/li>\n\u003Cli>Vérifier un paiement bancaire en ligne\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧱 Décomposer un problème\u003C/h1>\n\u003Cp>Un programme informatique suit la même logique que la construction d’un bâtiment ou d’un château en Lego :\u003C/p>\n\u003Cblockquote>\n\u003Cp>On découpe un grand problème en sous‑problèmes plus simples.\u003C/p>\n\u003C/blockquote>\n\u003Cp>Exemple :  \u003C/p>\n\u003Cul>\n\u003Cli>Commencer par les fondations, puis les murs, puis le toit.  \u003C/li>\n\u003Cli>En programmation, cette décomposition se fait grâce au &quot;pseudo‑code&quot; (ou LDA : Langage de Description d’Algorithmes).\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧩 Exemple simple d’algorithme\u003C/h1>\n\u003Cpre>\u003Ccode>Algorithme Déplacement\nDébut\n    Déplacement à droite\n    Déplacement en haut\n    Déplacement à droite\n    Déplacement en haut\nFin\n\u003C/code>\u003C/pre>\n\u003Ch1>🔢 Les variables\u003C/h1>\n\u003Cp>Une variable contient une valeur que l’on peut lire ou modifier.\u003C/p>\n\u003Cpre>\u003Ccode>Variable\n    déplacement ← 0\n    score ← 0\n\u003C/code>\u003C/pre>\n\u003Ch1>🛠️ Les fonctions\u003C/h1>\n\u003Cp>Une fonction regroupe plusieurs actions réutilisables.\u003C/p>\n\u003Cpre>\u003Ccode>Fonction maj_déplacement_score(déplacement, score, point_de_déplacement)\nDébut\n    déplacement ← déplacement + 1\n    score ← score + (point_de_déplacement / déplacement)\nFin\n\u003C/code>\u003C/pre>\n\u003Ch1>🧭 Exemple complet avec variables + fonctions\u003C/h1>\n\u003Cpre>\u003Ccode>Algorithme Déplacement\n\nVariable\n    déplacement ← 0\n    score ← 0\nDébut\n    Déplacement en haut\n    maj_déplacement_score(déplacement, score, 25)\n\n    Déplacement en haut\n    maj_déplacement_score(déplacement, score, 25)\n\n    Déplacement à droite\n    maj_déplacement_score(déplacement, score, 70)\n\n    Déplacement à gauche\n    maj_déplacement_score(déplacement, score, 50 - 25)  // retour en arrière\n\n    Déplacement en bas\n    maj_déplacement_score(déplacement, score, 90 - 25)\n\n    Déplacement en bas\n    maj_déplacement_score(déplacement, score, 90 - 25)\n\n    réinitialiser_score(score)\nFin\n\u003C/code>\u003C/pre>\n\u003Ch1>🧮 Types de variables\u003C/h1>\n\u003Cp>Les types les plus courants :\u003C/p>\n\u003Cul>\n\u003Cli>Integer / Float : nombres\u003C/li>\n\u003Cli>String : texte\u003C/li>\n\u003Cli>Boolean : vrai / faux\u003C/li>\n\u003C/ul>\n\u003Cp>Exemple :\u003C/p>\n\u003Cpre>\u003Ccode>nomDuJoueur ← &quot;&quot; : CHAINE\nest_terminé ← Faux : BOOL\n\nDébut\n    nomDuJoueur ← &quot;Mickael&quot;\n    déplacementDépartArrivée(nomDuJoueur)\n    est_terminé ← Vrai\nFin\n\u003C/code>\u003C/pre>\n\u003Ch1>📦 Les tableaux\u003C/h1>\n\u003Cp>Un tableau contient plusieurs valeurs.\nExemple : \u003C/p>\n\u003Cul>\n\u003Cli>suite de Fibonacci (base 0) → 0, 1, 1, 2, 3, 5, 8, 13\u003C/li>\n\u003C/ul>\n\u003Cul>\n\u003Cli>Tableau statique : taille fixe\u003C/li>\n\u003Cli>Tableau dynamique : taille variable\u003C/li>\n\u003C/ul>\n\u003Ch1>🔍 Conditions et comparaisons\u003C/h1>\n\u003Cul>\n\u003Cli>Opérateurs : ==, &gt;, &lt;, &gt;=, &lt;=, !=\u003C/li>\n\u003C/ul>\n\u003Cpre>\u003Ccode>Variable\n    positionArrivée = (x4, y3)\n    positionJoueur = (x4, y3)\n    nombreDeplacements = 5\n\nDébut\n    Déplacement vers le haut\n    Déplacement vers la droite\n    Déplacement vers le haut\n    Déplacement vers la droite\n\nSi positionJoueur == positionArrivée\net nombreDeplacements &lt;= 5\n    afficher &quot;niveau terminé&quot;\nSinon\n    afficher &quot;Game Over&quot;\nFin Si\n\u003C/code>\u003C/pre>\n\u003Ch1>🔁 Boucles\u003C/h1>\n\u003Cul>\n\u003Cli>while : quand on ne connaît pas le nombre d’itérations\u003C/li>\n\u003Cli>for : quand le nombre d’itérations est connu\u003C/li>\n\u003C/ul>\n\u003Ch1>🌳 Structures de données\u003C/h1>\n\u003Cul>\n\u003Cli>Arbre binaire\nRelation : parent → enfant → feuille\u003C/li>\n\u003C/ul>\n\u003Cp>Utilisé dans :\u003C/p>\n\u003Cul>\n\u003Cli>\u003Cp>Jeux vidéo 3D\u003C/p>\n\u003C/li>\n\u003Cli>\u003Cp>Routeurs Internet\u003C/p>\n\u003C/li>\n\u003Cli>\u003Cp>Bases de données\u003C/p>\n\u003C/li>\n\u003Cli>\u003Cp>Calculatrices\u003C/p>\n\u003C/li>\n\u003Cli>\u003Cp>Graphe\nDonnées reliées entre elles (réseau routier, transport aérien…).\nPermet de trouver le chemin le plus court.\u003C/p>\n\u003C/li>\n\u003C/ul>\n\u003Ch1>🔃 Tri des données : tri à bulles\u003C/h1>\n\u003Cpre>\u003Ccode>Algorithme Tri_a_bulles(tableau)\n\n    taille ← Taille du tableau\n    Pour i allant de taille - 1 jusqu’à 1\n        Pour j allant de 0 jusqu’à i - 1\n            Si tableau[j+1] &lt; tableau[j]\n                échanger(tableau[j+1], tableau[j])\n            Fin Si\n        Fin Pour\n    Fin Pour\nFin\n\u003C/code>\u003C/pre>\n\u003Ch1>⏱️ Complexité algorithmique\u003C/h1>\n\u003Cp>La complexité mesure le temps ou la mémoire nécessaires à un algorithme.\u003C/p>\n\u003Cul>\n\u003Cli>Complexité temporelle : temps d’exécution\u003C/li>\n\u003Cli>Complexité spatiale : mémoire utilisée\nNotation Big O : notation standard (ex : O(n), O(n²), O(log n)…)\u003C/li>\n\u003C/ul>\n\u003Ch1>🔁 Récursivité : exemple Fibonacci\u003C/h1>\n\u003Cpre>\u003Ccode>Algorithme fibonacci(n)\n\nDébut\n    Si n &lt;= 1\n        Retourner 1\n    Sinon\n        Retourner fibonacci(n - 1) + fibonacci(n - 2)\n    Fin Si\nFin\n\u003C/code>\u003C/pre>\n\u003Ch1>⚠️ Erreurs courantes en algorithmique\u003C/h1>\n\u003Cp>Voici les erreurs les plus fréquentes chez les débutants (et parfois même chez les développeurs expérimentés) :\u003C/p>\n\u003Cul>\n\u003Cli>Confondre l’algorithme et le code\u003C/li>\n\u003Cli>Oublier d’initialiser les variables\u003C/li>\n\u003Cli>Créer des boucles infinies\u003C/li>\n\u003Cli>Mal gérer les indices de tableau (commencer à 1 au lieu de 0)\u003C/li>\n\u003Cli>Écrire des conditions trop complexes\u003C/li>\n\u003Cli>Ne pas décomposer suffisamment le problème\u003C/li>\n\u003Cli>Oublier les cas limites (tableau vide, division par zéro…)\u003C/li>\n\u003Cli>Confondre affectation (=) et comparaison (==)\u003C/li>\n\u003Cli>Ignorer la complexité algorithmique\u003C/li>\n\u003C/ul>\n\u003Cp>Note: MAJ au 27 mars 2026\u003C/p>\n",resources:{images:[],videos:[],documents:[]},thumbnailMetadata:{credit:null,source:null,description:null,headline:null,keywords:null,camera:null,lens:null,focalLength:null,aperture:null,shutterSpeed:null,iso:null,dateTime:null,gps:null,city:null,state:null,country:null,location:null,raw:{file:{"Bits Per Sample":{value:8,description:"8"},"Image Height":{value:1388,description:"1388px"},"Image Width":{value:1368,description:"1368px"},"Color Components":{value:3,description:"3"},Subsampling:{value:[[1,34,0],[2,17,1],[3,17,1]],description:"YCbCr4:2:0 (2 2)"},FileType:{value:"jpeg",description:"JPEG"}},jfif:{"JFIF Version":{value:257,description:"1.1"},"Resolution Unit":{value:1,description:"inches"},XResolution:{value:96,description:"96"},YResolution:{value:96,description:"96"},"JFIF Thumbnail Width":{value:0,description:"0px"},"JFIF Thumbnail Height":{value:0,description:"0px"}}},creditLine:null}}},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

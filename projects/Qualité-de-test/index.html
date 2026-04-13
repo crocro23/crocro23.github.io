@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.svg" />
+		<link rel="preconnect" href="https://fonts.bunny.net" />
+		<link
+			href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,500,600,700"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+		<link href="../../_app/immutable/assets/0.DKgpxOX7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DPNPZ6je.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CP6n-VMi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Be08vJ07.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BCZbx2Sk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/tbjhAa6l.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CK6M67NC.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.gv6bxq8D.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/gqh83yNy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B_5HCC-R.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DYPfjpQk.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DhRdYEGY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BkpA0PSA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DSGmDI0q.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/7.Cjg_R0Sw.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DXiV9JFe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D-RxnAsG.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C-CYnFmR.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/waNz1Iww.js"><!--[--><meta name="description" content="Comprendre la qualité logicielle, les rôles QA, les techniques de test, les ateliers collaboratifs et les stratégies d’automatisation"/> <meta property="og:title" content="Qualité Logicielle et Tests"/> <meta property="og:description" content="Comprendre la qualité logicielle, les rôles QA, les techniques de test, les ateliers collaboratifs et les stratégies d’automatisation"/> <meta property="og:image" content="../../content/projects/Qualité-de-test/thumbnail.jpg"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="microfolio"/><!--]--><title>microfolio • Qualité Logicielle et Tests</title>
+	</head>
+	<body class="bg-background px-4" data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><header class="bg-background sticky top-0 z-5000 mb-8"><div class="border-primary mx-auto flex h-32 max-w-7xl items-end justify-between border-b border-solid px-4 md:h-32"><section class="h-15 flex-1"><a href="../../"><div class="text-2xl font-medium">microfolio</div> <div class="text-sm">Générateur de portfolio statique</div></a></section> <nav class="hidden md:block"><ul class="flex h-8 gap-4"><!--[--><li class="hover:border-primary px-2 hover:font-medium "><a href="../../">Accueil</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../about">À propos</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../projects">Projets</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../list">Liste</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../map">Carte</a></li><!--]--></ul></nav> <button class="bg-box text-primary border-primary z-100 mb-3 cursor-pointer rounded-full border-1 p-2 md:hidden" aria-label="Menu"><!--[!--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="pointer-events-none size-6 hover:scale-110"><path fill="currentColor" d="M4 6h24v2H4zm0 18h24v2H4zm0-12h24v2H4zm0 6h24v2H4z"></path></svg><!--]--></button></div> <!--[!--><!--]--></header><!----> <main class="mx-auto max-w-7xl px-4 pb-24"><!----><div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6"><div class="col-span-2 mb-12 max-w-none"><div><h1 class="text-primary mb-2 text-3xl font-bold">Qualité Logicielle et Tests</h1></div> <p class="text-lg">Comprendre la qualité logicielle, les rôles QA, les techniques de test, les ateliers collaboratifs et les stratégies d’automatisation</p> <a href="../../projects" class="my-4 block text-sm hover:underline">← Retour aux projets</a> <img src="../../content/projects/Qualité-de-test/thumbnail.jpg" alt="Qualité Logicielle et Tests" class="w-full"/> <div class="text-primary mt-4 text-sm"><!--[!--><p class="font-medium">thumbnail.jpg</p><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <article class="prose prose-neutral text-primary mt-8"><!----><h1>🏆 Définition de la qualité</h1>
+<p>La qualité est l’ensemble des caractéristiques d’un produit ou d’un service qui influent sur sa capacité à satisfaire des besoins :</p>
+<ul>
+<li>Besoins déclarés → <em>vérification</em>  </li>
+<li>Besoins implicites → <em>validation</em></li>
+</ul>
+<p>L’assurance qualité regroupe toutes les activités planifiées et systématiques nécessaires pour garantir qu’un produit ou un service réponde aux exigences.</p>
+<hr>
+<h1>👥 Les rôles dans le test logiciel</h1>
+<p>Plusieurs intitulés existent :</p>
+<ul>
+<li>Ingénieur QA  </li>
+<li>Analyste QA  </li>
+<li>Ingénieur tests et validation  </li>
+<li>Testeur  </li>
+<li>Ingénieur en développement logiciel de test</li>
+</ul>
+<p>Le testeur établit et maintient les tests.</p>
+<hr>
+<h1>🧩 Types de besoins</h1>
+<h2>Besoins fonctionnels</h2>
+<p>Décrivent les attentes des utilisateurs.<br>Présents dans les User Stories ou documents de conception.</p>
+<h2>Besoins non fonctionnels</h2>
+<p>Concernent :</p>
+<ul>
+<li>Performance  </li>
+<li>Compatibilité  </li>
+<li>Fiabilité  </li>
+<li>Usabilité</li>
+</ul>
+<hr>
+<h1>🤝 La qualité : une responsabilité collective</h1>
+<p>La qualité logicielle est portée par toute l’équipe.</p>
+<ul>
+<li>Les tests sont détectifs  </li>
+<li>L’ingénierie de la qualité est préventive  </li>
+<li>C’est la vision du manifeste du test</li>
+</ul>
+<hr>
+<h1>🚀 CI/CD et amélioration continue</h1>
+<p>Mettre en place le CI/CD permet un feedback rapide</p>
+<h3>Activités préventives</h3>
+<ul>
+<li>Tests statiques  </li>
+<li>Revue des spécifications  </li>
+<li>Pair-testing  </li>
+<li>Exigences testables  </li>
+<li>Sensibilisation de l’équipe  </li>
+<li>Responsabilisation collective</li>
+</ul>
+<hr>
+<h1>🎭 Le rôle élargi du testeur</h1>
+<p>Le testeur peut être :</p>
+<ul>
+<li>Consultant  </li>
+<li>Spécialiste qualité  </li>
+<li>Coach agile  </li>
+<li>Leader  </li>
+<li>Facilitateur  </li>
+<li>Enseignant  </li>
+<li>Agent du changement</li>
+</ul>
+<h3>Compétences nécessaires</h3>
+<ul>
+<li>Communication orale et écrite  </li>
+<li>Collaboration  </li>
+<li>Créativité  </li>
+<li>Pensée critique  </li>
+<li>Proactivité</li>
+</ul>
+<h3>Compétences techniques</h3>
+<ul>
+<li>Bases de la programmation  </li>
+<li>Technologies web et mobiles  </li>
+<li>Connaissance des OS  </li>
+<li>Langages de test  </li>
+<li>Connaissance fonctionnelle du logiciel</li>
+</ul>
+<hr>
+<h1>🔄 Cycle CI/CD détaillé</h1>
+<h2>Monitor</h2>
+<ul>
+<li>Collecter les données  </li>
+<li>Surveiller les erreurs  </li>
+<li>Analyser la production</li>
+</ul>
+<h2>Plan</h2>
+<ul>
+<li>Cartes mentales pour les risques  </li>
+<li>Tester les hypothèses  </li>
+<li>US testables</li>
+</ul>
+<h2>Code</h2>
+<ul>
+<li>Tests unitaires  </li>
+<li>Pull Requests et revues de code  </li>
+<li>Automatisation du déploiement</li>
+</ul>
+<h2>Integrate</h2>
+<ul>
+<li>Tester les US  </li>
+<li>Tests manuels, API, automatiques, E2E</li>
+</ul>
+<h2>Deploy</h2>
+<ul>
+<li>Tests de charge et performance  </li>
+<li>Vérification de la pipeline  </li>
+<li>Exécution des tests automatiques</li>
+</ul>
+<h2>Operate</h2>
+<ul>
+<li>Retour utilisateur  </li>
+<li>Analyse de la valeur métier  </li>
+<li>Mise à jour du backlog</li>
+</ul>
+<hr>
+<h1>🗺️ Impact Mapping</h1>
+<p>Un outil collaboratif structuré :
+Objectif → Acteur → Impact → Livrable</p>
+<hr>
+<h1>👨‍👩‍👧‍👦 Atelier des 4 amigos</h1>
+<p>Participants :<br>Métier / Développeur / Testeur / DevOps</p>
+<p>Objectifs :</p>
+<ul>
+<li>Revue multi-perspectives  </li>
+<li>Collaboration renforcée  </li>
+<li>Amélioration du process</li>
+</ul>
+<hr>
+<h1>🧱 Example Mapping</h1>
+<p>Permet de diviser une fonctionnalité en US.</p>
+<p>Principes :</p>
+<ul>
+<li>Exemples concrets  </li>
+<li>Garder l’objectif principal  </li>
+<li>Se concentrer sur la valeur  </li>
+<li>Identifier les risques  </li>
+<li>Tester les hypothèses  </li>
+<li>Créer des US testables</li>
+</ul>
+<hr>
+<h1>🧪 Types de tests : expérience &amp; couverture</h1>
+<p>Les deux approches sont nécessaires :</p>
+<ul>
+<li>Tests basés sur l’expérience  </li>
+<li>Tests basés sur la couverture</li>
+</ul>
+<hr>
+<h1>🧠 Techniques de conception</h1>
+<ol>
+<li>Flux de contrôle / flux métier  </li>
+<li>Points de décision  </li>
+<li>Données  </li>
+<li>Apparence, fonctionnement, performance</li>
+</ol>
+<h3>Partitions d’équivalences</h3>
+<p>Regroupent des données similaires pour réduire le nombre de tests.</p>
+<h3>Valeurs limites</h3>
+<p>Permettent de détecter les erreurs fréquentes.</p>
+<hr>
+<h1>📄 Structure d’un cas de test</h1>
+<ul>
+<li>ID  </li>
+<li>Description  </li>
+<li>Préconditions  </li>
+<li>Étapes  </li>
+<li>Données  </li>
+<li>Résultat attendu  </li>
+<li>Actions post-test  </li>
+<li>Résultat obtenu  </li>
+<li>État du test (nouveau / non régression)</li>
+</ul>
+<hr>
+<h1>🔍 Tests exploratoires</h1>
+<p>Durée : 30 min à 1h30</p>
+<p>Charte :</p>
+<ul>
+<li>Quoi explorer ?  </li>
+<li>En tant que qui ?  </li>
+<li>Avec quelles ressources ?  </li>
+<li>Remonter les informations  </li>
+<li>Conserver les fichiers  </li>
+<li>Noter anomalies, idées, questions</li>
+</ul>
+<p>Débriefing :</p>
+<ul>
+<li>Ce qu’il s’est passé  </li>
+<li>Apprentissages  </li>
+<li>Points bloquants  </li>
+<li>Ce qu’il reste à faire</li>
+</ul>
+<hr>
+<h1>🐞 Cycle de vie d’une anomalie</h1>
+<p>La priorité détermine l’ordre de correction.</p>
+<table>
+<thead>
+<tr>
+<th>Sévérité</th>
+<th>Priorité</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Haute</td>
+<td>Haute</td>
+<td>Corriger immédiatement</td>
+</tr>
+<tr>
+<td>Haute</td>
+<td>Faible</td>
+<td>Impact limité</td>
+</tr>
+<tr>
+<td>Faible</td>
+<td>Haute</td>
+<td>Fonctionne mais gênant</td>
+</tr>
+<tr>
+<td>Faible</td>
+<td>Faible</td>
+<td>À corriger plus tard</td>
+</tr>
+</tbody></table>
+<p>Pipeline d’anomalies :<br><strong>Nouveau → Prêt pour le développement → En cours → Retester → Fini</strong></p>
+<p>Penser à chercher la cause racine du bug</p>
+<hr>
+<h1>🌀 Tests dans un sprint</h1>
+<ul>
+<li>Développements  </li>
+<li>Tests  </li>
+<li>Corrections d’anomalies  </li>
+<li>L’atelier risk storming est un bon outil pour définir les risques et aussi pour les techniques de tests</li>
+</ul>
+<hr>
+<h1>🧱 Variété de tests</h1>
+<h2>Pyramide de tests</h2>
+<ul>
+<li>Tests unitaires  </li>
+<li>Tests d’intégration  </li>
+<li>Tests système  </li>
+<li>Tests d’acceptation</li>
+</ul>
+<h2>Quadrants de test</h2>
+<ul>
+<li>Tests unitaires &amp; intégration (TDD)  </li>
+<li>Tests métier (PO, dev, testeurs)  </li>
+<li>Tests utilisateurs &amp; exploratoires  </li>
+<li>Tests non fonctionnels</li>
+</ul>
+<h2>Progression / Régression / Re-test</h2>
+<ul>
+<li>Progression : nouvelles fonctionnalités  </li>
+<li>Régression : vérifier que l’existant fonctionne  </li>
+<li>Re-test : vérifier la correction d’un bug</li>
+</ul>
+<hr>
+<h1>🧭 Stratégie de test</h1>
+<h3>Contexte</h3>
+<ul>
+<li>Description du projet  </li>
+<li>Impacts utilisateurs</li>
+</ul>
+<h3>Analyse de risques</h3>
+<ul>
+<li>Pourquoi tester ?  </li>
+<li>Pourquoi automatiser ?  </li>
+<li>Risques liés aux évolutions</li>
+</ul>
+<h3>Démarche</h3>
+<ul>
+<li>Quels tests ?  </li>
+<li>Comment organiser ?  </li>
+<li>Comment garantir la qualité ?  </li>
+<li>Quels livrables ?</li>
+</ul>
+<h3>Moyens</h3>
+<ul>
+<li>Environnements  </li>
+<li>Matériel  </li>
+<li>Logiciels  </li>
+<li>Ressources humaines</li>
+</ul>
+<h3>Organisation</h3>
+<ul>
+<li>Acteurs  </li>
+<li>Gouvernance</li>
+</ul>
+<h3>Planning</h3>
+<ul>
+<li>Phases et étapes  </li>
+<li>Intégration de l’automatisation</li>
+</ul>
+<hr>
+<h1>🎉 Bug Bash</h1>
+<p>À planifier :</p>
+<ul>
+<li>1er vendredi du mois  </li>
+<li>Après chaque release</li>
+</ul>
+<p>Objectifs :</p>
+<ul>
+<li>Tester les fonctionnalités critiques  </li>
+<li>Générer de nouvelles idées  </li>
+<li>Explorer l’application</li>
+</ul>
+<p>Inclure le temps de correction dans le sprint.</p>
+<hr>
+<h1>🤖 Automatisation des tests</h1>
+<p>Principes :</p>
+<ul>
+<li>Équipe interne plutôt que pilotée  </li>
+<li>Vue d’ensemble  </li>
+<li>Choix des outils  </li>
+<li>Responsabilités claires  </li>
+<li>Automatiser les tests répétitifs  </li>
+<li>Rétrospective régulière</li>
+</ul>
+<h3>Pyramide d’automatisation</h3>
+<ul>
+<li>Tests unitaires  </li>
+<li>Tests d’intégration  </li>
+<li>Tests interface (Selenium, RobotFramework, Appium…)</li>
+</ul>
+<h3>Avantages</h3>
+<ul>
+<li>Détection rapide  </li>
+<li>Maintenance facilitée  </li>
+<li>Accélération du cycle  </li>
+<li>Réduction des risques  </li>
+<li>Réutilisation des tests</li>
+</ul>
+<hr>
+<h1>🧭 Stratégie d’automatisation</h1>
+<p>Questions clés :</p>
+<ul>
+<li>Quelle valeur apporte l’automatisation ?  </li>
+<li>Qui automatise quoi ?  </li>
+<li>Quand et comment structurer le travail ?  </li>
+<li>Quelles tâches automatiser en priorité ?  </li>
+<li>Quels outils, données, environnements ?</li>
+</ul>
+<p>Les tests exploratoires complètent l’automatisation.</p>
+<hr>
+<h1>🔗 Pour aller plus loin</h1>
+<ul>
+<li><a href="https://miro.com/fr/modeles/risk-storming-and-premortem/">Risk Storming et Pré-Mortem (Modèle) | Miroverse</a></li>
+<li><a href="https://latavernedutesteur.fr/2022/02/07/pourquoi-une-pyramide-pour-les-tests/">Pourquoi une &quot;pyramide&quot; pour les tests ? - La taverne du testeur</a></li>
+<li><a href="https://www.reddit.com/r/programming/comments/1i5xasa/the_testing_pyramid_is_an_outdated_economic_model/?tl=fr">La pyramide des tests est un modèle économique dépassé. : r/programming</a></li>
+<li><a href="https://www.linkedin.com/posts/emnaayadi_agile-testing-condensed-a-brief-introduction-activity-7140021717049008128-xBTn">Prêt à transformer votre approche des tests dans un environnement agile?</a></li>
+</ul>
+<hr>
+<p><em>Note: MAJ au 11 avril 2026</em></p>
+<!----></article></div> <aside class="bg-box mb-6 space-y-3 p-6 text-sm lg:sticky lg:top-40 lg:self-start"><div class="flex items-center justify-between"><!--[--><span class="inline-block rounded-full border border-primary bg-box px-2 py-1 text-sm capitalize "><!---->test-logiciel<!----></span><!--]--><!----> <!--[--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="inline-block size-6 pb-1"><path fill="currentColor" d="m16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48Z"></path></svg><!--]--></div> <hr/> <div><h3 class="text-base font-medium">Informations</h3> <span class="font-medium">Lieu et date ›</span> <span>Mordelles, France /</span> <span>2026-04</span> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <!--[--><div class="mt-2"><h3 class="text-base font-medium">Équipe</h3> <!--[--><div><span class="font-medium">Mickaël Crozon</span> <!--[--><span>› Auteur</span><!--]--></div><!--]--></div><!--]--> <!--[--><div class="mt-2"><h3 class="mb-1 text-base font-medium">Mots-clés</h3> <div class="flex flex-wrap gap-2"><!--[--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->QA<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->tests<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->qualité<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->agilité<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->CI/CD<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->automatisation<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->testeur<!----></span><!--]--><!--]--></div></div><!--]--></aside></div> <!--[--><!--[!--><!--]--> <!--[!--><!--]--> <!--[--><section class="mb-12"><h2 class="mb-6 text-2xl font-bold">Documents</h2> <div class="grid grid-cols-1 gap-3 md:grid-cols-2"><!--[--><a href="/microfolio/content/projects/Qualité-de-test/documents/charte_exploratoire_parkcalc.docx" target="_blank" rel="noopener noreferrer" class="bg-box flex items-center gap-3 p-4"><div class="flex-shrink-0"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-primary pointer-events-none h-6 w-6"><path fill="currentColor" d="m25.7 9.3l-7-7c-.2-.2-.4-.3-.7-.3H8c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-.3-.1-.5-.3-.7M18 4.4l5.6 5.6H18zM24 28H8V4h8v6c0 1.1.9 2 2 2h6z"></path><path fill="currentColor" d="M10 22h12v2H10zm0-6h12v2H10z"></path></svg><!----></div> <div class="flex-1"><p class="text-primary text-sm font-medium">charte_exploratoire_parkcalc.docx</p> <p class="text-primary text-xs">Télécharger</p></div></a><a href="/microfolio/content/projects/Qualité-de-test/documents/Session de tests exploratoires.docx" target="_blank" rel="noopener noreferrer" class="bg-box flex items-center gap-3 p-4"><div class="flex-shrink-0"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-primary pointer-events-none h-6 w-6"><path fill="currentColor" d="m25.7 9.3l-7-7c-.2-.2-.4-.3-.7-.3H8c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-.3-.1-.5-.3-.7M18 4.4l5.6 5.6H18zM24 28H8V4h8v6c0 1.1.9 2 2 2h6z"></path><path fill="currentColor" d="M10 22h12v2H10zm0-6h12v2H10z"></path></svg><!----></div> <div class="flex-1"><p class="text-primary text-sm font-medium">Session de tests exploratoires.docx</p> <p class="text-primary text-xs">Télécharger</p></div></a><a href="/microfolio/content/projects/Qualité-de-test/documents/Strategie de test.docx" target="_blank" rel="noopener noreferrer" class="bg-box flex items-center gap-3 p-4"><div class="flex-shrink-0"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-primary pointer-events-none h-6 w-6"><path fill="currentColor" d="m25.7 9.3l-7-7c-.2-.2-.4-.3-.7-.3H8c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-.3-.1-.5-.3-.7M18 4.4l5.6 5.6H18zM24 28H8V4h8v6c0 1.1.9 2 2 2h6z"></path><path fill="currentColor" d="M10 22h12v2H10zm0-6h12v2H10z"></path></svg><!----></div> <div class="flex-1"><p class="text-primary text-sm font-medium">Strategie de test.docx</p> <p class="text-primary text-xs">Télécharger</p></div></a><!--]--></div></section><!--]--><!--]--> <!--[!--><!--]--><!----><!----></main> <footer><div class="border-primary mx-auto flex h-auto max-w-7xl flex-col items-center justify-between gap-4 border-t-2 border-solid px-4 py-4 md:h-12 md:flex-row md:gap-0 md:py-0"><p class="text-center text-sm md:text-start">© AKER
+			2026 — généré avec <a href="https://github.com/aker-dev/microfolio" target="_blank" class="font-medium hover:underline">microfolio 0.5.0-beta.8</a></p> <nav><ul class="flex justify-center gap-4 md:justify-end"><!--[!--><!--]--> <!--[--><li><a href="https://www.linkedin.com/in/mickael-crozon-17a85328/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><path fill="currentColor" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"></path></svg><!----></a></li><!--]--> <!--[--><li><a href="https://github.com/crocro23" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><g fill="none"><g clip-path="url(#SVGXv8lpc2Y)"><path fill="currentColor" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12" clip-rule="evenodd"></path></g><defs><clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></g></svg><!----></a></li><!--]--></ul></nav></div></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_nmrmm = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/microfolio"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DPNPZ6je.js"),
+						import("../../_app/immutable/entry/app.gv6bxq8D.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data: [null,{type:"data",data:{project:{slug:"Qualité-de-test",title:"Qualité Logicielle et Tests",date:"2026-04-11",location:"Mordelles, France",description:"Comprendre la qualité logicielle, les rôles QA, les techniques de test, les ateliers collaboratifs et les stratégies d’automatisation",type:"test-logiciel",tags:["QA","tests","qualité","agilité","CI/CD","automatisation","testeur"],authors:[{name:"Mickaël Crozon",role:"Auteur"}],featured:true,content:"\u003Ch1>🏆 Définition de la qualité\u003C/h1>\n\u003Cp>La qualité est l’ensemble des caractéristiques d’un produit ou d’un service qui influent sur sa capacité à satisfaire des besoins :\u003C/p>\n\u003Cul>\n\u003Cli>Besoins déclarés → \u003Cem>vérification\u003C/em>  \u003C/li>\n\u003Cli>Besoins implicites → \u003Cem>validation\u003C/em>\u003C/li>\n\u003C/ul>\n\u003Cp>L’assurance qualité regroupe toutes les activités planifiées et systématiques nécessaires pour garantir qu’un produit ou un service réponde aux exigences.\u003C/p>\n\u003Chr>\n\u003Ch1>👥 Les rôles dans le test logiciel\u003C/h1>\n\u003Cp>Plusieurs intitulés existent :\u003C/p>\n\u003Cul>\n\u003Cli>Ingénieur QA  \u003C/li>\n\u003Cli>Analyste QA  \u003C/li>\n\u003Cli>Ingénieur tests et validation  \u003C/li>\n\u003Cli>Testeur  \u003C/li>\n\u003Cli>Ingénieur en développement logiciel de test\u003C/li>\n\u003C/ul>\n\u003Cp>Le testeur établit et maintient les tests.\u003C/p>\n\u003Chr>\n\u003Ch1>🧩 Types de besoins\u003C/h1>\n\u003Ch2>Besoins fonctionnels\u003C/h2>\n\u003Cp>Décrivent les attentes des utilisateurs.\u003Cbr>Présents dans les User Stories ou documents de conception.\u003C/p>\n\u003Ch2>Besoins non fonctionnels\u003C/h2>\n\u003Cp>Concernent :\u003C/p>\n\u003Cul>\n\u003Cli>Performance  \u003C/li>\n\u003Cli>Compatibilité  \u003C/li>\n\u003Cli>Fiabilité  \u003C/li>\n\u003Cli>Usabilité\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🤝 La qualité : une responsabilité collective\u003C/h1>\n\u003Cp>La qualité logicielle est portée par toute l’équipe.\u003C/p>\n\u003Cul>\n\u003Cli>Les tests sont détectifs  \u003C/li>\n\u003Cli>L’ingénierie de la qualité est préventive  \u003C/li>\n\u003Cli>C’est la vision du manifeste du test\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🚀 CI/CD et amélioration continue\u003C/h1>\n\u003Cp>Mettre en place le CI/CD permet un feedback rapide\u003C/p>\n\u003Ch3>Activités préventives\u003C/h3>\n\u003Cul>\n\u003Cli>Tests statiques  \u003C/li>\n\u003Cli>Revue des spécifications  \u003C/li>\n\u003Cli>Pair-testing  \u003C/li>\n\u003Cli>Exigences testables  \u003C/li>\n\u003Cli>Sensibilisation de l’équipe  \u003C/li>\n\u003Cli>Responsabilisation collective\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🎭 Le rôle élargi du testeur\u003C/h1>\n\u003Cp>Le testeur peut être :\u003C/p>\n\u003Cul>\n\u003Cli>Consultant  \u003C/li>\n\u003Cli>Spécialiste qualité  \u003C/li>\n\u003Cli>Coach agile  \u003C/li>\n\u003Cli>Leader  \u003C/li>\n\u003Cli>Facilitateur  \u003C/li>\n\u003Cli>Enseignant  \u003C/li>\n\u003Cli>Agent du changement\u003C/li>\n\u003C/ul>\n\u003Ch3>Compétences nécessaires\u003C/h3>\n\u003Cul>\n\u003Cli>Communication orale et écrite  \u003C/li>\n\u003Cli>Collaboration  \u003C/li>\n\u003Cli>Créativité  \u003C/li>\n\u003Cli>Pensée critique  \u003C/li>\n\u003Cli>Proactivité\u003C/li>\n\u003C/ul>\n\u003Ch3>Compétences techniques\u003C/h3>\n\u003Cul>\n\u003Cli>Bases de la programmation  \u003C/li>\n\u003Cli>Technologies web et mobiles  \u003C/li>\n\u003Cli>Connaissance des OS  \u003C/li>\n\u003Cli>Langages de test  \u003C/li>\n\u003Cli>Connaissance fonctionnelle du logiciel\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🔄 Cycle CI/CD détaillé\u003C/h1>\n\u003Ch2>Monitor\u003C/h2>\n\u003Cul>\n\u003Cli>Collecter les données  \u003C/li>\n\u003Cli>Surveiller les erreurs  \u003C/li>\n\u003Cli>Analyser la production\u003C/li>\n\u003C/ul>\n\u003Ch2>Plan\u003C/h2>\n\u003Cul>\n\u003Cli>Cartes mentales pour les risques  \u003C/li>\n\u003Cli>Tester les hypothèses  \u003C/li>\n\u003Cli>US testables\u003C/li>\n\u003C/ul>\n\u003Ch2>Code\u003C/h2>\n\u003Cul>\n\u003Cli>Tests unitaires  \u003C/li>\n\u003Cli>Pull Requests et revues de code  \u003C/li>\n\u003Cli>Automatisation du déploiement\u003C/li>\n\u003C/ul>\n\u003Ch2>Integrate\u003C/h2>\n\u003Cul>\n\u003Cli>Tester les US  \u003C/li>\n\u003Cli>Tests manuels, API, automatiques, E2E\u003C/li>\n\u003C/ul>\n\u003Ch2>Deploy\u003C/h2>\n\u003Cul>\n\u003Cli>Tests de charge et performance  \u003C/li>\n\u003Cli>Vérification de la pipeline  \u003C/li>\n\u003Cli>Exécution des tests automatiques\u003C/li>\n\u003C/ul>\n\u003Ch2>Operate\u003C/h2>\n\u003Cul>\n\u003Cli>Retour utilisateur  \u003C/li>\n\u003Cli>Analyse de la valeur métier  \u003C/li>\n\u003Cli>Mise à jour du backlog\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🗺️ Impact Mapping\u003C/h1>\n\u003Cp>Un outil collaboratif structuré :\nObjectif → Acteur → Impact → Livrable\u003C/p>\n\u003Chr>\n\u003Ch1>👨‍👩‍👧‍👦 Atelier des 4 amigos\u003C/h1>\n\u003Cp>Participants :\u003Cbr>Métier / Développeur / Testeur / DevOps\u003C/p>\n\u003Cp>Objectifs :\u003C/p>\n\u003Cul>\n\u003Cli>Revue multi-perspectives  \u003C/li>\n\u003Cli>Collaboration renforcée  \u003C/li>\n\u003Cli>Amélioration du process\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧱 Example Mapping\u003C/h1>\n\u003Cp>Permet de diviser une fonctionnalité en US.\u003C/p>\n\u003Cp>Principes :\u003C/p>\n\u003Cul>\n\u003Cli>Exemples concrets  \u003C/li>\n\u003Cli>Garder l’objectif principal  \u003C/li>\n\u003Cli>Se concentrer sur la valeur  \u003C/li>\n\u003Cli>Identifier les risques  \u003C/li>\n\u003Cli>Tester les hypothèses  \u003C/li>\n\u003Cli>Créer des US testables\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧪 Types de tests : expérience &amp; couverture\u003C/h1>\n\u003Cp>Les deux approches sont nécessaires :\u003C/p>\n\u003Cul>\n\u003Cli>Tests basés sur l’expérience  \u003C/li>\n\u003Cli>Tests basés sur la couverture\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧠 Techniques de conception\u003C/h1>\n\u003Col>\n\u003Cli>Flux de contrôle / flux métier  \u003C/li>\n\u003Cli>Points de décision  \u003C/li>\n\u003Cli>Données  \u003C/li>\n\u003Cli>Apparence, fonctionnement, performance\u003C/li>\n\u003C/ol>\n\u003Ch3>Partitions d’équivalences\u003C/h3>\n\u003Cp>Regroupent des données similaires pour réduire le nombre de tests.\u003C/p>\n\u003Ch3>Valeurs limites\u003C/h3>\n\u003Cp>Permettent de détecter les erreurs fréquentes.\u003C/p>\n\u003Chr>\n\u003Ch1>📄 Structure d’un cas de test\u003C/h1>\n\u003Cul>\n\u003Cli>ID  \u003C/li>\n\u003Cli>Description  \u003C/li>\n\u003Cli>Préconditions  \u003C/li>\n\u003Cli>Étapes  \u003C/li>\n\u003Cli>Données  \u003C/li>\n\u003Cli>Résultat attendu  \u003C/li>\n\u003Cli>Actions post-test  \u003C/li>\n\u003Cli>Résultat obtenu  \u003C/li>\n\u003Cli>État du test (nouveau / non régression)\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🔍 Tests exploratoires\u003C/h1>\n\u003Cp>Durée : 30 min à 1h30\u003C/p>\n\u003Cp>Charte :\u003C/p>\n\u003Cul>\n\u003Cli>Quoi explorer ?  \u003C/li>\n\u003Cli>En tant que qui ?  \u003C/li>\n\u003Cli>Avec quelles ressources ?  \u003C/li>\n\u003Cli>Remonter les informations  \u003C/li>\n\u003Cli>Conserver les fichiers  \u003C/li>\n\u003Cli>Noter anomalies, idées, questions\u003C/li>\n\u003C/ul>\n\u003Cp>Débriefing :\u003C/p>\n\u003Cul>\n\u003Cli>Ce qu’il s’est passé  \u003C/li>\n\u003Cli>Apprentissages  \u003C/li>\n\u003Cli>Points bloquants  \u003C/li>\n\u003Cli>Ce qu’il reste à faire\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🐞 Cycle de vie d’une anomalie\u003C/h1>\n\u003Cp>La priorité détermine l’ordre de correction.\u003C/p>\n\u003Ctable>\n\u003Cthead>\n\u003Ctr>\n\u003Cth>Sévérité\u003C/th>\n\u003Cth>Priorité\u003C/th>\n\u003Cth>Action\u003C/th>\n\u003C/tr>\n\u003C/thead>\n\u003Ctbody>\u003Ctr>\n\u003Ctd>Haute\u003C/td>\n\u003Ctd>Haute\u003C/td>\n\u003Ctd>Corriger immédiatement\u003C/td>\n\u003C/tr>\n\u003Ctr>\n\u003Ctd>Haute\u003C/td>\n\u003Ctd>Faible\u003C/td>\n\u003Ctd>Impact limité\u003C/td>\n\u003C/tr>\n\u003Ctr>\n\u003Ctd>Faible\u003C/td>\n\u003Ctd>Haute\u003C/td>\n\u003Ctd>Fonctionne mais gênant\u003C/td>\n\u003C/tr>\n\u003Ctr>\n\u003Ctd>Faible\u003C/td>\n\u003Ctd>Faible\u003C/td>\n\u003Ctd>À corriger plus tard\u003C/td>\n\u003C/tr>\n\u003C/tbody>\u003C/table>\n\u003Cp>Pipeline d’anomalies :\u003Cbr>\u003Cstrong>Nouveau → Prêt pour le développement → En cours → Retester → Fini\u003C/strong>\u003C/p>\n\u003Cp>Penser à chercher la cause racine du bug\u003C/p>\n\u003Chr>\n\u003Ch1>🌀 Tests dans un sprint\u003C/h1>\n\u003Cul>\n\u003Cli>Développements  \u003C/li>\n\u003Cli>Tests  \u003C/li>\n\u003Cli>Corrections d’anomalies  \u003C/li>\n\u003Cli>L’atelier risk storming est un bon outil pour définir les risques et aussi pour les techniques de tests\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧱 Variété de tests\u003C/h1>\n\u003Ch2>Pyramide de tests\u003C/h2>\n\u003Cul>\n\u003Cli>Tests unitaires  \u003C/li>\n\u003Cli>Tests d’intégration  \u003C/li>\n\u003Cli>Tests système  \u003C/li>\n\u003Cli>Tests d’acceptation\u003C/li>\n\u003C/ul>\n\u003Ch2>Quadrants de test\u003C/h2>\n\u003Cul>\n\u003Cli>Tests unitaires &amp; intégration (TDD)  \u003C/li>\n\u003Cli>Tests métier (PO, dev, testeurs)  \u003C/li>\n\u003Cli>Tests utilisateurs &amp; exploratoires  \u003C/li>\n\u003Cli>Tests non fonctionnels\u003C/li>\n\u003C/ul>\n\u003Ch2>Progression / Régression / Re-test\u003C/h2>\n\u003Cul>\n\u003Cli>Progression : nouvelles fonctionnalités  \u003C/li>\n\u003Cli>Régression : vérifier que l’existant fonctionne  \u003C/li>\n\u003Cli>Re-test : vérifier la correction d’un bug\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧭 Stratégie de test\u003C/h1>\n\u003Ch3>Contexte\u003C/h3>\n\u003Cul>\n\u003Cli>Description du projet  \u003C/li>\n\u003Cli>Impacts utilisateurs\u003C/li>\n\u003C/ul>\n\u003Ch3>Analyse de risques\u003C/h3>\n\u003Cul>\n\u003Cli>Pourquoi tester ?  \u003C/li>\n\u003Cli>Pourquoi automatiser ?  \u003C/li>\n\u003Cli>Risques liés aux évolutions\u003C/li>\n\u003C/ul>\n\u003Ch3>Démarche\u003C/h3>\n\u003Cul>\n\u003Cli>Quels tests ?  \u003C/li>\n\u003Cli>Comment organiser ?  \u003C/li>\n\u003Cli>Comment garantir la qualité ?  \u003C/li>\n\u003Cli>Quels livrables ?\u003C/li>\n\u003C/ul>\n\u003Ch3>Moyens\u003C/h3>\n\u003Cul>\n\u003Cli>Environnements  \u003C/li>\n\u003Cli>Matériel  \u003C/li>\n\u003Cli>Logiciels  \u003C/li>\n\u003Cli>Ressources humaines\u003C/li>\n\u003C/ul>\n\u003Ch3>Organisation\u003C/h3>\n\u003Cul>\n\u003Cli>Acteurs  \u003C/li>\n\u003Cli>Gouvernance\u003C/li>\n\u003C/ul>\n\u003Ch3>Planning\u003C/h3>\n\u003Cul>\n\u003Cli>Phases et étapes  \u003C/li>\n\u003Cli>Intégration de l’automatisation\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🎉 Bug Bash\u003C/h1>\n\u003Cp>À planifier :\u003C/p>\n\u003Cul>\n\u003Cli>1er vendredi du mois  \u003C/li>\n\u003Cli>Après chaque release\u003C/li>\n\u003C/ul>\n\u003Cp>Objectifs :\u003C/p>\n\u003Cul>\n\u003Cli>Tester les fonctionnalités critiques  \u003C/li>\n\u003Cli>Générer de nouvelles idées  \u003C/li>\n\u003Cli>Explorer l’application\u003C/li>\n\u003C/ul>\n\u003Cp>Inclure le temps de correction dans le sprint.\u003C/p>\n\u003Chr>\n\u003Ch1>🤖 Automatisation des tests\u003C/h1>\n\u003Cp>Principes :\u003C/p>\n\u003Cul>\n\u003Cli>Équipe interne plutôt que pilotée  \u003C/li>\n\u003Cli>Vue d’ensemble  \u003C/li>\n\u003Cli>Choix des outils  \u003C/li>\n\u003Cli>Responsabilités claires  \u003C/li>\n\u003Cli>Automatiser les tests répétitifs  \u003C/li>\n\u003Cli>Rétrospective régulière\u003C/li>\n\u003C/ul>\n\u003Ch3>Pyramide d’automatisation\u003C/h3>\n\u003Cul>\n\u003Cli>Tests unitaires  \u003C/li>\n\u003Cli>Tests d’intégration  \u003C/li>\n\u003Cli>Tests interface (Selenium, RobotFramework, Appium…)\u003C/li>\n\u003C/ul>\n\u003Ch3>Avantages\u003C/h3>\n\u003Cul>\n\u003Cli>Détection rapide  \u003C/li>\n\u003Cli>Maintenance facilitée  \u003C/li>\n\u003Cli>Accélération du cycle  \u003C/li>\n\u003Cli>Réduction des risques  \u003C/li>\n\u003Cli>Réutilisation des tests\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch1>🧭 Stratégie d’automatisation\u003C/h1>\n\u003Cp>Questions clés :\u003C/p>\n\u003Cul>\n\u003Cli>Quelle valeur apporte l’automatisation ?  \u003C/li>\n\u003Cli>Qui automatise quoi ?  \u003C/li>\n\u003Cli>Quand et comment structurer le travail ?  \u003C/li>\n\u003Cli>Quelles tâches automatiser en priorité ?  \u003C/li>\n\u003Cli>Quels outils, données, environnements ?\u003C/li>\n\u003C/ul>\n\u003Cp>Les tests exploratoires complètent l’automatisation.\u003C/p>\n\u003Chr>\n\u003Ch1>🔗 Pour aller plus loin\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://miro.com/fr/modeles/risk-storming-and-premortem/\">Risk Storming et Pré-Mortem (Modèle) | Miroverse\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://latavernedutesteur.fr/2022/02/07/pourquoi-une-pyramide-pour-les-tests/\">Pourquoi une &quot;pyramide&quot; pour les tests ? - La taverne du testeur\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.reddit.com/r/programming/comments/1i5xasa/the_testing_pyramid_is_an_outdated_economic_model/?tl=fr\">La pyramide des tests est un modèle économique dépassé. : r/programming\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.linkedin.com/posts/emnaayadi_agile-testing-condensed-a-brief-introduction-activity-7140021717049008128-xBTn\">Prêt à transformer votre approche des tests dans un environnement agile?\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Cp>\u003Cem>Note: MAJ au 11 avril 2026\u003C/em>\u003C/p>\n",resources:{images:[],videos:[],documents:[{name:"charte_exploratoire_parkcalc.docx",path:"/microfolio/content/projects/Qualité-de-test/documents/charte_exploratoire_parkcalc.docx"},{name:"Session de tests exploratoires.docx",path:"/microfolio/content/projects/Qualité-de-test/documents/Session de tests exploratoires.docx"},{name:"Strategie de test.docx",path:"/microfolio/content/projects/Qualité-de-test/documents/Strategie de test.docx"}]},thumbnailMetadata:{credit:null,source:null,description:null,headline:null,keywords:null,camera:null,lens:null,focalLength:null,aperture:null,shutterSpeed:null,iso:null,dateTime:null,gps:null,city:null,state:null,country:null,location:null,raw:{file:{"Bits Per Sample":{value:8,description:"8"},"Image Height":{value:400,description:"400px"},"Image Width":{value:900,description:"900px"},"Color Components":{value:3,description:"3"},Subsampling:{value:[[1,34,0],[2,17,1],[3,17,1]],description:"YCbCr4:2:0 (2 2)"},FileType:{value:"jpeg",description:"JPEG"}},jfif:{"JFIF Version":{value:257,description:"1.1"},"Resolution Unit":{value:1,description:"inches"},XResolution:{value:72,description:"72"},YResolution:{value:72,description:"72"},"JFIF Thumbnail Width":{value:0,description:"0px"},"JFIF Thumbnail Height":{value:0,description:"0px"}}},creditLine:null}}},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

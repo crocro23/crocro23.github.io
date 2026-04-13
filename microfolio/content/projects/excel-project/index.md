@@ -100,9 +100,9 @@ Ressources :
 
 
 ## 🔎 Pour aller plus loin
-- 📊 Grist combine le meilleur des tableurs et des bases de données:(https://support.getgrist.com/fr/#how-to-tutorials)
-- La FAQ sur VBA de developpez.com: https://vb.developpez.com/faqvba/
-- 💬 L'aide de Microsoft! (https://support.microsoft.com/fr-fr/excel)
+- [📊 Grist combine le meilleur des tableurs et des bases de données](https://support.getgrist.com/fr/#how-to-tutorials)
+- [La FAQ sur VBA de developpez.com](https://vb.developpez.com/faqvba/)
+- [💬 L'aide de Microsoft](https://support.microsoft.com/fr-fr/excel)
 
 ---
 

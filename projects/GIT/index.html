@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.svg" />
+		<link rel="preconnect" href="https://fonts.bunny.net" />
+		<link
+			href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,500,600,700"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+		<link href="../../_app/immutable/assets/0.DKgpxOX7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DPNPZ6je.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CP6n-VMi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Be08vJ07.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BCZbx2Sk.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/tbjhAa6l.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CK6M67NC.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.gv6bxq8D.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/gqh83yNy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B_5HCC-R.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DYPfjpQk.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DhRdYEGY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BkpA0PSA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DSGmDI0q.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/7.Cjg_R0Sw.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DXiV9JFe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D-RxnAsG.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C-CYnFmR.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/waNz1Iww.js"><!--[--><meta name="description" content="Comprendre Git, GitHub et les commandes essentielles du contrôle de version"/> <meta property="og:title" content="Utilisation de Git et GitHub"/> <meta property="og:description" content="Comprendre Git, GitHub et les commandes essentielles du contrôle de version"/> <meta property="og:image" content="../../content/projects/GIT/thumbnail.jpg"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="microfolio"/><!--]--><title>microfolio • Utilisation de Git et GitHub</title>
+	</head>
+	<body class="bg-background px-4" data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><header class="bg-background sticky top-0 z-5000 mb-8"><div class="border-primary mx-auto flex h-32 max-w-7xl items-end justify-between border-b border-solid px-4 md:h-32"><section class="h-15 flex-1"><a href="../../"><div class="text-2xl font-medium">microfolio</div> <div class="text-sm">Générateur de portfolio statique</div></a></section> <nav class="hidden md:block"><ul class="flex h-8 gap-4"><!--[--><li class="hover:border-primary px-2 hover:font-medium "><a href="../../">Accueil</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../about">À propos</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../projects">Projets</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../list">Liste</a></li><li class="hover:border-primary px-2 hover:font-medium "><a href="../../map">Carte</a></li><!--]--></ul></nav> <button class="bg-box text-primary border-primary z-100 mb-3 cursor-pointer rounded-full border-1 p-2 md:hidden" aria-label="Menu"><!--[!--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="pointer-events-none size-6 hover:scale-110"><path fill="currentColor" d="M4 6h24v2H4zm0 18h24v2H4zm0-12h24v2H4zm0 6h24v2H4z"></path></svg><!--]--></button></div> <!--[!--><!--]--></header><!----> <main class="mx-auto max-w-7xl px-4 pb-24"><!----><div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6"><div class="col-span-2 mb-12 max-w-none"><div><h1 class="text-primary mb-2 text-3xl font-bold">Utilisation de Git et GitHub</h1></div> <p class="text-lg">Comprendre Git, GitHub et les commandes essentielles du contrôle de version</p> <a href="../../projects" class="my-4 block text-sm hover:underline">← Retour aux projets</a> <img src="../../content/projects/GIT/thumbnail.jpg" alt="Utilisation de Git et GitHub" class="w-full"/> <div class="text-primary mt-4 text-sm"><!--[!--><p class="font-medium">thumbnail.jpg</p><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <article class="prose prose-neutral text-primary mt-8"><!----><h1>🧠 Git vs GitHub</h1>
+<ul>
+<li><strong>Git</strong> : logiciel installé sur le PC, utilisé pour suivre l’historique des fichiers.  </li>
+<li><strong>GitHub</strong> : site web permettant d’héberger des dépôts Git en ligne.</li>
+</ul>
+<p>🎯 <strong>Objectif du contrôle de version</strong> : savoir <em>qui</em> a fait <em>quoi</em> et <em>quand</em>.</p>
+<hr>
+<h1>📘 Exemple concret : Alice &amp; Bob</h1>
+<p>Alice et Bob travaillent sur le même projet depuis un mois.<br>Le client demande une livraison urgente. Alice modifie le code et l’envoie.</p>
+<p>Le lendemain : tout est cassé.</p>
+<p>➡️ Alice a <strong>écrasé</strong> le travail de Bob.<br>➡️ Bob n’avait <strong>aucune copie</strong> de son travail.<br>➡️ Résultat : <strong>1 mois de travail perdu</strong>.</p>
+<p>👉 Git évite exactement ce genre de catastrophe.</p>
+<hr>
+<h1>🧑‍💻 Création du compte GitHub</h1>
+<ul>
+<li>Plan gratuit  </li>
+<li>Les carrés verts apparaissent lors des commits  </li>
+<li>Création d’un dépôt : <code>crocro23 / OpenclassroomsProject</code>  <ul>
+<li>Privé  </li>
+<li>Description : <em>openclassrooms.com courses gerez-du-code-avec-git-et-github</em>  </li>
+<li>Pas de README  </li>
+<li>Pas de .gitignore  </li>
+<li>Pas de licence</li>
+</ul>
+</li>
+</ul>
+<p>GitHub affiche ensuite les instructions de configuration :</p>
+<pre><code>echo &quot;# OpenclassroomsProject&quot; &gt;&gt; README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git branch -M main
+git remote add origin https://github.com/crocro23/OpenclassroomsProject.git
+git push -u origin main
+</code></pre>
+<h1>🛠️ Installation de Git</h1>
+<p>Téléchargement : <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>Option recommandée : Launch Git Bash</p>
+<p>Dans Git Bash :</p>
+<pre><code>cd C:/GIT/
+mkdir OpenclassroomsProject
+cd OpenclassroomsProject
+git config --global user.name &quot;Mickael Crozon&quot;
+git config --global user.email &quot;mickaelcrozon@hotmail.com&quot;
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+git init
+</code></pre>
+<p>Le dépôt GitHub et le dossier local portent le même nom : OpenclassroomsProject</p>
+<h1>📄 Ajout des premiers fichiers</h1>
+<p>index.html</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Un super titre&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>styles.css</p>
+<pre><code>h1 {
+    color: red;
+}
+</code></pre>
+<p>Commandes Git</p>
+<pre><code>git add index.html styles.css
+git commit -m &quot;Ajout des fichiers html et css de base&quot;
+git push
+</code></pre>
+<p>-&gt; Les fichiers sont envoyés sur GitHub.</p>
+<h1>🔗 Connexion au dépôt distant</h1>
+<pre><code>git remote add origin https://github.com/crocro23/OpenclassroomsProject.git
+git branch -M main
+git push -u origin main
+</code></pre>
+<h1>✏️ Modification d’un fichier</h1>
+<p>Modification de index.html :</p>
+<pre><code>&lt;h1&gt;Un mega titre&lt;/h1&gt;
+</code></pre>
+<p>Commandes :</p>
+<pre><code>git add index.html
+git commit -m &quot;Modification du titre H1&quot;
+git push origin main
+</code></pre>
+<h1>🌿 Création et fusion d’une branche</h1>
+<pre><code>git branch
+git branch cagnotte
+git checkout cagnotte
+echo &quot;texte de la cagnotte&quot; &gt; C:/GIT/OpenclassroomsProject/cagnotte.txt
+git add cagnotte.txt
+git commit -m &quot;Réalisation de la partie cagnotte côté front end&quot;
+git push -u origin cagnotte
+</code></pre>
+<p>Fusion :</p>
+<pre><code>git checkout main
+git merge cagnotte
+</code></pre>
+<h1>📥 Cloner un dépôt existant</h1>
+<pre><code>git clone git@github.com:OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git
+cd 7162856-G-rez-Git-et-GitHub
+git pull origin main
+git branch update-color
+git checkout update-color
+</code></pre>
+<p>Modification :</p>
+<pre><code>color: blue;
+</code></pre>
+<p>Commit :</p>
+<pre><code>git add styles.css
+git commit -m &quot;Modification de la couleur du css en bleu&quot;
+git push -u origin update-color
+</code></pre>
+<p>GitHub propose alors une Pull Request.</p>
+<p>Commentaire ajouté : <em>Change h1 color from red to blue</em> puis : </p>
+<pre><code>Merge Pull Request
+</code></pre>
+<h1>🧰 Commandes Git utiles</h1>
+<ul>
+<li>git branch -d	Supprime une branche</li>
+<li>git status	Affiche l’état des fichiers</li>
+<li>git stash	Sauvegarde temporaire des modifications</li>
+<li>git log	Historique des commits</li>
+<li>git reset --hard HEAD^	Retour au commit précédent</li>
+<li>git commit --amend	Modifier le dernier commit</li>
+<li>git reset	Revenir à l’état précédent sans commit</li>
+<li>git revert	Revenir à l’état précédent avec un nouveau commit</li>
+<li>git reflog	Historique complet des actions locales</li>
+<li>git checkout	Revenir à un commit précis</li>
+<li>git blame	Voir qui a modifié chaque ligne</li>
+</ul>
+<h1>⚔️ Gestion des conflits</h1>
+<ul>
+<li>Modifier les fichiers en conflit. Puis :</li>
+</ul>
+<pre><code>git add fichier_conflit.txt
+git commit -m &quot;Résolution du conflit&quot;
+git push
+</code></pre>
+<h1>📚 Pour aller plus loin</h1>
+<ul>
+<li><a href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github/8295476-allez-plus-loin-dans-votre-utilisation-de-git-et-github">Gestion des erreurs Git</a></li>
+<li><a href="https://www.linkedin.com/learning/l-essentiel-de-git">Formation LinkedIn Learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=UOK6Wyu_qEQ">Tutoriel vidéo Git Ingest</a></li>
+<li><a href="https://www.it-connect.fr/cours/git-apprendre-a-faire-de-la-gestion-de-versions/">Cours complet Git</a></li>
+</ul>
+<p>Note: MAJ au 27 mars 2026</p>
+<!----></article></div> <aside class="bg-box mb-6 space-y-3 p-6 text-sm lg:sticky lg:top-40 lg:self-start"><div class="flex items-center justify-between"><!--[--><span class="inline-block rounded-full border border-primary bg-box px-2 py-1 text-sm capitalize "><!---->Dev<!----></span><!--]--><!----> <!--[--><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="inline-block size-6 pb-1"><path fill="currentColor" d="m16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48Z"></path></svg><!--]--></div> <hr/> <div><h3 class="text-base font-medium">Informations</h3> <span class="font-medium">Lieu et date ›</span> <span>Mordelles, France /</span> <span>2026-03</span> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div> <!--[--><div class="mt-2"><h3 class="text-base font-medium">Équipe</h3> <!--[--><div><span class="font-medium">Mickaël Crozon</span> <!--[--><span>› Auteur</span><!--]--></div><!--]--></div><!--]--> <!--[--><div class="mt-2"><h3 class="mb-1 text-base font-medium">Mots-clés</h3> <div class="flex flex-wrap gap-2"><!--[--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->git<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->github<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->versioning<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->développement<!----></span><!--]--><!--[!--><span class="rounded border border-primary bg-box px-2 py-1 text-xs text-primary "><!---->workflow<!----></span><!--]--><!--]--></div></div><!--]--></aside></div> <!--[--><!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--><!--]--> <!--[!--><!--]--><!----><!----></main> <footer><div class="border-primary mx-auto flex h-auto max-w-7xl flex-col items-center justify-between gap-4 border-t-2 border-solid px-4 py-4 md:h-12 md:flex-row md:gap-0 md:py-0"><p class="text-center text-sm md:text-start">© AKER
+			2026 — généré avec <a href="https://github.com/aker-dev/microfolio" target="_blank" class="font-medium hover:underline">microfolio 0.5.0-beta.8</a></p> <nav><ul class="flex justify-center gap-4 md:justify-end"><!--[!--><!--]--> <!--[--><li><a href="https://www.linkedin.com/in/mickael-crozon-17a85328/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><path fill="currentColor" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"></path></svg><!----></a></li><!--]--> <!--[--><li><a href="https://github.com/crocro23" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="pointer-events-none h-5 w-5"><g fill="none"><g clip-path="url(#SVGXv8lpc2Y)"><path fill="currentColor" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12" clip-rule="evenodd"></path></g><defs><clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></g></svg><!----></a></li><!--]--></ul></nav></div></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_nmrmm = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/microfolio"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DPNPZ6je.js"),
+						import("../../_app/immutable/entry/app.gv6bxq8D.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data: [null,(function(a){a["Image Width"]={value:300,description:"300px"};a["Image Height"]={value:168,description:"168px"};a["Bit Depth"]={value:8,description:"8"};a["Color Type"]={value:3,description:"Palette"};a.Compression={value:0,description:"Deflate/Inflate"};a.Filter={value:0,description:"Adaptive"};a.Interlace={value:0,description:"Noninterlaced"};return {type:"data",data:{project:{slug:"GIT",title:"Utilisation de Git et GitHub",date:"2026-03-27",location:"Mordelles, France",description:"Comprendre Git, GitHub et les commandes essentielles du contrôle de version",type:"Dev",tags:["git","github","versioning","développement","workflow"],authors:[{name:"Mickaël Crozon",role:"Auteur"}],featured:true,content:"\u003Ch1>🧠 Git vs GitHub\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Cstrong>Git\u003C/strong> : logiciel installé sur le PC, utilisé pour suivre l’historique des fichiers.  \u003C/li>\n\u003Cli>\u003Cstrong>GitHub\u003C/strong> : site web permettant d’héberger des dépôts Git en ligne.\u003C/li>\n\u003C/ul>\n\u003Cp>🎯 \u003Cstrong>Objectif du contrôle de version\u003C/strong> : savoir \u003Cem>qui\u003C/em> a fait \u003Cem>quoi\u003C/em> et \u003Cem>quand\u003C/em>.\u003C/p>\n\u003Chr>\n\u003Ch1>📘 Exemple concret : Alice &amp; Bob\u003C/h1>\n\u003Cp>Alice et Bob travaillent sur le même projet depuis un mois.\u003Cbr>Le client demande une livraison urgente. Alice modifie le code et l’envoie.\u003C/p>\n\u003Cp>Le lendemain : tout est cassé.\u003C/p>\n\u003Cp>➡️ Alice a \u003Cstrong>écrasé\u003C/strong> le travail de Bob.\u003Cbr>➡️ Bob n’avait \u003Cstrong>aucune copie\u003C/strong> de son travail.\u003Cbr>➡️ Résultat : \u003Cstrong>1 mois de travail perdu\u003C/strong>.\u003C/p>\n\u003Cp>👉 Git évite exactement ce genre de catastrophe.\u003C/p>\n\u003Chr>\n\u003Ch1>🧑‍💻 Création du compte GitHub\u003C/h1>\n\u003Cul>\n\u003Cli>Plan gratuit  \u003C/li>\n\u003Cli>Les carrés verts apparaissent lors des commits  \u003C/li>\n\u003Cli>Création d’un dépôt : \u003Ccode>crocro23 / OpenclassroomsProject\u003C/code>  \u003Cul>\n\u003Cli>Privé  \u003C/li>\n\u003Cli>Description : \u003Cem>openclassrooms.com courses gerez-du-code-avec-git-et-github\u003C/em>  \u003C/li>\n\u003Cli>Pas de README  \u003C/li>\n\u003Cli>Pas de .gitignore  \u003C/li>\n\u003Cli>Pas de licence\u003C/li>\n\u003C/ul>\n\u003C/li>\n\u003C/ul>\n\u003Cp>GitHub affiche ensuite les instructions de configuration :\u003C/p>\n\u003Cpre>\u003Ccode>echo &quot;# OpenclassroomsProject&quot; &gt;&gt; README.md\ngit init\ngit add README.md\ngit commit -m &quot;first commit&quot;\ngit branch -M main\ngit remote add origin https://github.com/crocro23/OpenclassroomsProject.git\ngit push -u origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>🛠️ Installation de Git\u003C/h1>\n\u003Cp>Téléchargement : \u003Ca href=\"https://git-scm.com/downloads\">https://git-scm.com/downloads\u003C/a>\u003C/p>\n\u003Cp>Option recommandée : Launch Git Bash\u003C/p>\n\u003Cp>Dans Git Bash :\u003C/p>\n\u003Cpre>\u003Ccode>cd C:/GIT/\nmkdir OpenclassroomsProject\ncd OpenclassroomsProject\ngit config --global user.name &quot;Mickael Crozon&quot;\ngit config --global user.email &quot;mickaelcrozon@hotmail.com&quot;\ngit config --global color.diff auto\ngit config --global color.status auto\ngit config --global color.branch auto\ngit init\n\u003C/code>\u003C/pre>\n\u003Cp>Le dépôt GitHub et le dossier local portent le même nom : OpenclassroomsProject\u003C/p>\n\u003Ch1>📄 Ajout des premiers fichiers\u003C/h1>\n\u003Cp>index.html\u003C/p>\n\u003Cpre>\u003Ccode>\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n    &lt;title&gt;&lt;/title&gt;\n    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;\n&lt;/head&gt;\n&lt;body&gt;\n    &lt;h1&gt;Un super titre&lt;/h1&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>styles.css\u003C/p>\n\u003Cpre>\u003Ccode>h1 {\n    color: red;\n}\n\u003C/code>\u003C/pre>\n\u003Cp>Commandes Git\u003C/p>\n\u003Cpre>\u003Ccode>git add index.html styles.css\ngit commit -m &quot;Ajout des fichiers html et css de base&quot;\ngit push\n\u003C/code>\u003C/pre>\n\u003Cp>-&gt; Les fichiers sont envoyés sur GitHub.\u003C/p>\n\u003Ch1>🔗 Connexion au dépôt distant\u003C/h1>\n\u003Cpre>\u003Ccode>git remote add origin https://github.com/crocro23/OpenclassroomsProject.git\ngit branch -M main\ngit push -u origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>✏️ Modification d’un fichier\u003C/h1>\n\u003Cp>Modification de index.html :\u003C/p>\n\u003Cpre>\u003Ccode>&lt;h1&gt;Un mega titre&lt;/h1&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>Commandes :\u003C/p>\n\u003Cpre>\u003Ccode>git add index.html\ngit commit -m &quot;Modification du titre H1&quot;\ngit push origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>🌿 Création et fusion d’une branche\u003C/h1>\n\u003Cpre>\u003Ccode>git branch\ngit branch cagnotte\ngit checkout cagnotte\necho &quot;texte de la cagnotte&quot; &gt; C:/GIT/OpenclassroomsProject/cagnotte.txt\ngit add cagnotte.txt\ngit commit -m &quot;Réalisation de la partie cagnotte côté front end&quot;\ngit push -u origin cagnotte\n\u003C/code>\u003C/pre>\n\u003Cp>Fusion :\u003C/p>\n\u003Cpre>\u003Ccode>git checkout main\ngit merge cagnotte\n\u003C/code>\u003C/pre>\n\u003Ch1>📥 Cloner un dépôt existant\u003C/h1>\n\u003Cpre>\u003Ccode>git clone git@github.com:OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git\ncd 7162856-G-rez-Git-et-GitHub\ngit pull origin main\ngit branch update-color\ngit checkout update-color\n\u003C/code>\u003C/pre>\n\u003Cp>Modification :\u003C/p>\n\u003Cpre>\u003Ccode>color: blue;\n\u003C/code>\u003C/pre>\n\u003Cp>Commit :\u003C/p>\n\u003Cpre>\u003Ccode>git add styles.css\ngit commit -m &quot;Modification de la couleur du css en bleu&quot;\ngit push -u origin update-color\n\u003C/code>\u003C/pre>\n\u003Cp>GitHub propose alors une Pull Request.\u003C/p>\n\u003Cp>Commentaire ajouté : \u003Cem>Change h1 color from red to blue\u003C/em> puis : \u003C/p>\n\u003Cpre>\u003Ccode>Merge Pull Request\n\u003C/code>\u003C/pre>\n\u003Ch1>🧰 Commandes Git utiles\u003C/h1>\n\u003Cul>\n\u003Cli>git branch -d\tSupprime une branche\u003C/li>\n\u003Cli>git status\tAffiche l’état des fichiers\u003C/li>\n\u003Cli>git stash\tSauvegarde temporaire des modifications\u003C/li>\n\u003Cli>git log\tHistorique des commits\u003C/li>\n\u003Cli>git reset --hard HEAD^\tRetour au commit précédent\u003C/li>\n\u003Cli>git commit --amend\tModifier le dernier commit\u003C/li>\n\u003Cli>git reset\tRevenir à l’état précédent sans commit\u003C/li>\n\u003Cli>git revert\tRevenir à l’état précédent avec un nouveau commit\u003C/li>\n\u003Cli>git reflog\tHistorique complet des actions locales\u003C/li>\n\u003Cli>git checkout\tRevenir à un commit précis\u003C/li>\n\u003Cli>git blame\tVoir qui a modifié chaque ligne\u003C/li>\n\u003C/ul>\n\u003Ch1>⚔️ Gestion des conflits\u003C/h1>\n\u003Cul>\n\u003Cli>Modifier les fichiers en conflit. Puis :\u003C/li>\n\u003C/ul>\n\u003Cpre>\u003Ccode>git add fichier_conflit.txt\ngit commit -m &quot;Résolution du conflit&quot;\ngit push\n\u003C/code>\u003C/pre>\n\u003Ch1>📚 Pour aller plus loin\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github/8295476-allez-plus-loin-dans-votre-utilisation-de-git-et-github\">Gestion des erreurs Git\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.linkedin.com/learning/l-essentiel-de-git\">Formation LinkedIn Learning\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.youtube.com/watch?v=UOK6Wyu_qEQ\">Tutoriel vidéo Git Ingest\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.it-connect.fr/cours/git-apprendre-a-faire-de-la-gestion-de-versions/\">Cours complet Git\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Cp>Note: MAJ au 27 mars 2026\u003C/p>\n",resources:{images:[],videos:[],documents:[]},thumbnailMetadata:{credit:null,source:null,description:null,headline:null,keywords:null,camera:null,lens:null,focalLength:null,aperture:null,shutterSpeed:null,iso:null,dateTime:null,gps:null,city:null,state:null,country:null,location:null,raw:{png:a,pngFile:a,file:{FileType:{value:"png",description:"PNG"}}},creditLine:null}}},uses:{params:["slug"]}}}({}))],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

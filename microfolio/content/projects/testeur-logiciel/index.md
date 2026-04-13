@@ -66,7 +66,7 @@ Le testeur doit savoir où concentrer ses efforts. Cela dépend de plusieurs fac
 
 ## 🔎 Pour aller plus loin
 - 📊 Etude des TJM dans l’IT (Morgan Philips 2025) – page 29 : Analyste Technique de Test
-- 💬 Groupe LinkedIn : [Le métier du test](https://www.linkedin.com/groups/8592377/
+- [💬 Groupe LinkedIn : Le métier du test](https://www.linkedin.com/groups/8592377/)
 
 ---
 

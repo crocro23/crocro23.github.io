@@ -96,10 +96,10 @@ Le CV qui sert de modèle pour l’ATS :
 💬 Mon avis : la lettre de motivation ne semble pas indispensable dans ce contexte.
 
 ## 🔎 Pour aller plus loin
-- Le modèle de CV pour l'IT chez novoresume.com
-- Votre CV passe-t-il vraiment le filtre de l’IA ? (https://www.linkedin.com/posts/eric-h-54a32a1b0_ia-recrutement-cv-activity-7431464631761731585-pUnq/?originalSubdomain=fr)
-- What Are Your Career Goals - How to Answer (https://novoresume.com/career-blog/career-goals?utm_campaign=Weekly+Newsletter+-+30%3A+Career+Goals&utm_content=Weekly+Newsletter+-+30%3A+Career+Goals+%28short+subj%29&utm_medium=email_action&utm_source=customer.io)
-- 101 Career Paths for Every Personality (https://novoresume.com/career-blog/career-paths-for-every-personality#istp-the-explorer) 
-- https://www.instagram.com/aiforall_fr
+- [Le modèle de CV pour l'IT chez novoresume.com](https://novoresume.com/career-blog/it-resume)
+- [Votre CV passe-t-il vraiment le filtre de l’IA ?](https://www.linkedin.com/posts/eric-h-54a32a1b0_ia-recrutement-cv-activity-7431464631761731585-pUnq/?originalSubdomain=fr)
+- [What Are Your Career Goals - How to Answer](https://novoresume.com/career-blog/career-goals?utm_campaign=Weekly+Newsletter+-+30%3A+Career+Goals&utm_content=Weekly+Newsletter+-+30%3A+Career+Goals+%28short+subj%29&utm_medium=email_action&utm_source=customer.io)
+- [101 Career Paths for Every Personality](https://novoresume.com/career-blog/career-paths-for-every-personality#istp-the-explorer) 
+- [AI for ALL](https://www.instagram.com/aiforall_fr)
 
 _Note: MAJ au 02 mars 2026_
