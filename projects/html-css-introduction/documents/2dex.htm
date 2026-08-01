@@ -1,0 +1,85 @@
+<title>Créez un lien hypertexte en HTML</title>
+
+<!-- on utilise la balise<a>(pour "anchor") pour indiquer qu'on va rediriger vers un autre endroit,
+
+puis, on ajoute l'attribut href suivi de=pour annoncer l'endroit vers lequel on veut rediriger,
+
+on indique explicitement entre  " "  l'endroit vers lequel le lien doit rediriger -->
+
+<a href="https://openclassrooms.com/fr/">Accédez à OpenClassrooms</a>
+
+
+<!-- Créez un lien hypertexte d'une page à une autre sur votre site
+Souvenez-vous : pour l’instant nous n’avons pas d’URL disponible car le site n’est pas encore en ligne. On va donc créer des liens entre nos pages en utilisant leur nom, et en indiquant leur arborescence dans notre dossier en local.
+
+Ce type de lien hypertexte s'appelle un lien relatif : il indique où trouver notre fichier HTML.
+
+Cas n°1 : les deux pages sont situées dans un même dossier en local
+Si les pages sont dans le même dossier, il suffit d'écrire comme cible du lien hypertexte le nom du fichier vers lequel on veut amener, par exemple le fichier nommé page2.html.
+
+Si on veut aller de la page 1 à la page 2, voici ce que nous écrirons dans le fichier de page1.html  :-->
+
+<p></p>
+<a href="page1.html">Page 1</a>
+
+<!-- Mais comment faire si on veut créer un fichier page 3 et le déplacer dans un dossier `/contenu`: comment indiquer le chemin relatif ?
+
+Justement, la réponse est dans la question : en indiquant le chemin !
+
+Cas n°2 : les deux pages sont situées dans deux dossiers différents en local
+Si on veut créer un fichier page 3 et le déplacer dans un autre dossier, par exemple un dossier  /contenu , on va donc indiquer le chemin à suivre pour trouver ce fichier :-->
+
+<p></p>
+<a href="page2.html">Page 2</a>
+
+<!-- Et s'il y a plusieurs sous-dossiers, on écrira ceci :-->
+
+<p></p>
+<a href="Nouveau_dossier/page3.html">Page 3</a>
+
+<p>
+Cas n°1 : l'ancre est plus bas sur la même page
+Dans ce premier cas, on crée un lien avec l'attribut href  (il contient un dièse #  suivi du nom de l'ancre) :
+</p>
+
+<a href="#mon_ancre">Aller vers l'ancre</a>
+Voici un exemple de page comportant beaucoup de texte et utilisant les ancres :
+
+<h1>Ma grande page</h1>
+<p>
+Découvrez nos conseils d’aménagement pour :<br>
+    <a href="#cuisine">La cuisine</a><br>
+    <a href="#jardin">Le jardin</a><br>
+    <a href="#salon">Le salon</a><br>
+</p>
+<h2 id="cuisine">La cuisine</h2>
+<p>... (beaucoup de texte) ...<br>
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since 1966,<br> when designers at Letraset and James Mosley,<br> the librarian at St Bride Printing Library in London,<br> took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.<br> It has survived not only many decades,<br> but also the leap into electronic typesetting,<br> remaining essentially unchanged.<br> It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+</p>
+<h2 id="jardin">Le jardin</h2>
+<p>... (beaucoup de texte) ...<br>
+   Contrary to popular belief,<br> Lorem Ipsum is not simply random text.<br> It has roots in a piece of classical Latin literature from 45 BC,<br> making it over 2000 years old.<br> Richard McClintock,<br> a Latin professor at Hampden-Sydney College in Virginia,<br> looked up one of the more obscure Latin words,<br> consectetur,<br> from a Lorem Ipsum passage,<br> and going through the cites of the word in classical literature,<br> discovered the undoubtable source.<br> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.<br> This book is a treatise on the theory of ethics,<br> very popular during the Renaissance.<br> The first line of Lorem Ipsum,<br> "Lorem ipsum dolor sit amet..",<br> comes from a line in section 1.10.32.<p></p>
+   The standard chunk of Lorem Ipsum used since 1966 is reproduced below for those interested.<br> Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,<br> accompanied by English versions from the 1914 translation by H. Rackham.
+</p>
+<h2 id="salon">Le salon</h2>
+<p>... (beaucoup de texte) ...<br>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,<br> as opposed to using 'Content here, content here',<br> making it look like readable English.<br> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br> and a search for 'lorem ipsum' will uncover many web sites still in their infancy.<br> Various versions have evolved over the years,<br> sometimes by accident,<br> sometimes on purpose (injected humour and the like).
+</p>
+
+<p>
+Cas n°2 : l'ancre est située dans une autre page
+Dans ce cas-là, on tape le nom de la page cible avant le dièse # et enfin le nom de l'ancre :
+</p>
+
+<a href="index.html#jardin">Le jardin</a>
+Voici une nouvelle page qui contient trois liens, chacun amenant vers une des ancres de la page de l'exemple précédent :
+
+<h1>Le Mégamix</h1>
+<p>
+Rendez-vous quelque part sur la page :<br>
+    <a href="index.html#cuisine">La cuisine</a><br>
+    <a href="index.html#jardin">Le jardin</a><br>
+    <a href="index.html#salon">Le salon</a><br>
+</p>
+
+<p>Bonjour. Souhaitez-vous apprendre sur <a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a> ?</p>
