@@ -2,7 +2,7 @@
 title: "Introduction au HTML et au CSS"
 date: "2026-07-30"
 location: "Mordelles, France"
-description: "Une introduction complète aux bases du HTML et du CSS avec des exemples pratiques et des conseils pour débutants"
+description: "Une introduction complete aux bases du HTML et du CSS avec des exemples pratiques et des conseils pour débutants"
 type: "web"
 tags: ["HTML","CSS","Web Development","Frontend","Tutorial"]
 authors:
