@@ -319,7 +319,6 @@ Phrase de fin :
 ---
 
 # 📚 Pour aller plus loin
-
 [Préparer son entretien de développement informatique](https://www.linkedin.com/learning/preparer-son-entretien-de-developpement-informatique)
 
 _Note : MAJ du 11 avril 2026_

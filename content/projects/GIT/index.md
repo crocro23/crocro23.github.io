@@ -210,4 +210,4 @@ git push
 - [Tutoriel vidéo Git Ingest](https://www.youtube.com/watch?v=UOK6Wyu_qEQ)
 - [Cours complet Git](https://www.it-connect.fr/cours/git-apprendre-a-faire-de-la-gestion-de-versions/)
 
-Note: MAJ au 27 mars 2026
+_Note: MAJ au 27 mars 2026_

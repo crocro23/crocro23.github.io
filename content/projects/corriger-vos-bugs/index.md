@@ -3,7 +3,7 @@ title: "Méthode de débug en 5 étapes"
 date: "2026-09-04"
 location: "Mordelles, France"
 description: "Méthode structurée pour débugger du code, illustrée par des exemples HTML/CSS et des workflows pratiques."
-type: "documentation"
+type: "Dev"
 tags:
   - debug
   - méthodologie
@@ -264,4 +264,4 @@ git checkout flexbox-right
 
 ---
 
-Note : MAJ du 4 septembre 2026
+_Note : MAJ du 4 septembre 2026_

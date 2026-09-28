@@ -185,4 +185,4 @@ Alors l'utilisateur peut accéder au Web
 * Ajuster les paramètres si nécessaire
 * S’assurer d’un éclairage et d’une visibilité adéquats
 
-Note: MAJ au 09 janvier 2026
+_Note: MAJ au 09 janvier 2026_

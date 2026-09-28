@@ -243,11 +243,8 @@ def pytest_addoption(parser):
 ## 📚 Pour aller plus loin
 
 - [L'essentiel de Selenium](https://www.linkedin.com/learning/l-essentiel-de-selenium)
-
 - [The 2026 SDET Survival Guide](https://medium.com/codetodeploy/the-2026-sdet-survival-guide-why-im-moving-my-cohorts-away-from-selenium-and-toward-these-8-f2e0a72bb86f)
-
 - [Lightweight Screen Recorder for Selenium Tests](https://anivaz.medium.com/building-a-lightweight-screen-recorder-for-selenium-tests-no-dependencies-no-headaches-116cf1884ccf)
-
 - [Tutoriels Selenium](https://www.youtube.com/watch?v=joSTRn_fAEc&list=PLTRV3JymYE9eIEIDS1v6OZNUPNUYmehsy&index=1)
 
-Note : MAJ du 29 mai 2026
+_Note : MAJ du 29 mai 2026_

@@ -389,5 +389,5 @@ Les scénarios clients deviennent des tests de recette (*Gherkin*).
 
 ---
 
-Note : MAJ du 29 mai 2026
+_Note : MAJ du 29 mai 2026_
 

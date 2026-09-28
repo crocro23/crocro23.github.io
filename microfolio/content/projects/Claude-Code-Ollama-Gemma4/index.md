@@ -3,7 +3,7 @@ title: "Claude Code GRATUIT avec Ollama + Gemma4"
 date: "2026-09-04"
 location: "Mordelles, France"
 description: "Retour d’expérience complet : installation de Claude Code en local via Ollama, configuration avancée, génération automatique de fichiers, tests, documentation et mise en ligne GitHub."
-type: "documentation"
+type: "Dev"
 tags:
   - ollama
   - claude-code
@@ -189,7 +189,8 @@ Récapitulatif de la livrabilité finale :
 - [Claude Code Skills Not Working? The Invisible Limits Nobody Talks About | Medium](https://medium.com/@cheparsky/ai-in-testing-9-the-invisible-limitations-of-claude-code-skills-you-didnt-know-f3adbdcf3680)
 - [Most developers install Claude Code and immediately use it wrong](https://www.linkedin.com/posts/kachave_ai-claudecode-developers-share-7446071623088087042-rjf8/)
 - [12 Claude Code Commands Most Developers Never Use by habtesoft Medium](https://habtesoft.medium.com/12-claude-code-commands-most-developers-never-use-8e5b75825387?sk=788119f5a2f8c94fe0010d296d5dfd9d)
+- [Every Claude Code tool, repo, and tutorial worth knowing. 54 resources](https://www.linkedin.com/posts/chorouk-malmoum_i-compiled-every-claude-code-tool-repo-share-7447587400454963200-2VSy/)
 
 ---
 
-Note : MAJ du 4 septembre 2026
+_Note : MAJ du 4 septembre 2026_

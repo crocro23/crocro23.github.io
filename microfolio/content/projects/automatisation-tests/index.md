@@ -248,4 +248,4 @@ npm run test:coverage operations-mathematiques.js
 - **Secteur régulé** → GitLab Ultimate / Azure DevOps  
 
 
-Note: MAJ au 11 avril 2026
+_Note: MAJ au 11 avril 2026_

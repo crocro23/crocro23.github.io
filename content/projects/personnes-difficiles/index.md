@@ -191,6 +191,6 @@ Solutions :
 - [Triangle de Karpman : un outil pour comprendre les conflits](https://www.cegos.fr/ressources/mag/management/episode-1-comment-entrons-en-conflit)
 - [L'art de la délégation : astuces et outils pour une équipe agile performante](https://coach-agile.com/2023/03/art-de-la-delegation-astuces-et-outils-pour-une-equipe-agile-performante/)
 
-Note: MAJ au 11 avril 2026
-
 ---
+
+_Note: MAJ au 11 avril 2026_

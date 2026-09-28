@@ -94,9 +94,13 @@ Ensuite :
 	`git add .`
 	`git commit -m "Préparation pour publication"`
 	`git push origin main`
+
+  - Je vérifie le workflow :
+  https://github.com/crocro23/crocro23.github.io/actions
+  `pages build and deployment 3 minutes ago`
+  `pages-build-deployment #42: by crocro23 45s`
 	
 - Et voilà, mon site web est à jour et fonctionne ici :  
   🌐 [https://crocro23.github.io/](https://crocro23.github.io/)
   
-  
-_Note: MAJ au 20 octobre 2025_
+_Note: MAJ au 04 septembre 2026_

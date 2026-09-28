@@ -303,4 +303,4 @@ menuButton.addEventListener('click', () => {
 - [Flexbox Froggy - Un jeu pour apprendre les flexbox CSS](https://flexboxfroggy.com/#fr)
 - [Top 7 des meilleurs effets CSS et JavaScript - YouTube](https://www.youtube.com/watch?v=alEqDBSFv7E)
 
-Note: MAJ au 30 juillet 2026
+_Note: MAJ au 30 juillet 2026_

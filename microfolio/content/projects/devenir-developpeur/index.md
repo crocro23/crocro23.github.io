@@ -251,4 +251,4 @@ Plateformes utiles :
 
 ---
 
-Note: MAJ au 17 février 2026
+_Note: MAJ au 17 février 2026_

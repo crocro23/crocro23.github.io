@@ -218,4 +218,4 @@ Voici les erreurs les plus fréquentes chez les débutants (et parfois même che
 * Confondre affectation (=) et comparaison (==)
 * Ignorer la complexité algorithmique
 
-Note: MAJ au 27 mars 2026
+_Note: MAJ au 27 mars 2026_

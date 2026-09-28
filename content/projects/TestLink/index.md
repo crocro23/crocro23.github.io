@@ -183,4 +183,4 @@ Indicateur des tests espace client (01/12/2025 → 30/12/2025) :
 ## 🎥 Ressources complémentaires
 [Tutoriel vidéo TestLink de Oussama Ben Hedia](https://www.youtube.com/watch?v=Ht4Ba_-_1nM&list=PLVJxQWwLvT2Dl3FChbQgJhDdLZWMOubz0&index=2)
 
-Note: MAJ au 14 décembre 2025
+_Note: MAJ au 14 décembre 2025_
