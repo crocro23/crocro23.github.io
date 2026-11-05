@@ -10,7 +10,6 @@ authors:
     role: "Auteur"
 featured: true
 ---
-
 # 🧠 Git vs GitHub
 
 - **Git** : logiciel installé sur le PC, utilisé pour suivre l’historique des fichiers.  
@@ -41,7 +40,7 @@ Le lendemain : tout est cassé.
 - Les carrés verts apparaissent lors des commits  
 - Création d’un dépôt : `crocro23 / OpenclassroomsProject`  
   - Privé  
-  - Description : *openclassrooms.com courses gerez-du-code-avec-git-et-github*  
+  - Description : [*openclassrooms.com courses gerez-du-code-avec-git-et-github*](https://openclassrooms.com/us/courses/7162856-gerez-du-code-avec-git-et-github)  
   - Pas de README  
   - Pas de .gitignore  
   - Pas de licence  
@@ -61,12 +60,10 @@ git push -u origin main
 # 🛠️ Installation de Git
 
 Téléchargement : https://git-scm.com/downloads
-
 Option recommandée : Launch Git Bash
-
 Dans Git Bash :
 
-```
+```shell
 cd C:/GIT/
 mkdir OpenclassroomsProject
 cd OpenclassroomsProject
@@ -82,8 +79,7 @@ Le dépôt GitHub et le dossier local portent le même nom : OpenclassroomsProje
 # 📄 Ajout des premiers fichiers
 
 index.html
-```
-
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -98,14 +94,14 @@ index.html
 
 styles.css
 
-```
+``` css
 h1 {
     color: red;
 }
 ```
 
 Commandes Git
-```
+```shell
 git add index.html styles.css
 git commit -m "Ajout des fichiers html et css de base"
 git push
@@ -113,7 +109,7 @@ git push
 -> Les fichiers sont envoyés sur GitHub.
 
 # 🔗 Connexion au dépôt distant
-```
+```shell
 git remote add origin https://github.com/crocro23/OpenclassroomsProject.git
 git branch -M main
 git push -u origin main
@@ -123,20 +119,20 @@ git push -u origin main
 
 Modification de index.html :
 
-```
+``` html
 <h1>Un mega titre</h1>
 ```
 
 Commandes :
 
-```
+```shell
 git add index.html
 git commit -m "Modification du titre H1"
 git push origin main
 ```
 
 # 🌿 Création et fusion d’une branche
-```
+```shell
 git branch
 git branch cagnotte
 git checkout cagnotte
@@ -148,14 +144,14 @@ git push -u origin cagnotte
 
 Fusion :
 
-```
+```shell
 git checkout main
 git merge cagnotte
 ```
 
 # 📥 Cloner un dépôt existant
 
-```
+```shell
 git clone git@github.com:OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git
 cd 7162856-G-rez-Git-et-GitHub
 git pull origin main
@@ -164,12 +160,12 @@ git checkout update-color
 ```
 Modification :
 
-```
+```css
 color: blue;
 ```
 Commit :
 
-```
+```shell
 git add styles.css
 git commit -m "Modification de la couleur du css en bleu"
 git push -u origin update-color
@@ -198,7 +194,7 @@ Merge Pull Request
 
 # ⚔️ Gestion des conflits
 - Modifier les fichiers en conflit. Puis :
-```
+```shell
 git add fichier_conflit.txt
 git commit -m "Résolution du conflit"
 git push

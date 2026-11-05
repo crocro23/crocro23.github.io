@@ -47,16 +47,16 @@ Questions à se poser :
 - Est‑ce facile de parler des problèmes ?  
 
 ### Attitudes à adopter
-- Soyez ouvert  
-- Soyez juste  
-- Soyez empathique  
-- Soyez exemplaire  
+- Etre ouvert  
+- Etre juste  
+- Etre empathique  
+- Etre exemplaire  
 
 ---
 
 # 💥 3) Gestion de l’échec
 
-> *Tout semble parfait… sauf si vous vous êtes trompé.*
+> *Tout semble parfait… sauf si tu t'es trompé.*
 
 - Le **droit à l’erreur** ≠ le **droit à la faute**  
 - Le **devoir de tester** insiste sur l’expérimentation avant la décision  
@@ -127,4 +127,4 @@ Annoncer le test dans l’entreprise permet d’impliquer d’autres services.
 
 [Booster l'innovation avec le Test & Learn](https://www.linkedin.com/learning/booster-l-innovation-avec-le-test-learn)
 
-_Note : MAJ du 11 avril 2026_
+_Note : MAJ du 26 octobre 2026_

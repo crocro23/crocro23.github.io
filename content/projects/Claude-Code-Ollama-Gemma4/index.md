@@ -22,7 +22,6 @@ authors:
     role: "Auteur"
 featured: true
 ---
-
 # Claude Code GRATUIT avec Ollama + Gemma4 🔥 Tuto Local
 
 Un résumé de mon installation et des actions réalisées pour utiliser Claude Code en local avec Ollama (RTX4070 Ti).  

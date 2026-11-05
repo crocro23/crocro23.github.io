@@ -10,7 +10,6 @@ authors:
     role: "Auteur"
 featured: True
 ---
-
 # 🌐 Comprendre Internet et ses services
 
 Internet est un réseau mondial permettant aux ordinateurs de communiquer entre eux.  

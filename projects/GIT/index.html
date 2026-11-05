@@ -12,20 +12,20 @@
 
 		
 		<link href="../../_app/immutable/assets/0.DKgpxOX7.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../_app/immutable/entry/start.__1SGD5s.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/DoIoxqjz.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.CNNNXaaF.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Cp1D1kI5.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/Be08vJ07.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/BCZbx2Sk.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/tbjhAa6l.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/D6NEAmiO.js">
-		<link rel="modulepreload" href="../../_app/immutable/entry/app.Dc6PnRsv.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/tRJR_2uW.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.D8F_BYyg.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/gqh83yNy.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/B_5HCC-R.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/DYPfjpQk.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/0.Bup-77NO.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DSiChV_C.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/BkpA0PSA.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/DSGmDI0q.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/7.uVqe9LT6.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/7.BcOt2gBU.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/DXiV9JFe.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/D-RxnAsG.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/C-CYnFmR.js">
@@ -51,7 +51,7 @@
 <li>Les carrés verts apparaissent lors des commits  </li>
 <li>Création d’un dépôt : <code>crocro23 / OpenclassroomsProject</code>  <ul>
 <li>Privé  </li>
-<li>Description : <em>openclassrooms.com courses gerez-du-code-avec-git-et-github</em>  </li>
+<li>Description : <a href="https://openclassrooms.com/us/courses/7162856-gerez-du-code-avec-git-et-github"><em>openclassrooms.com courses gerez-du-code-avec-git-et-github</em></a>  </li>
 <li>Pas de README  </li>
 <li>Pas de .gitignore  </li>
 <li>Pas de licence</li>
@@ -68,10 +68,10 @@ git remote add origin https://github.com/crocro23/OpenclassroomsProject.git
 git push -u origin main
 </code></pre>
 <h1>🛠️ Installation de Git</h1>
-<p>Téléchargement : <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>Option recommandée : Launch Git Bash</p>
-<p>Dans Git Bash :</p>
-<pre><code>cd C:/GIT/
+<p>Téléchargement : <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+Option recommandée : Launch Git Bash
+Dans Git Bash :</p>
+<pre><code class="language-shell">cd C:/GIT/
 mkdir OpenclassroomsProject
 cd OpenclassroomsProject
 git config --global user.name &quot;Mickael Crozon&quot;
@@ -84,8 +84,7 @@ git init
 <p>Le dépôt GitHub et le dossier local portent le même nom : OpenclassroomsProject</p>
 <h1>📄 Ajout des premiers fichiers</h1>
 <p>index.html</p>
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;&lt;/title&gt;
@@ -97,32 +96,32 @@ git init
 &lt;/html&gt;
 </code></pre>
 <p>styles.css</p>
-<pre><code>h1 {
+<pre><code class="language-css">h1 {
     color: red;
 }
 </code></pre>
 <p>Commandes Git</p>
-<pre><code>git add index.html styles.css
+<pre><code class="language-shell">git add index.html styles.css
 git commit -m &quot;Ajout des fichiers html et css de base&quot;
 git push
 </code></pre>
 <p>-&gt; Les fichiers sont envoyés sur GitHub.</p>
 <h1>🔗 Connexion au dépôt distant</h1>
-<pre><code>git remote add origin https://github.com/crocro23/OpenclassroomsProject.git
+<pre><code class="language-shell">git remote add origin https://github.com/crocro23/OpenclassroomsProject.git
 git branch -M main
 git push -u origin main
 </code></pre>
 <h1>✏️ Modification d’un fichier</h1>
 <p>Modification de index.html :</p>
-<pre><code>&lt;h1&gt;Un mega titre&lt;/h1&gt;
+<pre><code class="language-html">&lt;h1&gt;Un mega titre&lt;/h1&gt;
 </code></pre>
 <p>Commandes :</p>
-<pre><code>git add index.html
+<pre><code class="language-shell">git add index.html
 git commit -m &quot;Modification du titre H1&quot;
 git push origin main
 </code></pre>
 <h1>🌿 Création et fusion d’une branche</h1>
-<pre><code>git branch
+<pre><code class="language-shell">git branch
 git branch cagnotte
 git checkout cagnotte
 echo &quot;texte de la cagnotte&quot; &gt; C:/GIT/OpenclassroomsProject/cagnotte.txt
@@ -131,21 +130,21 @@ git commit -m &quot;Réalisation de la partie cagnotte côté front end&quot;
 git push -u origin cagnotte
 </code></pre>
 <p>Fusion :</p>
-<pre><code>git checkout main
+<pre><code class="language-shell">git checkout main
 git merge cagnotte
 </code></pre>
 <h1>📥 Cloner un dépôt existant</h1>
-<pre><code>git clone git@github.com:OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git
+<pre><code class="language-shell">git clone git@github.com:OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git
 cd 7162856-G-rez-Git-et-GitHub
 git pull origin main
 git branch update-color
 git checkout update-color
 </code></pre>
 <p>Modification :</p>
-<pre><code>color: blue;
+<pre><code class="language-css">color: blue;
 </code></pre>
 <p>Commit :</p>
-<pre><code>git add styles.css
+<pre><code class="language-shell">git add styles.css
 git commit -m &quot;Modification de la couleur du css en bleu&quot;
 git push -u origin update-color
 </code></pre>
@@ -171,7 +170,7 @@ git push -u origin update-color
 <ul>
 <li>Modifier les fichiers en conflit. Puis :</li>
 </ul>
-<pre><code>git add fichier_conflit.txt
+<pre><code class="language-shell">git add fichier_conflit.txt
 git commit -m &quot;Résolution du conflit&quot;
 git push
 </code></pre>
@@ -188,7 +187,7 @@ git push
 			
 			<script>
 				{
-					__sveltekit_1bhj6d3 = {
+					__sveltekit_1mxpdjn = {
 						base: new URL("../..", location).pathname.slice(0, -1),
 						assets: "/microfolio"
 					};
@@ -196,12 +195,12 @@ git push
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../../_app/immutable/entry/start.__1SGD5s.js"),
-						import("../../_app/immutable/entry/app.Dc6PnRsv.js")
+						import("../../_app/immutable/entry/start.CNNNXaaF.js"),
+						import("../../_app/immutable/entry/app.D8F_BYyg.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],
-							data: [null,(function(a){a["Image Width"]={value:300,description:"300px"};a["Image Height"]={value:168,description:"168px"};a["Bit Depth"]={value:8,description:"8"};a["Color Type"]={value:3,description:"Palette"};a.Compression={value:0,description:"Deflate/Inflate"};a.Filter={value:0,description:"Adaptive"};a.Interlace={value:0,description:"Noninterlaced"};return {type:"data",data:{project:{slug:"GIT",title:"Utilisation de Git et GitHub",date:"2026-03-27",location:"Mordelles, France",description:"Comprendre Git, GitHub et les commandes essentielles du contrôle de version",type:"Dev",tags:["git","github","versioning","développement","workflow"],authors:[{name:"Mickaël Crozon",role:"Auteur"}],featured:true,content:"\u003Ch1>🧠 Git vs GitHub\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Cstrong>Git\u003C/strong> : logiciel installé sur le PC, utilisé pour suivre l’historique des fichiers.  \u003C/li>\n\u003Cli>\u003Cstrong>GitHub\u003C/strong> : site web permettant d’héberger des dépôts Git en ligne.\u003C/li>\n\u003C/ul>\n\u003Cp>🎯 \u003Cstrong>Objectif du contrôle de version\u003C/strong> : savoir \u003Cem>qui\u003C/em> a fait \u003Cem>quoi\u003C/em> et \u003Cem>quand\u003C/em>.\u003C/p>\n\u003Chr>\n\u003Ch1>📘 Exemple concret : Alice &amp; Bob\u003C/h1>\n\u003Cp>Alice et Bob travaillent sur le même projet depuis un mois.\u003Cbr>Le client demande une livraison urgente. Alice modifie le code et l’envoie.\u003C/p>\n\u003Cp>Le lendemain : tout est cassé.\u003C/p>\n\u003Cp>➡️ Alice a \u003Cstrong>écrasé\u003C/strong> le travail de Bob.\u003Cbr>➡️ Bob n’avait \u003Cstrong>aucune copie\u003C/strong> de son travail.\u003Cbr>➡️ Résultat : \u003Cstrong>1 mois de travail perdu\u003C/strong>.\u003C/p>\n\u003Cp>👉 Git évite exactement ce genre de catastrophe.\u003C/p>\n\u003Chr>\n\u003Ch1>🧑‍💻 Création du compte GitHub\u003C/h1>\n\u003Cul>\n\u003Cli>Plan gratuit  \u003C/li>\n\u003Cli>Les carrés verts apparaissent lors des commits  \u003C/li>\n\u003Cli>Création d’un dépôt : \u003Ccode>crocro23 / OpenclassroomsProject\u003C/code>  \u003Cul>\n\u003Cli>Privé  \u003C/li>\n\u003Cli>Description : \u003Cem>openclassrooms.com courses gerez-du-code-avec-git-et-github\u003C/em>  \u003C/li>\n\u003Cli>Pas de README  \u003C/li>\n\u003Cli>Pas de .gitignore  \u003C/li>\n\u003Cli>Pas de licence\u003C/li>\n\u003C/ul>\n\u003C/li>\n\u003C/ul>\n\u003Cp>GitHub affiche ensuite les instructions de configuration :\u003C/p>\n\u003Cpre>\u003Ccode>echo &quot;# OpenclassroomsProject&quot; &gt;&gt; README.md\ngit init\ngit add README.md\ngit commit -m &quot;first commit&quot;\ngit branch -M main\ngit remote add origin https://github.com/crocro23/OpenclassroomsProject.git\ngit push -u origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>🛠️ Installation de Git\u003C/h1>\n\u003Cp>Téléchargement : \u003Ca href=\"https://git-scm.com/downloads\">https://git-scm.com/downloads\u003C/a>\u003C/p>\n\u003Cp>Option recommandée : Launch Git Bash\u003C/p>\n\u003Cp>Dans Git Bash :\u003C/p>\n\u003Cpre>\u003Ccode>cd C:/GIT/\nmkdir OpenclassroomsProject\ncd OpenclassroomsProject\ngit config --global user.name &quot;Mickael Crozon&quot;\ngit config --global user.email &quot;mickaelcrozon@hotmail.com&quot;\ngit config --global color.diff auto\ngit config --global color.status auto\ngit config --global color.branch auto\ngit init\n\u003C/code>\u003C/pre>\n\u003Cp>Le dépôt GitHub et le dossier local portent le même nom : OpenclassroomsProject\u003C/p>\n\u003Ch1>📄 Ajout des premiers fichiers\u003C/h1>\n\u003Cp>index.html\u003C/p>\n\u003Cpre>\u003Ccode>\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n    &lt;title&gt;&lt;/title&gt;\n    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;\n&lt;/head&gt;\n&lt;body&gt;\n    &lt;h1&gt;Un super titre&lt;/h1&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>styles.css\u003C/p>\n\u003Cpre>\u003Ccode>h1 {\n    color: red;\n}\n\u003C/code>\u003C/pre>\n\u003Cp>Commandes Git\u003C/p>\n\u003Cpre>\u003Ccode>git add index.html styles.css\ngit commit -m &quot;Ajout des fichiers html et css de base&quot;\ngit push\n\u003C/code>\u003C/pre>\n\u003Cp>-&gt; Les fichiers sont envoyés sur GitHub.\u003C/p>\n\u003Ch1>🔗 Connexion au dépôt distant\u003C/h1>\n\u003Cpre>\u003Ccode>git remote add origin https://github.com/crocro23/OpenclassroomsProject.git\ngit branch -M main\ngit push -u origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>✏️ Modification d’un fichier\u003C/h1>\n\u003Cp>Modification de index.html :\u003C/p>\n\u003Cpre>\u003Ccode>&lt;h1&gt;Un mega titre&lt;/h1&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>Commandes :\u003C/p>\n\u003Cpre>\u003Ccode>git add index.html\ngit commit -m &quot;Modification du titre H1&quot;\ngit push origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>🌿 Création et fusion d’une branche\u003C/h1>\n\u003Cpre>\u003Ccode>git branch\ngit branch cagnotte\ngit checkout cagnotte\necho &quot;texte de la cagnotte&quot; &gt; C:/GIT/OpenclassroomsProject/cagnotte.txt\ngit add cagnotte.txt\ngit commit -m &quot;Réalisation de la partie cagnotte côté front end&quot;\ngit push -u origin cagnotte\n\u003C/code>\u003C/pre>\n\u003Cp>Fusion :\u003C/p>\n\u003Cpre>\u003Ccode>git checkout main\ngit merge cagnotte\n\u003C/code>\u003C/pre>\n\u003Ch1>📥 Cloner un dépôt existant\u003C/h1>\n\u003Cpre>\u003Ccode>git clone git@github.com:OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git\ncd 7162856-G-rez-Git-et-GitHub\ngit pull origin main\ngit branch update-color\ngit checkout update-color\n\u003C/code>\u003C/pre>\n\u003Cp>Modification :\u003C/p>\n\u003Cpre>\u003Ccode>color: blue;\n\u003C/code>\u003C/pre>\n\u003Cp>Commit :\u003C/p>\n\u003Cpre>\u003Ccode>git add styles.css\ngit commit -m &quot;Modification de la couleur du css en bleu&quot;\ngit push -u origin update-color\n\u003C/code>\u003C/pre>\n\u003Cp>GitHub propose alors une Pull Request.\u003C/p>\n\u003Cp>Commentaire ajouté : \u003Cem>Change h1 color from red to blue\u003C/em> puis : \u003C/p>\n\u003Cpre>\u003Ccode>Merge Pull Request\n\u003C/code>\u003C/pre>\n\u003Ch1>🧰 Commandes Git utiles\u003C/h1>\n\u003Cul>\n\u003Cli>git branch -d\tSupprime une branche\u003C/li>\n\u003Cli>git status\tAffiche l’état des fichiers\u003C/li>\n\u003Cli>git stash\tSauvegarde temporaire des modifications\u003C/li>\n\u003Cli>git log\tHistorique des commits\u003C/li>\n\u003Cli>git reset --hard HEAD^\tRetour au commit précédent\u003C/li>\n\u003Cli>git commit --amend\tModifier le dernier commit\u003C/li>\n\u003Cli>git reset\tRevenir à l’état précédent sans commit\u003C/li>\n\u003Cli>git revert\tRevenir à l’état précédent avec un nouveau commit\u003C/li>\n\u003Cli>git reflog\tHistorique complet des actions locales\u003C/li>\n\u003Cli>git checkout\tRevenir à un commit précis\u003C/li>\n\u003Cli>git blame\tVoir qui a modifié chaque ligne\u003C/li>\n\u003C/ul>\n\u003Ch1>⚔️ Gestion des conflits\u003C/h1>\n\u003Cul>\n\u003Cli>Modifier les fichiers en conflit. Puis :\u003C/li>\n\u003C/ul>\n\u003Cpre>\u003Ccode>git add fichier_conflit.txt\ngit commit -m &quot;Résolution du conflit&quot;\ngit push\n\u003C/code>\u003C/pre>\n\u003Ch1>📚 Pour aller plus loin\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github/8295476-allez-plus-loin-dans-votre-utilisation-de-git-et-github\">Gestion des erreurs Git\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.linkedin.com/learning/l-essentiel-de-git\">Formation LinkedIn Learning\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.youtube.com/watch?v=UOK6Wyu_qEQ\">Tutoriel vidéo Git Ingest\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.it-connect.fr/cours/git-apprendre-a-faire-de-la-gestion-de-versions/\">Cours complet Git\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cem>Note: MAJ au 27 mars 2026\u003C/em>\u003C/p>\n",resources:{images:[],videos:[],documents:[]},thumbnailMetadata:{credit:null,source:null,description:null,headline:null,keywords:null,camera:null,lens:null,focalLength:null,aperture:null,shutterSpeed:null,iso:null,dateTime:null,gps:null,city:null,state:null,country:null,location:null,raw:{png:a,pngFile:a,file:{FileType:{value:"png",description:"PNG"}}},creditLine:null}}},uses:{params:["slug"]}}}({}))],
+							data: [null,(function(a){a["Image Width"]={value:300,description:"300px"};a["Image Height"]={value:168,description:"168px"};a["Bit Depth"]={value:8,description:"8"};a["Color Type"]={value:3,description:"Palette"};a.Compression={value:0,description:"Deflate/Inflate"};a.Filter={value:0,description:"Adaptive"};a.Interlace={value:0,description:"Noninterlaced"};return {type:"data",data:{project:{slug:"GIT",title:"Utilisation de Git et GitHub",date:"2026-03-27",location:"Mordelles, France",description:"Comprendre Git, GitHub et les commandes essentielles du contrôle de version",type:"Dev",tags:["git","github","versioning","développement","workflow"],authors:[{name:"Mickaël Crozon",role:"Auteur"}],featured:true,content:"\u003Ch1>🧠 Git vs GitHub\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Cstrong>Git\u003C/strong> : logiciel installé sur le PC, utilisé pour suivre l’historique des fichiers.  \u003C/li>\n\u003Cli>\u003Cstrong>GitHub\u003C/strong> : site web permettant d’héberger des dépôts Git en ligne.\u003C/li>\n\u003C/ul>\n\u003Cp>🎯 \u003Cstrong>Objectif du contrôle de version\u003C/strong> : savoir \u003Cem>qui\u003C/em> a fait \u003Cem>quoi\u003C/em> et \u003Cem>quand\u003C/em>.\u003C/p>\n\u003Chr>\n\u003Ch1>📘 Exemple concret : Alice &amp; Bob\u003C/h1>\n\u003Cp>Alice et Bob travaillent sur le même projet depuis un mois.\u003Cbr>Le client demande une livraison urgente. Alice modifie le code et l’envoie.\u003C/p>\n\u003Cp>Le lendemain : tout est cassé.\u003C/p>\n\u003Cp>➡️ Alice a \u003Cstrong>écrasé\u003C/strong> le travail de Bob.\u003Cbr>➡️ Bob n’avait \u003Cstrong>aucune copie\u003C/strong> de son travail.\u003Cbr>➡️ Résultat : \u003Cstrong>1 mois de travail perdu\u003C/strong>.\u003C/p>\n\u003Cp>👉 Git évite exactement ce genre de catastrophe.\u003C/p>\n\u003Chr>\n\u003Ch1>🧑‍💻 Création du compte GitHub\u003C/h1>\n\u003Cul>\n\u003Cli>Plan gratuit  \u003C/li>\n\u003Cli>Les carrés verts apparaissent lors des commits  \u003C/li>\n\u003Cli>Création d’un dépôt : \u003Ccode>crocro23 / OpenclassroomsProject\u003C/code>  \u003Cul>\n\u003Cli>Privé  \u003C/li>\n\u003Cli>Description : \u003Ca href=\"https://openclassrooms.com/us/courses/7162856-gerez-du-code-avec-git-et-github\">\u003Cem>openclassrooms.com courses gerez-du-code-avec-git-et-github\u003C/em>\u003C/a>  \u003C/li>\n\u003Cli>Pas de README  \u003C/li>\n\u003Cli>Pas de .gitignore  \u003C/li>\n\u003Cli>Pas de licence\u003C/li>\n\u003C/ul>\n\u003C/li>\n\u003C/ul>\n\u003Cp>GitHub affiche ensuite les instructions de configuration :\u003C/p>\n\u003Cpre>\u003Ccode>echo &quot;# OpenclassroomsProject&quot; &gt;&gt; README.md\ngit init\ngit add README.md\ngit commit -m &quot;first commit&quot;\ngit branch -M main\ngit remote add origin https://github.com/crocro23/OpenclassroomsProject.git\ngit push -u origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>🛠️ Installation de Git\u003C/h1>\n\u003Cp>Téléchargement : \u003Ca href=\"https://git-scm.com/downloads\">https://git-scm.com/downloads\u003C/a>\nOption recommandée : Launch Git Bash\nDans Git Bash :\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-shell\">cd C:/GIT/\nmkdir OpenclassroomsProject\ncd OpenclassroomsProject\ngit config --global user.name &quot;Mickael Crozon&quot;\ngit config --global user.email &quot;mickaelcrozon@hotmail.com&quot;\ngit config --global color.diff auto\ngit config --global color.status auto\ngit config --global color.branch auto\ngit init\n\u003C/code>\u003C/pre>\n\u003Cp>Le dépôt GitHub et le dossier local portent le même nom : OpenclassroomsProject\u003C/p>\n\u003Ch1>📄 Ajout des premiers fichiers\u003C/h1>\n\u003Cp>index.html\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-html\">&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n    &lt;title&gt;&lt;/title&gt;\n    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;\n&lt;/head&gt;\n&lt;body&gt;\n    &lt;h1&gt;Un super titre&lt;/h1&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>styles.css\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-css\">h1 {\n    color: red;\n}\n\u003C/code>\u003C/pre>\n\u003Cp>Commandes Git\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-shell\">git add index.html styles.css\ngit commit -m &quot;Ajout des fichiers html et css de base&quot;\ngit push\n\u003C/code>\u003C/pre>\n\u003Cp>-&gt; Les fichiers sont envoyés sur GitHub.\u003C/p>\n\u003Ch1>🔗 Connexion au dépôt distant\u003C/h1>\n\u003Cpre>\u003Ccode class=\"language-shell\">git remote add origin https://github.com/crocro23/OpenclassroomsProject.git\ngit branch -M main\ngit push -u origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>✏️ Modification d’un fichier\u003C/h1>\n\u003Cp>Modification de index.html :\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-html\">&lt;h1&gt;Un mega titre&lt;/h1&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>Commandes :\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-shell\">git add index.html\ngit commit -m &quot;Modification du titre H1&quot;\ngit push origin main\n\u003C/code>\u003C/pre>\n\u003Ch1>🌿 Création et fusion d’une branche\u003C/h1>\n\u003Cpre>\u003Ccode class=\"language-shell\">git branch\ngit branch cagnotte\ngit checkout cagnotte\necho &quot;texte de la cagnotte&quot; &gt; C:/GIT/OpenclassroomsProject/cagnotte.txt\ngit add cagnotte.txt\ngit commit -m &quot;Réalisation de la partie cagnotte côté front end&quot;\ngit push -u origin cagnotte\n\u003C/code>\u003C/pre>\n\u003Cp>Fusion :\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-shell\">git checkout main\ngit merge cagnotte\n\u003C/code>\u003C/pre>\n\u003Ch1>📥 Cloner un dépôt existant\u003C/h1>\n\u003Cpre>\u003Ccode class=\"language-shell\">git clone git@github.com:OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git\ncd 7162856-G-rez-Git-et-GitHub\ngit pull origin main\ngit branch update-color\ngit checkout update-color\n\u003C/code>\u003C/pre>\n\u003Cp>Modification :\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-css\">color: blue;\n\u003C/code>\u003C/pre>\n\u003Cp>Commit :\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-shell\">git add styles.css\ngit commit -m &quot;Modification de la couleur du css en bleu&quot;\ngit push -u origin update-color\n\u003C/code>\u003C/pre>\n\u003Cp>GitHub propose alors une Pull Request.\u003C/p>\n\u003Cp>Commentaire ajouté : \u003Cem>Change h1 color from red to blue\u003C/em> puis : \u003C/p>\n\u003Cpre>\u003Ccode>Merge Pull Request\n\u003C/code>\u003C/pre>\n\u003Ch1>🧰 Commandes Git utiles\u003C/h1>\n\u003Cul>\n\u003Cli>git branch -d\tSupprime une branche\u003C/li>\n\u003Cli>git status\tAffiche l’état des fichiers\u003C/li>\n\u003Cli>git stash\tSauvegarde temporaire des modifications\u003C/li>\n\u003Cli>git log\tHistorique des commits\u003C/li>\n\u003Cli>git reset --hard HEAD^\tRetour au commit précédent\u003C/li>\n\u003Cli>git commit --amend\tModifier le dernier commit\u003C/li>\n\u003Cli>git reset\tRevenir à l’état précédent sans commit\u003C/li>\n\u003Cli>git revert\tRevenir à l’état précédent avec un nouveau commit\u003C/li>\n\u003Cli>git reflog\tHistorique complet des actions locales\u003C/li>\n\u003Cli>git checkout\tRevenir à un commit précis\u003C/li>\n\u003Cli>git blame\tVoir qui a modifié chaque ligne\u003C/li>\n\u003C/ul>\n\u003Ch1>⚔️ Gestion des conflits\u003C/h1>\n\u003Cul>\n\u003Cli>Modifier les fichiers en conflit. Puis :\u003C/li>\n\u003C/ul>\n\u003Cpre>\u003Ccode class=\"language-shell\">git add fichier_conflit.txt\ngit commit -m &quot;Résolution du conflit&quot;\ngit push\n\u003C/code>\u003C/pre>\n\u003Ch1>📚 Pour aller plus loin\u003C/h1>\n\u003Cul>\n\u003Cli>\u003Ca href=\"https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github/8295476-allez-plus-loin-dans-votre-utilisation-de-git-et-github\">Gestion des erreurs Git\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.linkedin.com/learning/l-essentiel-de-git\">Formation LinkedIn Learning\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.youtube.com/watch?v=UOK6Wyu_qEQ\">Tutoriel vidéo Git Ingest\u003C/a>\u003C/li>\n\u003Cli>\u003Ca href=\"https://www.it-connect.fr/cours/git-apprendre-a-faire-de-la-gestion-de-versions/\">Cours complet Git\u003C/a>\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cem>Note: MAJ au 27 mars 2026\u003C/em>\u003C/p>\n",resources:{images:[],videos:[],documents:[]},thumbnailMetadata:{credit:null,source:null,description:null,headline:null,keywords:null,camera:null,lens:null,focalLength:null,aperture:null,shutterSpeed:null,iso:null,dateTime:null,gps:null,city:null,state:null,country:null,location:null,raw:{png:a,pngFile:a,file:{FileType:{value:"png",description:"PNG"}}},creditLine:null}}},uses:{params:["slug"]}}}({}))],
 							form: null,
 							error: null
 						});

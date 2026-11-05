@@ -182,14 +182,14 @@ h1 { font-size: 3.5em; color: #a5b4fc; font-family: 'Montserrat', sans-serif; }
 ```
 
 Section photos :
-```
+```css
 .accueil-photos { background-color: white; padding: 80px; }
 .accueil-photos h2 { color: #242424; text-align: center; margin-bottom: 80px; }
 .accueil-photos div { display:flex; gap: 15px; justify-content: center; margin-bottom: 15px; }
 ```
 
 Responsive :
-```
+```css
 @media screen and (max-width: 996px) {
   h1 { font-size: 2em; }
   section { padding: 50px 20px; }
@@ -201,8 +201,7 @@ Responsive :
 ---
 ## Ajouter une barre de navigation fixe (4 étapes) 🔝
 
-HTML :
-```
+```HTML
 <div class="topnav">
   <a class="active" href="#home">Home</a>
   <a href="#news">News</a>
@@ -211,8 +210,7 @@ HTML :
 </div>
 ```
 
-CSS :
-```
+```CSS
 .topnav { background-color: #333; overflow: hidden; position: sticky; top: 0; z-index: 100; }
 .topnav a { float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; }
 .topnav a:hover { background-color: #ddd; color: black; }
@@ -230,14 +228,18 @@ Intégration :
 ## Modifier l'alignement via flexbox (exemple) ↗️
 
 1. Créer une branche :
+   
 ```bash
 git branch flexbox-right
 git checkout flexbox-right
 ```
-2. CSS pour aligner à droite :
+
+2.    CSS pour aligner à droite :
+
 ```css
 .container { display:flex; flex-direction: row-reverse; }
 ```
+
 3. Tester, puis merger quand OK.
 ---
 
@@ -251,17 +253,17 @@ git checkout flexbox-right
 
 # 🌐 Pour aller plus loin : 
 
-- Gerrit Code Review : https://www.gerritcodereview.com/  
-- Stack Overflow : https://stackoverflow.com/  
-- W3Schools : https://www.w3schools.com/  
-- OpenClassrooms (Git) : https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github/7165692-travaillez-avec-un-depot-distant#/id/r-7481330  
+- [Gerrit Code Review](https://www.gerritcodereview.com)
+- [Stack Overflow]( https://stackoverflow.com)
+- [W3Schools](https://www.w3schools.com)
+- [Cours de OpenClassrooms](https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github/7165692-travaillez-avec-un-depot-distant#/id/r-7481330)  
 - https://www.canva.com/templates
 - https://www.figma.com/fr-fr/
 - https://marvelapp.com/
 - https://dev.to/
 - https://feedly.com/i/discover
-- Loop de debug sur Claude (exemple) : https://www.instagram.com/p/DcQYcfnNihX/
+- [Loop de debug sur Claude de Zeyneb Madi](https://www.instagram.com/p/DcQYcfnNihX/)
 
 ---
 
-_Note : MAJ du 4 septembre 2026_
+_Note : MAJ du 27 octobre 2026_

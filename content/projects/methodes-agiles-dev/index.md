@@ -380,14 +380,16 @@ Les scénarios clients deviennent des tests de recette (*Gherkin*).
 
 # 📚 Pour aller plus loin
 
-- [5 Lean Tools That Actually Work](https://www.linkedin.com/pulse/5-lean-tools-actually-work-any-kind-workplace-sarath-s-if8pf/)
+- [5 Lean Tools That Actually Work - LinkedIn](https://www.linkedin.com/pulse/5-lean-tools-actually-work-any-kind-workplace-sarath-s-if8pf/)
 - [Quels sont les 20 méthodes et outils Lean principaux ?](https://www.wevalgo.com/fr/savoir-faire/gestion-lean/methodes-outils-lean)
 - [Le Guide Scrum](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-French.pdf)
 - [Scrum Guide Expanded](https://scrumexpansion.org/scrum-guide-expanded/)
 - [eXtreme Programming : guide d’introduction pour les débutants](https://www.wimi-teamwork.com/fr/blog/gestion-projet/extreme-programming-guide-dintroduction-debutants)
 - [Comprendre SAFe® - Scaled Agile Framework-, l'agilité à l'échelle de l'entreprise](https://www.tuleap.com/fr/comprendre-safe-scaled-agile-framework/)
+- [SAFe entre dans l'ère de l'IA - LinkedIn](https://www.linkedin.com/posts/pascalpoussard_ai-native-safe-ce-qui-change-ugcPost-7513140833727041537-GAh6/)
+- [Framework AI Native SAFe - LinkedIn](https://www.linkedin.com/posts/adhellemmes_safe-ia-transformation-share-7513584877146030080-Xyt_)
 
 ---
 
-_Note : MAJ du 29 mai 2026_
+_Note : MAJ du 5 novembre 2026_
 

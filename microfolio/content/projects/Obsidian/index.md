@@ -17,7 +17,6 @@ authors:
     role: "Auteur"
 featured: true
 ---
-
 # 🧠 Obsidian, mon coffre de notes centralisé
 
 Pour m'organiser, j'ai choisi d'utiliser Obsidian :
@@ -132,7 +131,7 @@ Cela permet de conserver un historique exploitable tout en réorganisant la mati
 
 *Gémini : voici le contenu de mon google drive : https://drive.google.com/drive/my-drive?hl=fr Est-ce que du contenu peut-être rangé dans mon Obsidian ? Voici les sujets dans mon Obsidian ...*
 
-## 📁 Migration de mon OneDrive et du répertoire "travail" mon disque dur
+## 📁 Migration de mon OneDrive et du répertoire "travail" de mon disque dur
 
 *Voici le contenu de mon onedrive dans le fichier texte ci-joint. Est-ce que... Voici le contenu de mon disque dur...*
 
@@ -150,12 +149,13 @@ Ces extensions complètent l'expérience et rendent la prise de notes plus fluid
 
 # 📹 Pour aller plus loin
 
+- [Experiences with Obsidian Compared to Notion](https://www.reddit.com/r/ObsidianMD/comments/1ebklz0/experiences_with_obsidian_compared_to_notion/)
 - [20 minutes pour comprendre Obsidian ! - En 2026 - YouTube](https://www.youtube.com/watch?v=15INt2XjlFw)
 - [How to implement PARA Method in Obsidian - YouTube](https://www.youtube.com/watch?v=C-eEdS_oipk)
 - [Comment transposer le système PARA dans le logiciel Obsidian ?](https://reelearn.com/para-obsidian/)
 - [PARA in Obsidian. Start being productive. - YouTube](https://www.youtube.com/watch?v=92UhZbJJivU)
 - [Méthode PARA et Obsidian - YouTube](https://www.youtube.com/watch?v=CAVoDjuJdwY)
+- [Aide-mémoire Markdown – Le guide complet avec exemples | Markdown69](https://markdown69.com/fr/)
 
 ---
-
 _Note : MAJ du 23 octobre 2026_

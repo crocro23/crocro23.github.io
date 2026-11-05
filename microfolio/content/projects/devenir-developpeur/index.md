@@ -153,7 +153,6 @@ Git, GitHub, GitLab…
 
 ### Full‑stack
 Un full‑stack maîtrise :
-
 - HTML / CSS / JavaScript  
 - Un framework front-end  
 - Un framework back-end  
@@ -194,7 +193,6 @@ https://openclassrooms.com/fr/courses/6817086-decouvrez-les-metiers-de-developpe
 # 🏛️ Architecte logiciel
 
 Compétences clés :
-
 - Design patterns  
 - Principes SOLID  
 - Architecture hexagonale  
@@ -235,20 +233,18 @@ Compétences clés :
 # 🎓 Se former efficacement
 
 Aujourd’hui, se former est :
-
 - **Simple** : tout est accessible en ligne  
 - **Compliqué** : trop de choix, risque de se perdre  
 - **Jamais magique** : sans pratique, rien ne se passe  
-- **Théorique** : les plateformes montrent, mais ne pratiquent pas pour vous  
+- **Théorique** : les plateformes montrent, mais ne pratiquent pas pour toi  
 
 Plateformes utiles :
-
-- CodinGame  
-- CheckiO  
-- HackerRank  
+- CodinGame
+- CheckiO
+- HackerRank
 
 > Il faut un objectif clair pour progresser.
 
 ---
 
-_Note: MAJ au 17 février 2026_
+_Note: MAJ au 26 octobre 2026_

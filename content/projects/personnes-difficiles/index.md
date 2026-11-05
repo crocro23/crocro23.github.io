@@ -56,7 +56,7 @@ featured: true
 
 ---
 
-## 4. Changer ce que vous faites… ou changer l’autre
+## 4. Changer ce que tu fais… ou changer l’autre
 
 * Faire plus si l’autre ne fait pas son travail, ou confronter
 * Trouver comment faire avec plus facilement (accepter n’est pas être faible)
@@ -174,7 +174,7 @@ Exemples :
 
 * Se demander : *« Est‑ce grave ? »*
 * Il vérifie tout : normal pour certains managers
-* Il peut changer ce que vous faites
+* Il peut changer ce que tu fais
 
 Solutions :
 
@@ -193,4 +193,4 @@ Solutions :
 
 ---
 
-_Note: MAJ au 11 avril 2026_
+_Note: MAJ au 26 octobre 2026_

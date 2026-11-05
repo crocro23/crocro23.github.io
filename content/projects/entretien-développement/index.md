@@ -10,7 +10,6 @@ authors:
     role: "Auteur"
 featured: true
 ---
-
 # 🧭 Lister ses expériences professionnelles et personnelles
 
 Objectifs :
@@ -62,7 +61,7 @@ Il passe par **l’humain** :
 
 # 🗂️ Portfolio & présence en ligne
 
-Un portfolio est une **preuve** de vos compétences.
+Un portfolio est une **preuve** de ses compétences.
 
 Outils possibles :
 - WordPress  
@@ -150,7 +149,7 @@ Je reste à votre disposition pour toute information complémentaire.
 En vous remerciant par avance.
 Bien cordialement,
 Mickael Crozon
-06 XX XX XX XX
+06 63 66 99 45
 ```
 
 ---
@@ -181,7 +180,7 @@ Mickael Crozon
 - Anticiper les questions  
 - Préparer les documents  
 - Adapter son style vestimentaire :  
-  - Start‑up → comme vous êtes  
+  - Start‑up → comme tu es  
   - Agence web → casual  
   - ESN → formel  
   - https://www.reddit.com/r/BusinessFashion/  
@@ -243,6 +242,22 @@ Phrase de fin :
 - Agilité  
 - Innovation  
 - Curiosité  
+
+---
+## TOP 5 qualité et défaut à citer en entretien d’embauche
+
+| TOP 5 Qualités<br>  | TOP 5 Défauts |
+| ------------------- | ------------- |
+| 1 - Créatif         | Obstiné       |
+| 2 - Adaptabilité    | Impatient     |
+| 3 - Esprit d’équipe | Autoritaire   |
+| 4 - Bon relationnel | Réservé       |
+| 5 - Curieux         | Bavard        |
+Qualités que l'on peux valoriser :
+Rigoureux, Organisé, Autonome, Gestion du temps, Dynamique, Sociable (sens du relationnel) , Force de proposition, Gestion du stress, Leadership (capacité à fédérer, diriger), Enthousiaste (plutôt que parler de motivation, trop usitée)
+
+Défauts que l'on peux valoriser :
+Émotif, Lent, Méfiant, Anxieux, Impulsif, Ambitieux, Fort caractère, Manque de confiance
 
 ---
 
@@ -320,5 +335,6 @@ Phrase de fin :
 
 # 📚 Pour aller plus loin
 [Préparer son entretien de développement informatique](https://www.linkedin.com/learning/preparer-son-entretien-de-developpement-informatique)
+[Quelles questions poser à la fin d’un entretien d’embauche ? - L'Etudiant](https://www.letudiant.fr/jobsstages/quelles-questions-poser-a-la-fin-d-un-entretien-d-embauche.html)
 
-_Note : MAJ du 11 avril 2026_
+_Note : MAJ du 26 ocotobre 2026_

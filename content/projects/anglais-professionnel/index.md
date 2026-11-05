@@ -1,5 +1,5 @@
 ---
-title: "Boostez votre anglais professionnel"
+title: "Booste ton anglais professionnel"
 date: "2026-09-28"
 location: "Mordelles, France"
 description: "Conseils, expressions et ressources pour progresser en anglais professionnel."
@@ -15,7 +15,7 @@ authors:
 featured: true
 ---
 
-# 🚀 Boostez votre anglais professionnel
+# 🚀 Booste ton anglais professionnel
 
 > Je suis parti du webinar **« Boostez votre anglais professionnel »** de YesnYou sur Webikeo (https://webikeo.fr/webinar/boostez-votre-anglais-professionnel#webinar)
 
@@ -132,7 +132,7 @@ Disponible sur **iOS et Android**, cette application gratuite propose :
 En recherchant :
 - `TOEIC Full Listening Test`
 - `TOEIC Practice Test`
-vous trouverez des vidéos complètes reproduisant la section d’écoute du TOEIC.
+tu trouveras des vidéos complètes reproduisant la section d’écoute du TOEIC.
 
 ### 🦜 Parroto
 
@@ -166,44 +166,44 @@ Cette plateforme propose :
 
 ### 🌱 Niveau A1 — Apprenant élémentaire : découverte
 
-Vous êtes capable de :
-- Comprendre et utiliser des expressions familières et quotidiennes.
-- Vous présenter.
-- Poser et répondre à des questions personnelles, comme votre lieu d’habitation.
-- Interagir de manière simple si votre interlocuteur parle lentement.
+*Etre capable de :*
+- *Comprendre et utiliser des expressions familières et quotidiennes.*
+- *Vous présenter.*
+- *Poser et répondre à des questions personnelles, comme votre lieu d’habitation.*
+- *Interagir de manière simple si votre interlocuteur parle lentement.*
 
 ### 🌿 Niveau A2 — Apprenant élémentaire : intermédiaire
 
-Vous pouvez :
-- Comprendre des phrases et des expressions fréquemment utilisées dans des domaines familiers.
-- Communiquer dans le cadre d’actions simples et habituelles.
-- Échanger des informations de manière simple et directe sur des sujets habituels.
+*Vous pouvez :*
+- *Comprendre des phrases et des expressions fréquemment utilisées dans des domaines familiers.*
+- *Communiquer dans le cadre d’actions simples et habituelles.*
+- *Échanger des informations de manière simple et directe sur des sujets habituels.*
 
 ### 🚶 Niveau B1 — Apprenant indépendant : seuil
 
-Vous pouvez :
-- Comprendre les points essentiels d’un langage clair et standard sur des sujets familiers rencontrés régulièrement au travail, à l’école ou dans les loisirs.
-- Produire un texte simple et cohérent sur un sujet familier.
-- Décrire vos expériences et vos rêves.
+*Vous pouvez :*
+- *Comprendre les points essentiels d’un langage clair et standard sur des sujets familiers rencontrés régulièrement au travail, à l’école ou dans les loisirs.*
+- *Produire un texte simple et cohérent sur un sujet familier.*
+- *Décrire vos expériences et vos rêves.*
 
 ### ⏩ Niveau B2 — Apprenant indépendant : avancé
 
-Vous pouvez :
-- Comprendre les idées principales d’un texte complexe sur des sujets concrets ou abstraits.
-- Comprendre des discussions techniques dans votre domaine de spécialisation.
-- Communiquer avec aisance avec un locuteur natif.
-- Produire un texte clair et détaillé sur des sujets d’actualité.
+*Vous pouvez :*
+- *Comprendre les idées principales d’un texte complexe sur des sujets concrets ou abstraits.*
+- *Comprendre des discussions techniques dans votre domaine de spécialisation.*
+- *Communiquer avec aisance avec un locuteur natif.*
+- *Produire un texte clair et détaillé sur des sujets d’actualité.*
 
 ### 🚀 Niveau C1 → Avancé
 
-- Vous vous exprimez couramment, avec un bon niveau de précision et de nuance. 
-- Correspondance : TOEIC 785-945 / IELTS 7.0-8.0 / TOEFL iBT 90-110 / Linguaskill 180-199
-- Vous avez une maîtrise avancée de l’anglais, qui vous permet de communiquer avec aisance et spontanéité dans des situations complexes, qu’elles soient professionnelles, académiques ou sociales. Vous comprenez des textes longs et exigeants, vous êtes capable d’argumenter avec précision et vous adaptez votre discours en fonction du contexte et de votre interlocuteur.
+- *Vous vous exprimez couramment, avec un bon niveau de précision et de nuance.* 
+- *Correspondance : TOEIC 785-945 / IELTS 7.0-8.0 / TOEFL iBT 90-110 / Linguaskill 180-199*
+- *Vous avez une maîtrise avancée de l’anglais, qui vous permet de communiquer avec aisance et spontanéité dans des situations complexes, qu’elles soient professionnelles, académiques ou sociales. Vous comprennez des textes longs et exigeants, tu es capable d'argumenter avec précision et vous adaptez votre discours en fonction du contexte et de votre interlocuteur.*
 
 ### 🗣️ Niveau C2 → Bilingue
 
-- Vous maîtrisez la langue avec une fluidité et une précision proches d’un natif. 
-- Correspondance : TOEIC 945+ / IELTS 8.5-9.0 / TOEFL iBT 110+ / Linguaskill 200+
-- C'est maîtriser l’anglais avec une aisance quasi-native. À ce stade, vous comprenez tout ce que vous lisez ou entendez, y compris les nuances culturelles, l’humour, les références littéraires et les expressions idiomatiques avancées. Vous êtes capable de vous exprimer spontanément, avec précision et sans effort, en adaptant votre langage au contexte et à votre interlocuteur.
+- *Vous maîtrisez la langue avec une fluidité et une précision proches d’un natif.* 
+- *Correspondance : TOEIC 945+ / IELTS 8.5-9.0 / TOEFL iBT 110+ / Linguaskill 200+*
+- *C'est maîtriser l’anglais avec une aisance quasi-native. À ce stade, tu comprends tout ce que tu lis ou entends, y compris les nuances culturelles, l’humour, les références littéraires et les expressions idiomatiques avancées. Tu es capable de t'exprimer spontanément, avec précision et sans effort, en adaptant votre langage au contexte et à votre interlocuteur.*
 
-_Note: MAJ au 28 septembre 2026_
+_Note: MAJ au 26 octobre 2026_

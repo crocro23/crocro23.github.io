@@ -10,7 +10,6 @@ authors:
     role: "Auteur"
 featured: True
 ---
-
 # Introduction au HTML et au CSS ✨
 
 Le HTML et le CSS sont deux langages complémentaires :
@@ -40,40 +39,40 @@ Introduit en 1996, il gère :
 # Structurer une page HTML 🧱
 
 ### Paragraphes
-```
+```html
 <p>Mon texte</p>
 ```
 ### Retour à la ligne
-```
+```html
 <br>
 ```
 ### Titres
-```
+```html
 <h1>Titre principal</h1>
 <h2>Sous-titre</h2>
 <h3>Titre niveau 3</h3>
 ```
 ### Titre de l’onglet
-```
+```html
 <title>Ma page</title>
 ```
 ### Mise en forme du texte
-```
+```html
 <mark>Texte surligné</mark>
 <em>Texte en italique</em>
 <strong>Texte en gras</strong>
 ```
 ## Lien hypertexte 🔗
-```
+```html
 <p>
-Bonjour. Souhaitez-vous apprendre sur
+Bonjour. Tu souhaites apprendre sur ...
 <a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a> ?
 </p>
 ```
 ## Insertion d’images 🖼️
-```
+```html
 <p>
-Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br>
+Tu souhaites voir l'image dans sa taille d'origine ? Clic dessus !<br>
 <a href="images/montagne.jpg">
   <img src="images/montagne_mini.jpg"
        alt="Chemin de randonnée au milieu des montagnes"
@@ -86,7 +85,8 @@ Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br>
 # Intégration du CSS dans une page HTML 🎛️
 
 ## Exemple de structure HTML + CSS
-```
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -106,7 +106,8 @@ Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br>
 </html>
 ```
 ## Exemple de fichier CSS 🎨
-```
+
+```css
 h1 {
   color: green;
 }
@@ -128,13 +129,15 @@ p {
 }
 ```
 ## Ajouter une police Google Fonts 🔤
-```
+
+```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
 ```
 ### Mise en forme du texte
-```
+
+```css
 font-weight: bold;
 text-decoration: line-through;
 text-align: center;
@@ -154,14 +157,16 @@ Propriétés :
 - box-shadow
 - text-shadow
 # Apparences dynamiques ✨
-```
+
+```css
 a:hover {
   color: red;
 }
 ```
 # Partitionner une page web 🧩
 Balises :
-```
+
+```html
 <header> : en‑tête
 <footer> : pied de page
 <nav> : navigation
@@ -170,7 +175,8 @@ Balises :
 ```
 ---
 # Flexbox 📐
-```
+
+```css
 .flex {
   display: flex;
   flex-direction: row;
@@ -182,7 +188,8 @@ Balises :
 Permet de diviser la page en colonnes et lignes.
 
 # Créer un tableau 📊
-```
+
+```html
 <table>
   <tr>
     <th>Titre</th>
@@ -194,7 +201,8 @@ Permet de diviser la page en colonnes et lignes.
 </table>
 ```
 # Formulaire HTML 📝
-```
+
+```html
 <form method="post" action="traitement.php">
   <input type="email" required>
   <input type="submit" value="Envoyer">
@@ -202,11 +210,13 @@ Permet de diviser la page en colonnes et lignes.
 ```
 ---
 # Responsive design 📱
-```
+
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 ## Media queries
-```
+
+```css
 /* Par défaut */
 p {
   color: blue;
@@ -230,7 +240,8 @@ p {
 ```
 # Fonctionnalités supplémentaires avec JavaScript 🖥️
 ## Smooth scroll pour les ancres (#contact) ⬇️
-```
+
+```js
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -243,7 +254,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 ```
 ## Validation du formulaire + envoi AJAX (fetch) 📧
-```
+
+```js
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function(e) {
@@ -275,7 +287,8 @@ form.addEventListener('submit', function(e) {
 });
 ```
 ## Toggle menu mobile / focus management 📱
-```
+
+```js
 const menuButton = document.querySelector('#menu-button');
 const navMenu = document.querySelector('#nav-menu');
 
@@ -303,4 +316,4 @@ menuButton.addEventListener('click', () => {
 - [Flexbox Froggy - Un jeu pour apprendre les flexbox CSS](https://flexboxfroggy.com/#fr)
 - [Top 7 des meilleurs effets CSS et JavaScript - YouTube](https://www.youtube.com/watch?v=alEqDBSFv7E)
 
-_Note: MAJ au 30 juillet 2026_
+_Note: MAJ au 26  octobre 2026_

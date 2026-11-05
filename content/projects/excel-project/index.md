@@ -12,7 +12,6 @@ authors:
     role: 'Auteur'
 featured: true
 ---
-
 # Utilisation d'Excel
 
 ## 🧭 Avant de commencer

@@ -9,9 +9,7 @@ authors:
   - name: "Mickaël Crozon"
     role: "Auteur"
 featured: true
----
-
-# 🏆 Définition de la qualité
+---\n\n## 🔗 Articles liés\n- [[automatisation-tests]]\n- [[Playwright]]\n- [[Selenium]]
 
 La qualité est l’ensemble des caractéristiques d’un produit ou d’un service qui influent sur sa capacité à satisfaire des besoins :
 

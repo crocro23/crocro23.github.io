@@ -77,7 +77,6 @@ Ordre recommandé :
 ## 🌍 Environnements de test
 
 Par défaut : Desktop Chrome, Desktop Safari, Mobile Chrome, Mobile Safari
-
 Suggestion : Développement, Recette, PréProd, Maintenance à chaud
 
 ---
